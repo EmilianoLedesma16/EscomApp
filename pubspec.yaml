@@ -1,0 +1,55 @@
+name: escom_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase dependencies compatibles
+  firebase_core: ^3.8.0
+  firebase_auth: 5.3.3
+  cloud_firestore: ^5.3.3
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geocoding: ^2.0.0
+  open_route_service: ^1.2.6
+  geolocator: ^9.0.0
+  location: ^7.0.1
+  http: ^1.2.2
+  permission_handler: ^11.3.1
+  provider: ^6.1.0
+  carousel_slider: ^5.0.0
+
+  # Dependencia para íconos estilo iOS
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+
+  # Agrega tu imagen
+  assets:
+    - assets/img/uno.jpeg
+    - assets/img/dos.jpeg
+    - assets/img/tres.jpeg
+    - assets/img/cuatro.jpg
+    - assets/img/escom_background.jpg
+    - assets/img/escom_logo.png
+    - assets/data/alumnos.json

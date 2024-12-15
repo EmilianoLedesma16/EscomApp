@@ -1,0 +1,20 @@
+{
+    "alumnos": [
+      {
+        "boleta": "2023123456",
+        "curp": "CURP123456789",
+        "name": "Juan Pérez"
+      },
+      {
+        "boleta": "2023123457",
+        "curp": "CURP987654321",
+        "name": "Ana Gómez"
+      },
+      {
+        "boleta": "2022630593",
+        "curp": "LERE030416HDFDMMA3",
+        "name": "José Emiliano Ledesma Ramírez"
+      }
+    ]
+  }
+  

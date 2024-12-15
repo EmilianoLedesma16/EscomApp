@@ -1,0 +1,35 @@
+// Agregar buildscript para Gradle y dependencias necesarias
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Plugin de Android Gradle
+        classpath 'com.android.tools.build:gradle:8.1.0'  // O la última versión disponible
+        // Plugin de servicios de Google para Firebase
+        classpath 'com.google.gms:google-services:4.3.15' // Última versión
+    }
+}
+
+// Repositorios para todos los subproyectos
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Configuración de directorios de build
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+// Tarea para limpiar el proyecto
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
