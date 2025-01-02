@@ -18,6 +18,7 @@ import 'screens/register_alumno_screen.dart';
 import 'screens/register_externo_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'screens/historia_screen.dart';
+import 'screens/talleres_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         '/historia': (context) => Historia(),
         '/dashboardAlumno': (context) => DashboardAlumnoScreen(),
         '/dashboardExterno': (context) => DashboardExternoScreen(),
+        '/talleres': (context) => Talleres(),
       },
     );
   }
