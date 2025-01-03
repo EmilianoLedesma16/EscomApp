@@ -15,10 +15,8 @@ class DashboardAlumnoScreen extends StatelessWidget {
               context, 'Directorio de Profesores', Icons.school, '/directorio'),
           _buildOption(
               context, 'Información Académica', Icons.info, '/academicInfo'),
-          _buildOption(context, 'Mapa interactivo', Icons.map, '/schoolarMap'),
-          _buildOption(
-              context, 'Horarios de profesores', Icons.schedule, '/Horarios'),
-          _buildOption(context, 'Historia', Icons.book, '/historia'),
+          _buildOption(context, 'Galería', Icons.photo_album, '/galeria'),
+          _buildOption(context, 'Historia', Icons.work_history, '/historia'),
         ],
       ),
     );

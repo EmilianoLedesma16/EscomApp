@@ -1,0 +1,36 @@
+[
+    {
+        "profesor": "Juan Perez",
+        "department": "sexo",
+        "materias": [
+            {
+                "nombre": "Cálculo Diferencial",
+                "grupos": ["A1", "B2"],
+                "horarios": {
+                    "Lunes": "08:00 - 10:00",
+                    "Miércoles": "10:00 - 12:00"
+                }
+            },
+            {
+                "nombre": "Álgebra Lineal",
+                "grupos": ["C1"],
+                "horarios": {
+                    "Viernes": "12:00 - 14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Ana Lopez",
+        "materias": [
+            {
+                "nombre": "Física I",
+                "grupos": ["D1", "E2"],
+                "horarios": {
+                    "Martes": "08:00 - 10:00",
+                    "Jueves": "10:00 - 12:00"
+                }
+            }
+        ]
+    }
+]

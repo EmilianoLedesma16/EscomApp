@@ -6,12 +6,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'screens/dashboardAlumno_screen.dart';
 import 'screens/dashboardExterno_screen.dart';
 import 'screens/map_screen.dart';
-import 'screens/mapa_escolar_screen.dart';
+import 'screens/galeria.dart';
 import 'screens/profile_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/splash_intermedio_screen.dart';
 import 'screens/professor_directory_screen.dart';
 //import 'services/professor_service.dart';
+import 'screens/professor_schedule_screen.dart';
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_selection_screen.dart';
@@ -48,11 +49,14 @@ class MyApp extends StatelessWidget {
         '/registerExterno': (context) => RegisterExternoScreen(),
         '/forgotPassword': (context) => ForgotPasswordScreen(),
         '/profile': (context) => ProfileScreen(),
-        '/schoolarMap': (context) => SchoolarMap(),
+        '/galeria': (context) => Galeria(),
         '/historia': (context) => Historia(),
         '/dashboardAlumno': (context) => DashboardAlumnoScreen(),
         '/dashboardExterno': (context) => DashboardExternoScreen(),
         '/talleres': (context) => Talleres(),
+        '/horarios': (context) => const ProfessorScheduleScreen(
+              professor: {},
+            ),
       },
     );
   }

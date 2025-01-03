@@ -54,3 +54,4 @@ flutter:
     - assets/img/escom_logo.png
     - assets/data/alumnos.json
     - assets/data/profesores.json
+    - assets/data/horarios_profesores.json

@@ -1,20 +1,802 @@
-{
-    "alumnos": [
-      {
-        "boleta": "2023123456",
-        "curp": "CURP123456789",
-        "name": "Juan Pérez"
-      },
-      {
-        "boleta": "2023123457",
-        "curp": "CURP987654321",
-        "name": "Ana Gómez"
-      },
-      {
-        "boleta": "2022630593",
-        "curp": "LERE030416HDFDMMA3",
-        "name": "José Emiliano Ledesma Ramírez"
-      }
-    ]
+[
+  {
+      "boleta": 2022630593,
+      "curp": "LERE030416HDFDMMA3",
+      "nombre": "JOSE EMILIANO",
+      "primerApe": "LEDESMA",
+      "segundoApe": "RAMIREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630002,
+      "curp": "ABCD123456EFGHIJ02",
+      "nombre": "JORGE ARMANDO",
+      "primerApe": "ARTEAGA",
+      "segundoApe": "ROCHA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630003,
+      "curp": "ABCD123456EFGHIJ03",
+      "nombre": "RAUL",
+      "primerApe": "MONTOYA",
+      "segundoApe": "DE SANTIAGO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630004,
+      "curp": "ABCD123456EFGHIJ04",
+      "nombre": "ALDRICH JONATHAN",
+      "primerApe": "AVILA",
+      "segundoApe": "SANCHEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630005,
+      "curp": "ABCD123456EFGHIJ05",
+      "nombre": "DAVID",
+      "primerApe": "TORRES",
+      "segundoApe": "RAMIREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630006,
+      "curp": "ABCD123456EFGHIJ06",
+      "nombre": "JESSE OBED",
+      "primerApe": "SAUCILLO",
+      "segundoApe": "GONZALEZ",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630007,
+      "curp": "ABCD123456EFGHIJ07",
+      "nombre": "MIGUEL ANGEL",
+      "primerApe": "RODRIGUEZ",
+      "segundoApe": "TORRES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630008,
+      "curp": "ABCD123456EFGHIJ08",
+      "nombre": "FLAVIO JOSUE",
+      "primerApe": "SANCHEZ",
+      "segundoApe": "DE LOS RIOS",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630009,
+      "curp": "ABCD123456EFGHIJ09",
+      "nombre": "GUILLERMO",
+      "primerApe": "PINEDA",
+      "segundoApe": "CUELLAR",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630010,
+      "curp": "ABCD123456EFGHIJ10",
+      "nombre": "DANIEL SAID",
+      "primerApe": "AVILA",
+      "segundoApe": "MEJIA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630011,
+      "curp": "ABCD123456EFGHIJ11",
+      "nombre": "LUIS JESUS",
+      "primerApe": "NAVA",
+      "segundoApe": "CLEMENTE",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630012,
+      "curp": "ABCD123456EFGHIJ12",
+      "nombre": "BRANDON ANTONIO",
+      "primerApe": "CAMPERO",
+      "segundoApe": "BELECHE",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630013,
+      "curp": "ABCD123456EFGHIJ13",
+      "nombre": "BRENDA",
+      "primerApe": "VERGARA",
+      "segundoApe": "MARTINEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630014,
+      "curp": "ABCD123456EFGHIJ14",
+      "nombre": "PEDRO ABRAHAM",
+      "primerApe": "MOYA",
+      "segundoApe": "MANCILLA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630015,
+      "curp": "ABCD123456EFGHIJ15",
+      "nombre": "KEVYN ALEJANDRO",
+      "primerApe": "PEREZ",
+      "segundoApe": "LUCIO",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630016,
+      "curp": "ABCD123456EFGHIJ16",
+      "nombre": "JUAN LUIS",
+      "primerApe": "MOLINA",
+      "segundoApe": "ACUÑA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630017,
+      "curp": "ABCD123456EFGHIJ17",
+      "nombre": "TABATHA DUBHE",
+      "primerApe": "AXOTLA",
+      "segundoApe": "GONZALEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630018,
+      "curp": "ABCD123456EFGHIJ18",
+      "nombre": "IRMIN YAEL",
+      "primerApe": "SANCHEZ",
+      "segundoApe": "RODRIGUEZ",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630019,
+      "curp": "ABCD123456EFGHIJ19",
+      "nombre": "ERANDI GUADALUPE",
+      "primerApe": "RAMIREZ",
+      "segundoApe": "AYALA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630020,
+      "curp": "ABCD123456EFGHIJ20",
+      "nombre": "RODRIGO",
+      "primerApe": "ORTIZ",
+      "segundoApe": "MARIN",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630021,
+      "curp": "ABCD123456EFGHIJ21",
+      "nombre": "GIBHRAM",
+      "primerApe": "CASTRO",
+      "segundoApe": "RENDON",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630022,
+      "curp": "ABCD123456EFGHIJ22",
+      "nombre": "JULIAN",
+      "primerApe": "ALCIBAR",
+      "segundoApe": "ZUBILLAGA",
+      "pacad": "LCD"
+  },
+  {
+      "boleta": 2024630023,
+      "curp": "ABCD123456EFGHIJ23",
+      "nombre": "MARCO ANTONIO",
+      "primerApe": "CRUZ",
+      "segundoApe": "GOMEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630024,
+      "curp": "ABCD123456EFGHIJ24",
+      "nombre": "ITZEL",
+      "primerApe": "FLORES",
+      "segundoApe": "PATIÑO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630025,
+      "curp": "ABCD123456EFGHIJ25",
+      "nombre": "JAYRI ARATH",
+      "primerApe": "FUENTES",
+      "segundoApe": "REYES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630026,
+      "curp": "ABCD123456EFGHIJ26",
+      "nombre": "CINTHIA NAYELLI",
+      "primerApe": "GUTIERREZ",
+      "segundoApe": "JIMENEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630027,
+      "curp": "ABCD123456EFGHIJ27",
+      "nombre": "SAUL",
+      "primerApe": "HERNANDEZ",
+      "segundoApe": "ALONSO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630028,
+      "curp": "ABCD123456EFGHIJ28",
+      "nombre": "CESAR ALEJANDRO",
+      "primerApe": "LECHUGA",
+      "segundoApe": "CERVANTES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630029,
+      "curp": "ABCD123456EFGHIJ29",
+      "nombre": "LUIS ANTONIO",
+      "primerApe": "MONTOYA",
+      "segundoApe": "MORALES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630030,
+      "curp": "ABCD123456EFGHIJ30",
+      "nombre": "EZEQUIEL NAHUN",
+      "primerApe": "PEREZ",
+      "segundoApe": "CARBAJAL",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630031,
+      "curp": "ABCD123456EFGHIJ31",
+      "nombre": "CARLOS JARED",
+      "primerApe": "LOPEZ",
+      "segundoApe": "DEL CARMEN",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630032,
+      "curp": "ABCD123456EFGHIJ32",
+      "nombre": "ALBERTO",
+      "primerApe": "PLATA",
+      "segundoApe": "GONZALEZ",
+      "pacad": "LCD"
+  },
+  {
+      "boleta": 2024630033,
+      "curp": "ABCD123456EFGHIJ33",
+      "nombre": "ARTURO",
+      "primerApe": "MONROY",
+      "segundoApe": "MORA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630034,
+      "curp": "ABCD123456EFGHIJ34",
+      "nombre": "JESUS EDUARDO",
+      "primerApe": "SOLIS",
+      "segundoApe": "GONZALEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630035,
+      "curp": "ABCD123456EFGHIJ35",
+      "nombre": "ERIK ENRIQUE",
+      "primerApe": "RIVERA",
+      "segundoApe": "PONCE",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630036,
+      "curp": "ABCD123456EFGHIJ36",
+      "nombre": "ARTURO",
+      "primerApe": "ROJAS",
+      "segundoApe": "CERVANTES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630037,
+      "curp": "ABCD123456EFGHIJ37",
+      "nombre": "BRIAN JULIAN",
+      "primerApe": "CALVA",
+      "segundoApe": "GONZALEZ",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630038,
+      "curp": "ABCD123456EFGHIJ38",
+      "nombre": "ADRIAN",
+      "primerApe": "RAMIREZ",
+      "segundoApe": "RAMIREZ",
+      "pacad": "LCD"
+  },
+  {
+      "boleta": 2024630039,
+      "curp": "ABCD123456EFGHIJ39",
+      "nombre": "YAHAIDA MICHELLE",
+      "primerApe": "RAMIREZ",
+      "segundoApe": "VAZQUEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630040,
+      "curp": "ABCD123456EFGHIJ40",
+      "nombre": "ERIC DANIEL",
+      "primerApe": "LEGARIA",
+      "segundoApe": "AGAPITO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630041,
+      "curp": "ABCD123456EFGHIJ41",
+      "nombre": "JOSE LUIS",
+      "primerApe": "RODRIGUEZ",
+      "segundoApe": "VILLEGAS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630042,
+      "curp": "ABCD123456EFGHIJ42",
+      "nombre": "GABRIEL ALBERTO",
+      "primerApe": "MORENO",
+      "segundoApe": "ROJAS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630043,
+      "curp": "ABCD123456EFGHIJ43",
+      "nombre": "FERNANDO ROBERTO",
+      "primerApe": "MAGALLANES",
+      "segundoApe": "RETANA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630044,
+      "curp": "ABCD123456EFGHIJ44",
+      "nombre": "ALEJANDRA",
+      "primerApe": "GUZMAN",
+      "segundoApe": "JIMENEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630045,
+      "curp": "ABCD123456EFGHIJ45",
+      "nombre": "FERNANDO",
+      "primerApe": "REYES",
+      "segundoApe": "VIVAR",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630046,
+      "curp": "ABCD123456EFGHIJ46",
+      "nombre": "OSCAR DANIEL",
+      "primerApe": "BUCIO",
+      "segundoApe": "BARRERA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630047,
+      "curp": "ABCD123456EFGHIJ47",
+      "nombre": "PABLO DARIO",
+      "primerApe": "JUAREZ",
+      "segundoApe": "SANCHEZ",
+      "pacad": "LCD"
+  },
+  {
+      "boleta": 2024630048,
+      "curp": "ABCD123456EFGHIJ48",
+      "nombre": "OSMAR ALEJANDRO",
+      "primerApe": "GARCIA",
+      "segundoApe": "JIMENEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630049,
+      "curp": "ABCD123456EFGHIJ49",
+      "nombre": "DIEGO",
+      "primerApe": "MARTINEZ",
+      "segundoApe": "MENDEZ",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630050,
+      "curp": "ABCD123456EFGHIJ50",
+      "nombre": "AXEL ULYSSES",
+      "primerApe": "ROBLES",
+      "segundoApe": "VELAZQUEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630051,
+      "curp": "ABCD123456EFGHIJ51",
+      "nombre": "GIOVANNI JAVIER",
+      "primerApe": "LONGORIA",
+      "segundoApe": "BUNOUST",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630052,
+      "curp": "ABCD123456EFGHIJ52",
+      "nombre": "JARED",
+      "primerApe": "CASTILLO",
+      "segundoApe": "GONZALEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630053,
+      "curp": "ABCD123456EFGHIJ53",
+      "nombre": "ARANZA ALONDRA",
+      "primerApe": "MUÑOZ",
+      "segundoApe": "CHAVEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630054,
+      "curp": "ABCD123456EFGHIJ54",
+      "nombre": "SERGIO IVAN",
+      "primerApe": "PANIAGUA",
+      "segundoApe": "ARROYO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630055,
+      "curp": "ABCD123456EFGHIJ55",
+      "nombre": "JAVIER",
+      "primerApe": "ZAMARRON",
+      "segundoApe": "RAMIREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630056,
+      "curp": "ABCD123456EFGHIJ56",
+      "nombre": "HECTOR",
+      "primerApe": "RUIZ",
+      "segundoApe": "HERNANDEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630057,
+      "curp": "ABCD123456EFGHIJ57",
+      "nombre": "ERIC OMAR",
+      "primerApe": "ESPINOSA DE LOS MONTEROS",
+      "segundoApe": "MARTINEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630058,
+      "curp": "ABCD123456EFGHIJ58",
+      "nombre": "CARLOS",
+      "primerApe": "MORENO",
+      "segundoApe": "HERNANDEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630059,
+      "curp": "ABCD123456EFGHIJ59",
+      "nombre": "GUSTAVO ADOLFO",
+      "primerApe": "ARREOLA",
+      "segundoApe": "ROJAS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630060,
+      "curp": "ABCD123456EFGHIJ60",
+      "nombre": "ANTONIO DE JESUS",
+      "primerApe": "DOMINGUEZ",
+      "segundoApe": "ORTEGA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630061,
+      "curp": "ABCD123456EFGHIJ61",
+      "nombre": "DIEGO FRANCISCO",
+      "primerApe": "HERNANDEZ",
+      "segundoApe": "PEREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630062,
+      "curp": "ABCD123456EFGHIJ62",
+      "nombre": "MIGUEL ANGEL",
+      "primerApe": "RAFAEL",
+      "segundoApe": "VILLAFUERTE",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630063,
+      "curp": "ABCD123456EFGHIJ63",
+      "nombre": "OSCAR ALESSANDRO",
+      "primerApe": "OSTOA",
+      "segundoApe": "VELASCO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630064,
+      "curp": "ABCD123456EFGHIJ64",
+      "nombre": "JESUS ADIEL",
+      "primerApe": "GARCIA",
+      "segundoApe": "VELAZQUEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630065,
+      "curp": "ABCD123456EFGHIJ65",
+      "nombre": "JONATHAN GERARDO",
+      "primerApe": "AVIÑA",
+      "segundoApe": "CALDERON",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630066,
+      "curp": "ABCD123456EFGHIJ66",
+      "nombre": "BRENDA SAMANTHA",
+      "primerApe": "PEREZ",
+      "segundoApe": "BEDOLLA",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630067,
+      "curp": "ABCD123456EFGHIJ67",
+      "nombre": "MARIO CESAR",
+      "primerApe": "MONROY",
+      "segundoApe": "HERNANDEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630068,
+      "curp": "ABCD123456EFGHIJ68",
+      "nombre": "MARIANA",
+      "primerApe": "JIMENEZ",
+      "segundoApe": "GUERRERO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630069,
+      "curp": "ABCD123456EFGHIJ69",
+      "nombre": "CALEB",
+      "primerApe": "GAMIZ",
+      "segundoApe": "GONZALEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630070,
+      "curp": "ABCD123456EFGHIJ70",
+      "nombre": "ERIK",
+      "primerApe": "ALCANTARA",
+      "segundoApe": "COVARRUBIAS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630071,
+      "curp": "ABCD123456EFGHIJ71",
+      "nombre": "ALDO ALEJANDRO",
+      "primerApe": "ARCOS",
+      "segundoApe": "HERMIDA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630072,
+      "curp": "ABCD123456EFGHIJ72",
+      "nombre": "BRAYAN JAVIER",
+      "primerApe": "AGUIRRE",
+      "segundoApe": "ORTIZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630073,
+      "curp": "ABCD123456EFGHIJ73",
+      "nombre": "CRISTIAN AXEL",
+      "primerApe": "BRAVO",
+      "segundoApe": "LOPEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630074,
+      "curp": "ABCD123456EFGHIJ74",
+      "nombre": "LUIS ANGEL",
+      "primerApe": "BERNAL",
+      "segundoApe": "PEREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630075,
+      "curp": "ABCD123456EFGHIJ75",
+      "nombre": "DANIEL",
+      "primerApe": "ACEVEDO",
+      "segundoApe": "MEJIA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630076,
+      "curp": "ABCD123456EFGHIJ76",
+      "nombre": "EMILIANO",
+      "primerApe": "BAÑUELOS",
+      "segundoApe": "PEREZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630077,
+      "curp": "ABCD123456EFGHIJ77",
+      "nombre": "JONATHAN DEMIAN",
+      "primerApe": "ANDRADE",
+      "segundoApe": "JIMENEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630078,
+      "curp": "ABCD123456EFGHIJ78",
+      "nombre": "ALEJANDRO",
+      "primerApe": "CARBAJAL",
+      "segundoApe": "VELAZQUEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630079,
+      "curp": "ABCD123456EFGHIJ79",
+      "nombre": "PEDRO",
+      "primerApe": "CRUZ",
+      "segundoApe": "VAZQUEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630080,
+      "curp": "ABCD123456EFGHIJ80",
+      "nombre": "DIEGO IVAN",
+      "primerApe": "CERVANTES",
+      "segundoApe": "HERNANDEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630081,
+      "curp": "ABCD123456EFGHIJ81",
+      "nombre": "EDGAR SEBASTIAN",
+      "primerApe": "CASTILLO",
+      "segundoApe": "SALGADO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630082,
+      "curp": "ABCD123456EFGHIJ82",
+      "nombre": "EDMUNDO ALEJANDRO",
+      "primerApe": "CRUZ",
+      "segundoApe": "DE LA VEGA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630083,
+      "curp": "ABCD123456EFGHIJ83",
+      "nombre": "LUIS ANGEL",
+      "primerApe": "CALDERON",
+      "segundoApe": "ZIMBRON",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630084,
+      "curp": "ABCD123456EFGHIJ84",
+      "nombre": "DIEGO",
+      "primerApe": "CUREÑO",
+      "segundoApe": "CRUZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630085,
+      "curp": "ABCD123456EFGHIJ85",
+      "nombre": "NOE",
+      "primerApe": "CRUZ",
+      "segundoApe": "MEDRANO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630086,
+      "curp": "ABCD123456EFGHIJ86",
+      "nombre": "DEREK JACOB",
+      "primerApe": "COLIN",
+      "segundoApe": "ROMERO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630087,
+      "curp": "ABCD123456EFGHIJ87",
+      "nombre": "LIZETH ABIGAIL",
+      "primerApe": "DAMIAN",
+      "segundoApe": "ELIZONDO",
+      "pacad": "IIA"
+  },
+  {
+      "boleta": 2024630088,
+      "curp": "ABCD123456EFGHIJ88",
+      "nombre": "CUAUHTEMOC",
+      "primerApe": "FERNANDEZ",
+      "segundoApe": "VILLAR",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630089,
+      "curp": "ABCD123456EFGHIJ89",
+      "nombre": "CARLOS ANTONIO",
+      "primerApe": "DIAZ",
+      "segundoApe": "SOTO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630090,
+      "curp": "ABCD123456EFGHIJ90",
+      "nombre": "KEVIN",
+      "primerApe": "DIAZ",
+      "segundoApe": "FUENTES",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630091,
+      "curp": "ABCD123456EFGHIJ91",
+      "nombre": "RODRIGO",
+      "primerApe": "FLORES",
+      "segundoApe": "ESTOPIER",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630092,
+      "curp": "ABCD123456EFGHIJ92",
+      "nombre": "FERNANDA",
+      "primerApe": "GARCIA",
+      "segundoApe": "JIMENEZ",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630093,
+      "curp": "ABCD123456EFGHIJ93",
+      "nombre": "NOE RAMSES",
+      "primerApe": "GONZALEZ",
+      "segundoApe": "LLAMOSAS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630094,
+      "curp": "ABCD123456EFGHIJ94",
+      "nombre": "LUZ MIREYA",
+      "primerApe": "GARCIA",
+      "segundoApe": "GARCIA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630095,
+      "curp": "ABCD123456EFGHIJ95",
+      "nombre": "ROGELIO ASAHID",
+      "primerApe": "GOMEZ",
+      "segundoApe": "JASSO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630096,
+      "curp": "ABCD123456EFGHIJ96",
+      "nombre": "LUIS RAUL",
+      "primerApe": "GARCIA",
+      "segundoApe": "BAUTISTA",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630097,
+      "curp": "ABCD123456EFGHIJ97",
+      "nombre": "ARMANDO",
+      "primerApe": "GUZMAN",
+      "segundoApe": "BALLESTEROS",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630098,
+      "curp": "ABCD123456EFGHIJ98",
+      "nombre": "OSCAR ALEXIS",
+      "primerApe": "GONZALEZ",
+      "segundoApe": "CARRETO",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630099,
+      "curp": "ABCD123456EFGHIJ99",
+      "nombre": "DIEGO",
+      "primerApe": "GARCIA",
+      "segundoApe": "CERON",
+      "pacad": "ISC"
+  },
+  {
+      "boleta": 2024630100,
+      "curp": "ABCD123456EFGHIJ00",
+      "nombre": "ERICK",
+      "primerApe": "LARA",
+      "segundoApe": "SARMIENTO",
+      "pacad": "ISC"
   }
-  
+]

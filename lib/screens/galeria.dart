@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class SchoolarMap extends StatelessWidget {
+class Galeria extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mapa Interactivo'),
+        title: Text('Galeria'),
       ),
       body: Center(
         child: Text(
-          'Aquí se mostrará el mapa interactivo.',
+          'Aquí se mostrará la galeria xd',
           style: TextStyle(fontSize: 18),
         ),
       ),

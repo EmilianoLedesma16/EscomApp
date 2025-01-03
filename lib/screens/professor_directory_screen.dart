@@ -1,5 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import '../services/professor_service.dart';
+import 'package:flutter/services.dart';
+import 'professor_schedule_screen.dart';
 
 class ProfessorDirectoryScreen extends StatefulWidget {
   const ProfessorDirectoryScreen({Key? key}) : super(key: key);
@@ -10,13 +13,38 @@ class ProfessorDirectoryScreen extends StatefulWidget {
 }
 
 class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
-  late Future<List<Map<String, dynamic>>> _professors;
+  List<Map<String, dynamic>> _professors = [];
+  List<Map<String, dynamic>> _filteredProfessors = [];
   Map<String, dynamic>? _selectedProfessor;
 
   @override
   void initState() {
     super.initState();
-    _professors = ProfessorService().fetchProfessors();
+    _loadProfessors();
+  }
+
+  Future<void> _loadProfessors() async {
+    try {
+      final data = await ProfessorService().fetchProfessors();
+      setState(() {
+        _professors = data;
+        _filteredProfessors =
+            data; // Inicialmente, muestra todos los profesores
+      });
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error al cargar profesores: $e')),
+      );
+    }
+  }
+
+  void _filterProfessors(String query) {
+    setState(() {
+      _filteredProfessors = _professors.where((professor) {
+        final name = professor['profesor']?.toLowerCase() ?? '';
+        return name.contains(query.toLowerCase());
+      }).toList();
+    });
   }
 
   @override
@@ -25,27 +53,28 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
       appBar: AppBar(
         title: const Text('Directorio de Profesores'),
       ),
-      body: FutureBuilder<List<Map<String, dynamic>>>(
-        future: _professors,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          } else if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          } else if (snapshot.data == null || snapshot.data!.isEmpty) {
-            return const Center(child: Text('No se encontraron profesores.'));
-          } else {
-            final professors = snapshot.data!;
-            return Row(
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: const InputDecoration(
+                hintText: 'Buscar profesor por nombre...',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.search),
+              ),
+              onChanged: _filterProfessors,
+            ),
+          ),
+          Expanded(
+            child: Row(
               children: [
-                // Lista de Profesores
                 Container(
-                  width:
-                      MediaQuery.of(context).size.width * 0.46, // 40% del ancho
+                  width: MediaQuery.of(context).size.width * 0.48,
                   child: ListView.builder(
-                    itemCount: professors.length,
+                    itemCount: _filteredProfessors.length,
                     itemBuilder: (context, index) {
-                      final professor = professors[index];
+                      final professor = _filteredProfessors[index];
                       return Card(
                         elevation: 3,
                         margin: const EdgeInsets.symmetric(
@@ -54,10 +83,11 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
                         ),
                         child: ListTile(
                           title: Text(
-                            professor['name'],
+                            professor['profesor'] ?? 'Nombre no disponible',
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
-                          subtitle: Text(professor['department']),
+                          subtitle: Text(professor['department'] ??
+                              'Departamento no disponible'),
                           trailing:
                               const Icon(Icons.arrow_forward_ios, size: 16),
                           onTap: () {
@@ -70,8 +100,6 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
                     },
                   ),
                 ),
-
-                // Detalles del Profesor
                 Expanded(
                   child: _selectedProfessor != null
                       ? _buildProfessorDetails(_selectedProfessor!)
@@ -83,45 +111,70 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
                         ),
                 ),
               ],
-            );
-          }
-        },
+            ),
+          ),
+        ],
       ),
     );
   }
 
   Widget _buildProfessorDetails(Map<String, dynamic> professor) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(7.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            professor['name'],
+            professor['profesor'] ?? 'Nombre no disponible',
             style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),
           Text(
-            'Departamento: ${professor['department']}',
+            'Departamento: ${professor['department'] ?? 'No disponible'}',
             style: const TextStyle(fontSize: 16),
           ),
           const SizedBox(height: 10),
           Text(
-            'Correo: ${professor['email']}',
+            'Correo: ${professor['email'] ?? 'No disponible'}',
             style: const TextStyle(fontSize: 16),
           ),
           const SizedBox(height: 20),
-          const Text(
-            'Horario:',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ElevatedButton(
+            onPressed: () async {
+              try {
+                final String response = await rootBundle
+                    .loadString('assets/data/horarios_profesores.json');
+                final List<dynamic> horarios = json.decode(response);
+
+                final professorSchedule = horarios.firstWhere(
+                  (p) => p['profesor'] == professor['profesor'],
+                  orElse: () => null,
+                );
+
+                if (professorSchedule != null) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProfessorScheduleScreen(
+                        professor: professorSchedule,
+                      ),
+                    ),
+                  );
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                        content: Text(
+                            'No se encontraron horarios para este profesor.')),
+                  );
+                }
+              } catch (e) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Error al cargar horarios: $e')),
+                );
+              }
+            },
+            child: const Text('Ver Horarios'),
           ),
-          const SizedBox(height: 10),
-          ...professor['schedule'].entries.map(
-                (entry) => Text(
-                  '${entry.key}: ${entry.value}',
-                  style: const TextStyle(fontSize: 16),
-                ),
-              ),
         ],
       ),
     );
