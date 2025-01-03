@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Dr. Juan Pérez",
+      "email": "juan.perez@escom.ipn.mx",
+      "department": "Ciencias Básicas",
+      "schedule": {
+        "Monday": "10:00 - 12:00",
+        "Wednesday": "14:00 - 16:00"
+      }
+    },
+    {
+      "name": "Dra. Ana López",
+      "email": "ana.lopez@escom.ipn.mx",
+      "department": "Ingeniería de Software",
+      "schedule": {
+        "Tuesday": "08:00 - 10:00",
+        "Thursday": "16:00 - 18:00"
+      }
+    },
+    {
+      "name": "Dr. Carlos Ruiz",
+      "email": "carlos.ruiz@escom.ipn.mx",
+      "department": "Sistemas Inteligentes",
+      "schedule": {
+        "Monday": "12:00 - 14:00",
+        "Friday": "10:00 - 12:00"
+      }
+    },
+    {
+      "name": "Dr. Roberto Castillo",
+      "email": "roberto.castillo@escom.ipn.mx",
+      "department": "Redes y Telecomunicaciones",
+      "schedule": {
+        "Wednesday": "09:00 - 11:00",
+        "Thursday": "14:00 - 16:00"
+      }
+    },
+    {
+      "name": "Dra. María Fernández",
+      "email": "maria.fernandez@escom.ipn.mx",
+      "department": "Ciencias Básicas",
+      "schedule": {
+        "Tuesday": "10:00 - 12:00",
+        "Friday": "13:00 - 15:00"
+      }
+    },
+    {
+      "name": "Dr. Enrique García",
+      "email": "enrique.garcia@escom.ipn.mx",
+      "department": "Sistemas Embebidos",
+      "schedule": {
+        "Monday": "14:00 - 16:00",
+        "Thursday": "08:00 - 10:00"
+      }
+    }
+  ]
+  

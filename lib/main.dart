@@ -10,7 +10,8 @@ import 'screens/mapa_escolar_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/splash_intermedio_screen.dart';
-import 'screens/directorio_profesores.dart';
+import 'screens/professor_directory_screen.dart';
+//import 'services/professor_service.dart';
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_selection_screen.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
             HomeScreen(role: 'alumno'), // Rol dinámico según el login
         '/map': (context) => MapScreen(),
         '/directorio': (context) =>
-            ProfessorsDirectoryScreen(), // Pantalla del Directorio
+            ProfessorDirectoryScreen(), // Pantalla del Directorio
         '/registerSelection': (context) => RegisterSelectionScreen(),
         '/registerAlumno': (context) => RegisterAlumnoScreen(),
         '/registerExterno': (context) => RegisterExternoScreen(),
