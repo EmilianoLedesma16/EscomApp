@@ -2,19 +2,11 @@
     {
         "profesor": "Juan Perez",
         "department": "Departamento de Matemáticas",
-        "email": "juan.perez@escom.ipn.mx",
-        "schedule": {
-            "Lunes": "08:00 - 10:00",
-            "Martes": "10:00 - 12:00"
-        }
+        "email": "juan.perez@escom.ipn.mx"
     },
     {
         "profesor": "Ana Lopez",
         "department": "Departamento de Física",
-        "email": "ana.lopez@escom.ipn.mx",
-        "schedule": {
-            "Miércoles": "14:00 - 16:00",
-            "Jueves": "16:00 - 18:00"
-        }
+        "email": "ana.lopez@escom.ipn.mx"
     }
 ]

@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.menu_book),
+            icon: Icon(Icons.dashboard),
             label: 'Opciones',
           ),
           BottomNavigationBarItem(

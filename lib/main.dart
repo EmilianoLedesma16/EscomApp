@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ESCOM App',
       theme: ThemeData.light(),
+      debugShowCheckedModeBanner: false, // Desactiva el banner
       initialRoute: '/splash', // Pantalla inicial de la app
       routes: {
         '/splash': (context) => SplashScreen(),
