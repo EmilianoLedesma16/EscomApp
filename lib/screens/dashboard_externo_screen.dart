@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class DashboardAlumnoScreen extends StatelessWidget {
+class DashboardExternoScreen extends StatelessWidget {
+  const DashboardExternoScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,13 +15,12 @@ class DashboardAlumnoScreen extends StatelessWidget {
           _buildOption(
               context, 'Información General', Icons.info, '/academicInfo'),
           _buildOption(context, 'ESCOM Maps', Icons.location_on, '/map'),
-          _buildOption(
-              context, 'Directorio de Profesores', Icons.phone, '/directorio'),
           _buildOption(context, 'Galería', Icons.photo_album, '/galeria'),
           _buildOption(context, 'Historia', Icons.work_history, '/historia'),
           _buildOption(context, 'Carreras', Icons.school, '/historia'),
           _buildOption(context, 'Actividades Extracurriculares',
               Icons.sports_football, '/historia'),
+          _buildOption(context, 'Redes sociales', Icons.facebook, '/historia'),
           _buildOption(
               context, 'Chatbot', Icons.chat_bubble_rounded, '/chatbot'),
         ],

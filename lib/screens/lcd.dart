@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CienciaDeDatos extends StatelessWidget {
+  const CienciaDeDatos({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

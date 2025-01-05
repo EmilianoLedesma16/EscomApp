@@ -7,6 +7,8 @@ class LoginScreen extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  LoginScreen({super.key});
+
   Future<void> login(BuildContext context) async {
     try {
       final String email = emailController.text.trim();
@@ -22,6 +24,7 @@ class LoginScreen extends StatelessWidget {
       // Verificar si el correo está confirmado
       if (!userCredential.user!.emailVerified) {
         await FirebaseAuth.instance.signOut();
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(
               'El correo no está verificado. Por favor verifica tu correo e inténtalo de nuevo.'),
@@ -34,12 +37,14 @@ class LoginScreen extends StatelessWidget {
 
       // Redirigir al Home correspondiente según el rol
       Navigator.pushReplacement(
+        // ignore: use_build_context_synchronously
         context,
         MaterialPageRoute(
           builder: (context) => HomeScreen(role: role),
         ),
       );
     } catch (e) {
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text('Error: ${e.toString()}'),
       ));

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Mscm extends StatelessWidget {
+  const Mscm({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Talleres extends StatelessWidget {
+  const Talleres({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -3,8 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 
 // Pantallas importadas
 //import 'screens/customAppBar.dart';
-import 'screens/dashboardAlumno_screen.dart';
-import 'screens/dashboardExterno_screen.dart';
+import 'screens/dashboard_alumno_screen.dart';
+import 'screens/dashboard_externo_screen.dart';
 import 'screens/map_screen.dart';
 import 'screens/galeria.dart';
 import 'screens/profile_screen.dart';
@@ -28,6 +28,7 @@ void main() async {
   runApp(MyApp());
 }
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _SplashScreenState createState() => _SplashScreenState();
 }
 
@@ -34,6 +37,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     // Navegar al login tras la animación y un breve retraso
     Future.delayed(Duration(seconds: 4), () {
+      // ignore: use_build_context_synchronously
       Navigator.pushReplacementNamed(context, '/login');
     });
   }

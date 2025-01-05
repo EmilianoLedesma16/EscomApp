@@ -1,8 +1,8 @@
-import 'dart:convert'; // Para decodificar JSON
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/services.dart'; // Para cargar archivos locales
+import 'package:flutter/services.dart';
 
 class RegisterAlumnoScreen extends StatelessWidget {
   final TextEditingController boletaController = TextEditingController();
@@ -12,14 +12,11 @@ class RegisterAlumnoScreen extends StatelessWidget {
   final TextEditingController confirmPasswordController =
       TextEditingController();
 
-  // Cargar el JSON de boletas y CURPs desde un archivo local
   Future<Map<String, dynamic>> fetchAlumnosData() async {
     try {
-      // Cargar el archivo JSON desde la carpeta assets/data
       final String response =
           await rootBundle.loadString('assets/data/alumnos.json');
-      print("Archivos JSON cargado correctamente");
-      return jsonDecode(response); // Parsear el JSON
+      return jsonDecode(response);
     } catch (e) {
       throw Exception('Error al cargar los datos de alumnos: $e');
     }
@@ -27,26 +24,38 @@ class RegisterAlumnoScreen extends StatelessWidget {
 
   Future<bool> checkAlumnoExistente(String boleta, String curp) async {
     try {
-      // Cargar los datos desde el JSON
       final data = await fetchAlumnosData();
 
-      // Asegurarnos de que 'alumnos' no sea null
       if (data['alumnos'] != null) {
         List alumnos = data['alumnos'];
-
-        // Buscar si la boleta y el curp están en los datos cargados
-        bool boletaValida = alumnos.any((alumno) => alumno['boleta'] == boleta);
-        bool curpValido = alumnos.any((alumno) => alumno['curp'] == curp);
-
-        // Devolver verdadero solo si ambas condiciones son verdaderas
-        return boletaValida && curpValido;
+        return alumnos.any((alumno) =>
+            alumno['boleta'].toString() == boleta && alumno['curp'] == curp);
       } else {
-        print('Error: Los datos de alumnos no existen en el JSON.');
         return false;
       }
     } catch (e) {
       print('Error al verificar los datos del alumno: $e');
       return false;
+    }
+  }
+
+  Future<Map<String, dynamic>?> getAlumnoDetails(
+      String boleta, String curp) async {
+    try {
+      final data = await fetchAlumnosData();
+
+      if (data['alumnos'] != null) {
+        List alumnos = data['alumnos'];
+        return alumnos.firstWhere(
+            (alumno) =>
+                alumno['boleta'].toString() == boleta && alumno['curp'] == curp,
+            orElse: () => null);
+      } else {
+        return null;
+      }
+    } catch (e) {
+      print('Error al obtener los detalles del alumno: $e');
+      return null;
     }
   }
 
@@ -58,62 +67,75 @@ class RegisterAlumnoScreen extends StatelessWidget {
       final String boleta = boletaController.text.trim();
       final String curp = curpController.text.trim();
 
-      // Validar que los campos no estén vacíos
       if (boleta.isEmpty ||
           curp.isEmpty ||
           email.isEmpty ||
           password.isEmpty ||
           confirmPassword.isEmpty) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text('Todos los campos son obligatorios.'),
         ));
         return;
       }
 
-      // Validar que las contraseñas coincidan
       if (password != confirmPassword) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text('Las contraseñas no coinciden.'),
         ));
         return;
       }
 
-      // Validar formato de la contraseña
-      final passwordRegex = RegExp(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$');
+      final passwordRegex =
+          RegExp(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{8,}$');
       if (!passwordRegex.hasMatch(password)) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text(
               'La contraseña debe tener al menos 8 caracteres, incluir una letra mayúscula, una minúscula y un número.'),
         ));
         return;
       }
 
-      // Verificar si la boleta y el CURP existen en el JSON
       bool alumnoValido = await checkAlumnoExistente(boleta, curp);
       if (!alumnoValido) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content:
               Text('La boleta o el CURP no están registrados como alumnos.'),
         ));
         return;
       }
 
-      // Registrar usuario en Firebase Authentication
+      Map<String, dynamic>? alumnoDetails =
+          await getAlumnoDetails(boleta, curp);
+      if (alumnoDetails == null) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text('No se pudieron recuperar los datos del alumno.'),
+        ));
+        return;
+      }
+
       UserCredential userCredential =
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
 
-      // Crear el documento en Firestore inmediatamente
-      await completeRegistration(
-          userCredential.user!.uid, email, boleta, curp, 'alumno');
+      await FirebaseFirestore.instance
+          .collection('Users')
+          .doc(userCredential.user!.uid)
+          .set({
+        'email': email,
+        'role': 'alumno',
+        'boleta': boleta,
+        'curp': curp,
+        'nombre': alumnoDetails['nombre'],
+        'primerApe': alumnoDetails['primerApe'],
+        'segundoApe': alumnoDetails['segundoApe'],
+        'emailVerified': false,
+      });
 
-      // Enviar correo de verificación
       await userCredential.user!.sendEmailVerification();
 
-      // Mostrar mensaje y redirigir al login
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text(
             'Registro exitoso. Se ha enviado un correo de verificación. Por favor, verifica tu bandeja de entrada.'),
       ));
@@ -126,27 +148,11 @@ class RegisterAlumnoScreen extends StatelessWidget {
     }
   }
 
-  Future<void> completeRegistration(
-      String uid, String email, String boleta, String curp, String role) async {
-    try {
-      await FirebaseFirestore.instance.collection('Users').doc(uid).set({
-        'email': email,
-        'role': role,
-        'boleta': boleta,
-        'curp': curp,
-        'emailVerified': false,
-      });
-      print('Documento creado correctamente en Firestore para el UID: $uid');
-    } catch (e) {
-      print('Error al crear el documento en Firestore: $e');
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Registro como Alumno'),
+        title: const Text('Registro como Alumno'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -154,30 +160,32 @@ class RegisterAlumnoScreen extends StatelessWidget {
           children: [
             TextField(
               controller: boletaController,
-              decoration: InputDecoration(labelText: 'Número de Boleta'),
+              decoration: const InputDecoration(labelText: 'Número de Boleta'),
             ),
             TextField(
               controller: curpController,
-              decoration: InputDecoration(labelText: 'CURP'),
+              decoration: const InputDecoration(labelText: 'CURP'),
             ),
             TextField(
               controller: emailController,
-              decoration: InputDecoration(labelText: 'Correo Electrónico'),
+              decoration:
+                  const InputDecoration(labelText: 'Correo Electrónico'),
             ),
             TextField(
               controller: passwordController,
-              decoration: InputDecoration(labelText: 'Contraseña'),
+              decoration: const InputDecoration(labelText: 'Contraseña'),
               obscureText: true,
             ),
             TextField(
               controller: confirmPasswordController,
-              decoration: InputDecoration(labelText: 'Confirmar Contraseña'),
+              decoration:
+                  const InputDecoration(labelText: 'Confirmar Contraseña'),
               obscureText: true,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => registerAlumno(context),
-              child: Text('Registrarse como Alumno'),
+              child: const Text('Registrarse como Alumno'),
             ),
           ],
         ),

@@ -1,3 +1,4 @@
+import 'package:escom_app/screens/dashboard_externo_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'isc.dart'; // Pantalla para Ingeniería en Sistemas Computacionales
@@ -6,7 +7,7 @@ import 'lcd.dart'; // Pantalla para Licenciatura en Ciencias de la Computación
 import 'isa.dart'; // Pantalla para Maestría en Ciencias de la Computación
 import 'mscm.dart'; // Pantalla para Ingeniería en Software
 import 'miacd.dart'; // Pantalla para Licenciatura en Desarrollo de Software
-import 'dashboardAlumno_screen.dart'; // Pantalla de Dashboard para alumnos
+import 'dashboard_alumno_screen.dart'; // Pantalla de Dashboard para alumnos
 import 'profile_screen.dart'; // Pantalla de perfil
 
 class HomeScreen extends StatefulWidget {
@@ -33,8 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
       _buildHomeScreen(), // Pantalla principal
       widget.role == 'alumno'
           ? DashboardAlumnoScreen()
-          : Container(), // Redirige según el rol
-      ProfileScreen(username: widget.username), // Pantalla de Perfil
+          : DashboardExternoScreen(), // Redirige según el rol
+      ProfileScreen(), // Pantalla de Perfil
     ];
   }
 
@@ -44,9 +45,9 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Row(
           children: [
-            Icon(Icons.home, size: 28),
+            Icon(Icons.app_shortcut, size: 28),
             SizedBox(width: 8),
-            Text('Home'),
+            Text('ESCOMapp'),
           ],
         ),
         actions: [
@@ -56,8 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) =>
-                      ProfileScreen(username: widget.username),
+                  builder: (context) => ProfileScreen(),
                 ),
               );
             },
