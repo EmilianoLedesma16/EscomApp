@@ -1,3 +1,4 @@
+import 'package:escom_app/screens/isc.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -21,6 +22,9 @@ import 'screens/register_externo_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'screens/historia_screen.dart';
 import 'screens/talleres_screen.dart';
+import 'screens/carreras.dart';
+import 'screens/redes.dart';
+import 'screens/informacion_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -53,12 +57,18 @@ class MyApp extends StatelessWidget {
         '/profile': (context) => ProfileScreen(),
         '/galeria': (context) => Galeria(),
         '/historia': (context) => Historia(),
+        '/academicInfo': (context) => InformacionScreen(),
         '/dashboardAlumno': (context) => DashboardAlumnoScreen(),
         '/dashboardExterno': (context) => DashboardExternoScreen(),
         '/talleres': (context) => Talleres(),
+        '/redes': (context) => Redes(),
         '/horarios': (context) => const ProfessorScheduleScreen(
               professor: {},
             ),
+        '/carreras': (context) => CarrerasScreen(),
+        //'/dashboardAlumno': (context) => DashboardAlumnoScreen(),
+        //'/dashboardAlumno': (context) => DashboardAlumnoScreen(),
+        '/isc': (context) => CarreraSistemasScreen(),
       },
     );
   }

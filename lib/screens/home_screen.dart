@@ -1,21 +1,15 @@
 import 'package:escom_app/screens/dashboard_externo_screen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'isc.dart'; // Pantalla para Ingeniería en Sistemas Computacionales
-import 'ia.dart'; // Pantalla para Ingeniería en Tecnologías Computacionales
-import 'lcd.dart'; // Pantalla para Licenciatura en Ciencias de la Computación
-import 'isa.dart'; // Pantalla para Maestría en Ciencias de la Computación
-import 'mscm.dart'; // Pantalla para Ingeniería en Software
-import 'miacd.dart'; // Pantalla para Licenciatura en Desarrollo de Software
-import 'dashboard_alumno_screen.dart'; // Pantalla de Dashboard para alumnos
-import 'profile_screen.dart'; // Pantalla de perfil
+import 'dashboard_alumno_screen.dart';
+import 'profile_screen.dart';
+import 'carreras.dart';
 
 class HomeScreen extends StatefulWidget {
   final String role;
-  final String? username;
-
-  const HomeScreen({Key? key, required this.role, this.username})
-      : super(key: key);
+  const HomeScreen({Key? key, required this.role}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -23,47 +17,65 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-
   late final List<Widget> _screens;
+  String? userName;
 
   @override
   void initState() {
     super.initState();
 
+    fetchUserName();
+
     _screens = [
-      _buildHomeScreen(), // Pantalla principal
+      _buildHomeScreen(),
       widget.role == 'alumno'
           ? DashboardAlumnoScreen()
-          : DashboardExternoScreen(), // Redirige según el rol
-      ProfileScreen(), // Pantalla de Perfil
+          : DashboardExternoScreen(),
+      ProfileScreen(),
     ];
+  }
+
+  Future<void> fetchUserName() async {
+    try {
+      final userId = FirebaseAuth.instance.currentUser?.uid;
+      if (userId == null) {
+        throw Exception("Usuario no autenticado.");
+      }
+      final userDoc = await FirebaseFirestore.instance
+          .collection('Users')
+          .doc(userId)
+          .get();
+      if (!userDoc.exists) {
+        throw Exception("Usuario no encontrado en Firestore.");
+      }
+      setState(() {
+        userName = userDoc['nombre'] ?? 'Usuario';
+      });
+    } catch (e) {
+      setState(() {
+        userName = 'Usuario';
+      });
+      print('Error al obtener el nombre del usuario: $e');
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: [
-            Icon(Icons.app_shortcut, size: 28),
-            SizedBox(width: 8),
-            Text('ESCOMapp'),
-          ],
-        ),
+        title: const Text('ESCOMapp'),
+        backgroundColor: const Color.fromARGB(255, 212, 216, 240),
         actions: [
           IconButton(
-            icon: Icon(Icons.person, size: 28), // Ícono de perfil
+            icon: const Icon(Icons.account_circle),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => ProfileScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => ProfileScreen()),
               );
             },
           ),
         ],
-        automaticallyImplyLeading: false,
       ),
       body: IndexedStack(
         index: _currentIndex,
@@ -76,6 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
             _currentIndex = index;
           });
         },
+        backgroundColor: const Color.fromARGB(255, 212, 216, 240),
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -98,6 +113,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return SingleChildScrollView(
       child: Column(
         children: [
+          // Bienvenida con el nombre del usuario
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              userName != null ? 'Hola, $userName' : 'Hola, usuario...',
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
           // Carrusel de imágenes
           CarouselSlider(
             items: [
@@ -111,15 +138,14 @@ class _HomeScreenState extends State<HomeScreen> {
               enlargeCenterPage: true,
               aspectRatio: 2.0,
               viewportFraction: 1.0,
-              height:
-                  200, // Establece una altura fija para que todas las imágenes tengan el mismo tamaño
+              height: 200,
             ),
           ),
 
           // Descripción breve
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Text(
+            child: const Text(
               'Bienvenido a la ESCOM, la Escuela Superior de Cómputo del IPN, '
               'una institución líder en la formación de profesionales en informática y tecnología.',
               style: TextStyle(fontSize: 18),
@@ -131,26 +157,84 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Oferta Académica',
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                const Text(
+                  'Nivel Superior',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
                 ),
-                SizedBox(height: 20),
-                // Botones mejor distribuidos
-                _buildCareerButton('Ingeniería en Sistemas Computacionales',
-                    CarreraSistemasScreen()),
-                _buildCareerButton('Ingeniería en Inteligencia Artificial',
-                    CarreraInteligencia()),
-                _buildCareerButton(
-                    'Licenciatura en Ciencia de Datos', CienciaDeDatos()),
-                _buildCareerButton(
-                    'Ingeniería en Sistemas Automotrices', Isa()),
-                _buildCareerButton(
-                    'Maestría en Inteligencia Artificial y Ciencia de Datos',
-                    Miacd()),
-                _buildCareerButton(
-                    'Maestría en Sistemas Computacionales Móviles', Mscm()),
+                const SizedBox(height: 20),
+                _buildCareerGrid([
+                  _CareerItem(
+                    title: 'Ingeniería en Sistemas Computacionales',
+                    imagePath: 'assets/img/isc.png',
+                    modalidad: 'Modalidad Escolarizada',
+                  ),
+                  _CareerItem(
+                    title: 'Ingeniería en Inteligencia Artificial',
+                    imagePath: 'assets/img/ia.png',
+                    modalidad: 'Modalidad Escolarizada',
+                  ),
+                  _CareerItem(
+                    title: 'Licenciatura en Ciencia de Datos',
+                    imagePath: 'assets/img/lcd.jpg',
+                    modalidad: 'Modalidad Escolarizada',
+                  ),
+                  _CareerItem(
+                    title: 'Ingeniería en Sistemas Automotrices',
+                    imagePath: 'assets/img/isa.jpg',
+                    modalidad: 'Modalidad No Escolarizada',
+                  ),
+                ]),
+                const SizedBox(height: 30),
+                const Text(
+                  'Maestrías de Posgrado',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                _buildCareerGrid([
+                  _CareerItem(
+                    title:
+                        'Maestría en Inteligencia Artificial y Ciencia de Datos',
+                    imagePath: 'assets/img/ia.png',
+                    modalidad: 'Modalidad No Escolarizada',
+                  ),
+                  _CareerItem(
+                    title: 'Maestría en Sistemas Computacionales Móviles',
+                    imagePath: 'assets/img/mscm.jpg',
+                    modalidad: 'Modalidad No Escolarizada',
+                  ),
+                ]),
+                const SizedBox(height: 30),
+                const Text(
+                  '¿Quieres conocer más acerca de estas carreras?',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 10),
+                Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CarrerasScreen()),
+                      );
+                    },
+                    child: const Text('Ver más'),
+                  ),
+                ),
               ],
             ),
           ),
@@ -159,27 +243,93 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildCareerButton(String careerName, Widget screen) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: ElevatedButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => screen,
-            ),
-          );
-        },
-        child: Text(careerName),
-        style: ElevatedButton.styleFrom(
-          padding: EdgeInsets.symmetric(vertical: 14.0, horizontal: 20.0),
-          backgroundColor: Colors.blue,
-          textStyle: TextStyle(fontSize: 16), // Cambiar el color si lo deseas
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-        ),
+  Widget _buildCareerGrid(List<_CareerItem> items) {
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+        childAspectRatio: 3 / 4,
+      ),
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        return _FlipCard(item: items[index]);
+      },
+    );
+  }
+}
+
+class _CareerItem {
+  final String title;
+  final String imagePath;
+  final String modalidad;
+
+  _CareerItem(
+      {required this.title, required this.imagePath, required this.modalidad});
+}
+
+class _FlipCard extends StatefulWidget {
+  final _CareerItem item;
+  const _FlipCard({required this.item});
+
+  @override
+  State<_FlipCard> createState() => _FlipCardState();
+}
+
+class _FlipCardState extends State<_FlipCard> {
+  bool _isFlipped = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _isFlipped = !_isFlipped;
+        });
+      },
+      child: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 500),
+        child: _isFlipped
+            ? Card(
+                key: ValueKey(true),
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    widget.item.modalidad,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              )
+            : Card(
+                key: ValueKey(false),
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    Expanded(
+                      child:
+                          Image.asset(widget.item.imagePath, fit: BoxFit.cover),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        widget.item.title,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
       ),
     );
   }

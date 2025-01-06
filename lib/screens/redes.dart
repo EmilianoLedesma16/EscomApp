@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MscmScreen extends StatelessWidget {
+class Redes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hsitoria'),
+        title: Text('Redes Sociales'),
       ),
       body: Center(
         child: Text(
-          'Aquí se mostrará la linea del tiempo.',
+          'Aquí se mostrarán las redes sociales.',
           style: TextStyle(fontSize: 18),
         ),
       ),

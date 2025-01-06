@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Miacd extends StatelessWidget {
-  const Miacd({super.key});
-
+class MiacdScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

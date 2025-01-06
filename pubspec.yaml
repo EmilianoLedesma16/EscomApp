@@ -28,6 +28,8 @@ dependencies:
   carousel_slider: ^5.0.0
   image_picker: ^0.8.7+4
   path_provider: ^2.0.13
+  flutter_pdfview: ^1.4.0
+  table_calendar: ^3.0.8
 
   # Dependencia para íconos estilo iOS
   cupertino_icons: ^1.0.8
@@ -48,12 +50,64 @@ flutter:
 
   # Agrega tu imagen
   assets:
-    - assets/img/uno.jpeg
-    - assets/img/dos.jpeg
-    - assets/img/tres.jpeg
+    - assets/img/aniversario.jpg
+    - assets/img/arcoiris.jpg
+    - assets/img/atardecer.jpg
+    - assets/img/auditorio.jpg
+    - assets/img/baile.jpg
+    - assets/img/biblioteca.jpg
+    - assets/img/cajero.jpg
+    - assets/img/casileros.jpg
+    - assets/img/computadora.jpg
+    - assets/img/conferencia.jpg
+    - assets/img/consejo.jpg
     - assets/img/cuatro.jpg
+    - assets/img/dos.jpeg
     - assets/img/escom_background.jpg
     - assets/img/escom_logo.png
+    - assets/img/estacionamiento.jpg
+    - assets/img/explanada.jpg
+    - assets/img/expo1.jpg
+    - assets/img/expo2.jpg
+    - assets/img/fachada.jpg
+    - assets/img/foto.jpg
+    - assets/img/arcoiris.jpg
+    - assets/img/genesis.jpg
+    - assets/img/ia.png
+    - assets/img/ia1.jpg
+    - assets/img/ia3.jpg
+    - assets/img/icpc.jpg
+    - assets/img/inauguranIA.jpg
+    - assets/img/infra.jpg
+    - assets/img/isa.jpg
+    - assets/img/isc.png
+    - assets/img/lab.jpg
+    - assets/img/labComputo.jpg
+    - assets/img/lcd.jpg
+    - assets/img/letras.jpg
+    - assets/img/motos.jpg
+    - assets/img/mscm.jpg
+    - assets/img/mural.jpg
+    - assets/img/navidad.jpg
+    - assets/img/primera.jpg
+    - assets/img/ranking.PNG
+    - assets/img/rebelion.jpg
+    - assets/img/rebelion1.jpg
+    - assets/img/rebelion2.jpg
+    - assets/img/rector.jpg
+    - assets/img/tiburon.jpg
+    - assets/img/titulado.jpg
+    - assets/img/tres.jpeg
+    - assets/img/uno.jpeg
     - assets/data/alumnos.json
     - assets/data/profesores.json
     - assets/data/horarios_profesores.json
+    - assets/docs/mapaCurricularISC.pdf
+    - assets/docs/mapaCurricularIIA.pdf
+    - assets/docs/mapaCurricularLCD.pdf
+    - assets/docs/mapaCurricularISA.pdf
+    - assets/docs/optativasIA.pdf
+    - assets/docs/optativasISC.pdf
+    - assets/docs/optativasLCD.pdf    
+
+

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Isa extends StatelessWidget {
+class IsaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

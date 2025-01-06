@@ -17,7 +17,7 @@ class DashboardExternoScreen extends StatelessWidget {
           _buildOption(context, 'ESCOM Maps', Icons.location_on, '/map'),
           _buildOption(context, 'Galería', Icons.photo_album, '/galeria'),
           _buildOption(context, 'Historia', Icons.work_history, '/historia'),
-          _buildOption(context, 'Carreras', Icons.school, '/historia'),
+          _buildOption(context, 'Oferta educativa', Icons.school, '/carreras'),
           _buildOption(context, 'Actividades Extracurriculares',
               Icons.sports_football, '/historia'),
           _buildOption(context, 'Redes sociales', Icons.facebook, '/historia'),
