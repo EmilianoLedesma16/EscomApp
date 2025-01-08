@@ -134,7 +134,7 @@ class CarreraIAScreen extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () async {
                   final file = await _loadPdfFromAssets(
-                      'assets/docs/mapaCurricularIA.pdf'); // Ruta del PDF del mapa curricular
+                      'assets/docs/mapaCurricularIIA.pdf'); // Ruta del PDF del mapa curricular
                   if (file != null) {
                     Navigator.push(
                       context,
@@ -212,7 +212,7 @@ class PdfViewerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Documento'),
+        title: const Text('Mapa curricular IIA 2020'),
       ),
       body: PDFView(
         filePath: filePath,

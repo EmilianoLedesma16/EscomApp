@@ -30,6 +30,9 @@ dependencies:
   path_provider: ^2.0.13
   flutter_pdfview: ^1.4.0
   table_calendar: ^3.0.8
+  #flutter_webview_plugin: ^0.4.0
+  url_launcher: ^6.1.10
+  #webview_flutter: ^4.0.5
 
   # Dependencia para íconos estilo iOS
   cupertino_icons: ^1.0.8
@@ -50,11 +53,14 @@ flutter:
 
   # Agrega tu imagen
   assets:
+    - assets/img/ajedrez.jpg
     - assets/img/aniversario.jpg
     - assets/img/arcoiris.jpg
     - assets/img/atardecer.jpg
     - assets/img/auditorio.jpg
     - assets/img/baile.jpg
+    - assets/img/basquetbol.jpg
+    - assets/img/beisbol.jpg
     - assets/img/biblioteca.jpg
     - assets/img/cajero.jpg
     - assets/img/casileros.jpg
@@ -71,6 +77,7 @@ flutter:
     - assets/img/expo2.jpg
     - assets/img/fachada.jpg
     - assets/img/foto.jpg
+    - assets/img/futbol.jpg
     - assets/img/arcoiris.jpg
     - assets/img/genesis.jpg
     - assets/img/ia.png
@@ -85,20 +92,33 @@ flutter:
     - assets/img/labComputo.jpg
     - assets/img/lcd.jpg
     - assets/img/letras.jpg
+    - assets/img/miacd.jpg
     - assets/img/motos.jpg
     - assets/img/mscm.jpg
     - assets/img/mural.jpg
+    - assets/img/musica.jpg
     - assets/img/navidad.jpg
+    - assets/img/pingpong.jpg
+    - assets/img/pintura.jpg
     - assets/img/primera.jpg
     - assets/img/ranking.PNG
     - assets/img/rebelion.jpg
     - assets/img/rebelion1.jpg
     - assets/img/rebelion2.jpg
     - assets/img/rector.jpg
+    - assets/img/robotica.jpg
+    - assets/img/taekwondo.PNG
+    - assets/img/teatro.jpg
     - assets/img/tiburon.jpg
     - assets/img/titulado.jpg
     - assets/img/tres.jpeg
+    - assets/img/tuna.jpg
     - assets/img/uno.jpeg
+    - assets/img/voleibol.jpg
+    - assets/img/facebook.png
+    - assets/img/x.png
+    - assets/img/instagram.png
+    - assets/img/youtube.png
     - assets/data/alumnos.json
     - assets/data/profesores.json
     - assets/data/horarios_profesores.json
@@ -106,6 +126,7 @@ flutter:
     - assets/docs/mapaCurricularIIA.pdf
     - assets/docs/mapaCurricularLCD.pdf
     - assets/docs/mapaCurricularISA.pdf
+    - assets/docs/mapaCurricularMSCM.pdf
     - assets/docs/optativasIA.pdf
     - assets/docs/optativasISC.pdf
     - assets/docs/optativasLCD.pdf    

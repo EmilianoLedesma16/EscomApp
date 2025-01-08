@@ -21,7 +21,7 @@ import 'screens/register_alumno_screen.dart';
 import 'screens/register_externo_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'screens/historia_screen.dart';
-import 'screens/talleres_screen.dart';
+import 'screens/actividades_screen.dart';
 import 'screens/carreras.dart';
 import 'screens/redes.dart';
 import 'screens/informacion_screen.dart';
@@ -55,12 +55,12 @@ class MyApp extends StatelessWidget {
         '/registerExterno': (context) => RegisterExternoScreen(),
         '/forgotPassword': (context) => ForgotPasswordScreen(),
         '/profile': (context) => ProfileScreen(),
-        '/galeria': (context) => Galeria(),
+        '/galeria': (context) => GaleriaScreen(),
         '/historia': (context) => Historia(),
         '/academicInfo': (context) => InformacionScreen(),
         '/dashboardAlumno': (context) => DashboardAlumnoScreen(),
         '/dashboardExterno': (context) => DashboardExternoScreen(),
-        '/talleres': (context) => Talleres(),
+        '/actividades': (context) => ActividadesScreen(),
         '/redes': (context) => Redes(),
         '/horarios': (context) => const ProfessorScheduleScreen(
               professor: {},

@@ -1,8 +1,8 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:escom_app/screens/dashboard_externo_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'dashboard_alumno_screen.dart';
 import 'profile_screen.dart';
 import 'carreras.dart';
@@ -19,12 +19,12 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   late final List<Widget> _screens;
   String? userName;
+  int _currentCarouselIndex = 0; // Índice actual del carrusel
 
   @override
   void initState() {
     super.initState();
-
-    fetchUserName();
+    _fetchUserName(); // Corregir llamado a la función.
 
     _screens = [
       _buildHomeScreen(),
@@ -35,27 +35,28 @@ class _HomeScreenState extends State<HomeScreen> {
     ];
   }
 
-  Future<void> fetchUserName() async {
+  Future<void> _fetchUserName() async {
     try {
       final userId = FirebaseAuth.instance.currentUser?.uid;
-      if (userId == null) {
-        throw Exception("Usuario no autenticado.");
-      }
+      if (userId == null) throw Exception("Usuario no autenticado");
+
       final userDoc = await FirebaseFirestore.instance
           .collection('Users')
           .doc(userId)
           .get();
-      if (!userDoc.exists) {
-        throw Exception("Usuario no encontrado en Firestore.");
-      }
+
+      if (!userDoc.exists)
+        throw Exception("Documento de usuario no encontrado");
+
       setState(() {
         userName = userDoc['nombre'] ?? 'Usuario';
       });
     } catch (e) {
+      // Si ocurre un error, manejamos el estado mostrando un nombre predeterminado.
       setState(() {
         userName = 'Usuario';
       });
-      print('Error al obtener el nombre del usuario: $e');
+      print('Error al obtener el nombre: $e');
     }
   }
 
@@ -110,36 +111,79 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildHomeScreen() {
+    final List<String> carouselImages = [
+      'assets/img/uno.jpeg',
+      'assets/img/dos.jpeg',
+      'assets/img/tres.jpeg',
+      'assets/img/navidad.jpg',
+    ];
+
     return SingleChildScrollView(
       child: Column(
         children: [
           // Bienvenida con el nombre del usuario
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              userName != null ? 'Hola, $userName' : 'Hola, usuario...',
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
+          const SizedBox(height: 20),
+          userName == null
+              ? const CircularProgressIndicator()
+              : Text(
+                  'Hola, $userName',
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+          const SizedBox(height: 5),
 
           // Carrusel de imágenes
-          CarouselSlider(
-            items: [
-              Image.asset('assets/img/uno.jpeg', fit: BoxFit.cover),
-              Image.asset('assets/img/dos.jpeg', fit: BoxFit.cover),
-              Image.asset('assets/img/tres.jpeg', fit: BoxFit.cover),
-              Image.asset('assets/img/cuatro.jpg', fit: BoxFit.cover),
+          Column(
+            children: [
+              CarouselSlider.builder(
+                itemCount: carouselImages.length,
+                itemBuilder: (context, index, realIndex) {
+                  return Image.asset(
+                    carouselImages[index],
+                    fit: BoxFit.cover,
+                  );
+                },
+                options: CarouselOptions(
+                  autoPlay: true,
+                  enlargeCenterPage: true,
+                  aspectRatio: 2.0,
+                  viewportFraction: 1.0,
+                  height: 200,
+                  onPageChanged: (index, reason) {
+                    setState(() {
+                      _currentCarouselIndex = index;
+                    });
+                  },
+                ),
+              ),
+              const SizedBox(height: 10),
+
+              // Indicador de imágenes
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: carouselImages.asMap().entries.map((entry) {
+                  return GestureDetector(
+                    onTap: () => setState(() {
+                      _currentCarouselIndex = entry.key;
+                    }),
+                    child: Container(
+                      width: 8.0,
+                      height: 8.0,
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 8.0, horizontal: 4.0),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: _currentCarouselIndex == entry.key
+                            ? Colors.blue
+                            : Colors.grey,
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
             ],
-            options: CarouselOptions(
-              autoPlay: true,
-              enlargeCenterPage: true,
-              aspectRatio: 2.0,
-              viewportFraction: 1.0,
-              height: 200,
-            ),
           ),
 
           // Descripción breve

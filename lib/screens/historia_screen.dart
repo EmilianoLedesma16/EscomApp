@@ -63,7 +63,7 @@ class Historia extends StatelessWidget {
       "title": "Reconocimiento Nacional",
       "description":
           "La ESCOM es reconocida como una de las mejores escuelas de computación en México.",
-      "image": "assets/img/ranking.png",
+      "image": "assets/img/ranking.PNG",
     },
     {
       "year": "2023",

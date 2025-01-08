@@ -48,7 +48,7 @@ class CarreraSistemasScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
 
-            // Misión
+            // Modalidad
             const Text(
               'Modalidad',
               style: TextStyle(
@@ -115,7 +115,7 @@ class CarreraSistemasScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
 
-            // Mapa curricular
+            // Mapa Curricular
             const Text(
               'Mapa Curricular',
               style: TextStyle(
@@ -145,6 +145,40 @@ class CarreraSistemasScreen extends StatelessWidget {
                   }
                 },
                 child: const Text('Ver Mapa Curricular'),
+              ),
+            ),
+            const SizedBox(height: 24),
+
+            // Unidades Optativas
+            const Text(
+              'Unidades Optativas',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Consulta el documento con las unidades optativas disponibles para la carrera.',
+              style: TextStyle(fontSize: 16),
+              textAlign: TextAlign.justify,
+            ),
+            const SizedBox(height: 16),
+            Center(
+              child: ElevatedButton(
+                onPressed: () async {
+                  final file = await _loadPdfFromAssets(
+                      'assets/docs/optativasISC.pdf'); // Ruta del PDF de unidades optativas
+                  if (file != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PdfViewerScreen(file.path),
+                      ),
+                    );
+                  }
+                },
+                child: const Text('Ver Unidades Optativas'),
               ),
             ),
           ],
@@ -178,7 +212,7 @@ class PdfViewerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mapa Curricular'),
+        title: const Text('Mapa curricular ISC 2020'),
       ),
       body: PDFView(
         filePath: filePath,

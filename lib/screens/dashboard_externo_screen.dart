@@ -19,8 +19,8 @@ class DashboardExternoScreen extends StatelessWidget {
           _buildOption(context, 'Historia', Icons.work_history, '/historia'),
           _buildOption(context, 'Oferta educativa', Icons.school, '/carreras'),
           _buildOption(context, 'Actividades Extracurriculares',
-              Icons.sports_football, '/historia'),
-          _buildOption(context, 'Redes sociales', Icons.facebook, '/historia'),
+              Icons.sports_football, '/actividades'),
+          _buildOption(context, 'Redes sociales', Icons.facebook, '/redes'),
           _buildOption(
               context, 'Chatbot', Icons.chat_bubble_rounded, '/chatbot'),
         ],

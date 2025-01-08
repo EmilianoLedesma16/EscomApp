@@ -24,7 +24,7 @@ class CarrerasScreen extends StatelessWidget {
     _CarreraItem(
       title: 'Licenciatura en Ciencia de Datos',
       imagePath: 'assets/img/lcd.jpg',
-      destination: CienciaDeDatos(),
+      destination: CienciaDeDatosScreen(),
     ),
     _CarreraItem(
       title: 'Ingeniería en Sistemas Automotrices',
