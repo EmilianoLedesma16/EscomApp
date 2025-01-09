@@ -129,6 +129,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.3"
+  file:
+    dependency: transitive
+    description:
+      name: file
+      sha256: a3b4f84adafef897088c160faf7dfffb7696046cb13ae90b508c2cbc95d3b8d4
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.1"
   file_selector_linux:
     dependency: transitive
     description:
@@ -360,6 +368,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  ikchatbot:
+    dependency: "direct main"
+    description:
+      name: ikchatbot
+      sha256: "65f00b9f26e2cce4c973e5fe44b98983a3cdb83942a5b0b1dad5b2b42c3c12ad"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.5"
   image_picker:
     dependency: "direct main"
     description:
@@ -520,6 +536,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.5.0"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      sha256: c8245ada5f1717ed44271ed1c26b8ce85ca3228fd2ffdb75468ab01979309d61
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.0"
+  mailer:
+    dependency: transitive
+    description:
+      name: mailer
+      sha256: e907087cd00719898c493f720dd326af73b00b406ab4af8e79f15d7c5fc24035
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.3.0"
   matcher:
     dependency: transitive
     description:
@@ -720,6 +752,62 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.2"
+  shared_preferences:
+    dependency: "direct main"
+    description:
+      name: shared_preferences
+      sha256: a752ce92ea7540fc35a0d19722816e04d0e72828a4200e83a98cf1a1eb524c9a
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.5"
+  shared_preferences_android:
+    dependency: transitive
+    description:
+      name: shared_preferences_android
+      sha256: "02a7d8a9ef346c9af715811b01fbd8e27845ad2c41148eefd31321471b41863d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.0"
+  shared_preferences_foundation:
+    dependency: transitive
+    description:
+      name: shared_preferences_foundation
+      sha256: "6a52cfcdaeac77cad8c97b539ff688ccfc458c007b4db12be584fbe5c0e49e03"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.5.4"
+  shared_preferences_linux:
+    dependency: transitive
+    description:
+      name: shared_preferences_linux
+      sha256: "580abfd40f415611503cae30adf626e6656dfb2f0cee8f465ece7b6defb40f2f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
+  shared_preferences_platform_interface:
+    dependency: transitive
+    description:
+      name: shared_preferences_platform_interface
+      sha256: "57cbf196c486bc2cf1f02b85784932c6094376284b3ad5779d1b1c6c6a816b80"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
+  shared_preferences_web:
+    dependency: transitive
+    description:
+      name: shared_preferences_web
+      sha256: d2ca4132d3946fec2184261726b355836a82c33d7d5b67af32692aff18a4684e
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.2"
+  shared_preferences_windows:
+    dependency: transitive
+    description:
+      name: shared_preferences_windows
+      sha256: "94ef0f72b2d71bc3e700e025db3710911bd51a71cefb65cc609dd0d9a982e3c1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
   simple_gesture_detector:
     dependency: transitive
     description:

@@ -32,6 +32,8 @@ dependencies:
   table_calendar: ^3.0.8
   #flutter_webview_plugin: ^0.4.0
   url_launcher: ^6.1.10
+  ikchatbot: ^1.0.2
+  shared_preferences: ^2.1.0
   #webview_flutter: ^4.0.5
 
   # Dependencia para íconos estilo iOS
@@ -119,6 +121,7 @@ flutter:
     - assets/img/x.png
     - assets/img/instagram.png
     - assets/img/youtube.png
+    - assets/img/fondo.jpg
     - assets/data/alumnos.json
     - assets/data/profesores.json
     - assets/data/horarios_profesores.json
@@ -130,5 +133,6 @@ flutter:
     - assets/docs/optativasIA.pdf
     - assets/docs/optativasISC.pdf
     - assets/docs/optativasLCD.pdf    
+    - assets/dialogflow-key.json    
 
 

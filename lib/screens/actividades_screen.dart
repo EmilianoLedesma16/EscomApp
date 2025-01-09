@@ -35,7 +35,7 @@ class ActividadesScreen extends StatelessWidget {
       'nombre': 'Club de Taekwondo',
       'descripcion':
           'Aprende técnicas de defensa personal y participa en exhibiciones. Ideal para mejorar tu concentración y condición física.',
-      'imagen': 'assets/img/taekwondo.png',
+      'imagen': 'assets/img/taekwondo.PNG',
       'link': 'https://www.facebook.com/clubdetaekwondoescom',
     },
     {
