@@ -20,14 +20,14 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> {
   }
 
   Future<void> _loadThemePreference() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
     setState(() {
       isDarkTheme = prefs.getBool('isDarkTheme') ?? false;
     });
   }
 
   Future<void> _saveThemePreference(bool value) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('isDarkTheme', value);
   }
 
@@ -59,7 +59,6 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> {
             leading: const Icon(Icons.lock_reset),
             title: const Text('Restablecer Contraseña'),
             onTap: () {
-              // Implementar lógica para restablecer contraseña
               Navigator.pushNamed(context, '/forgotPassword');
             },
           ),
@@ -67,7 +66,6 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> {
             leading: const Icon(Icons.person),
             title: const Text('Cambiar Foto de Perfil'),
             onTap: () {
-              // Navegar a la pantalla de perfil
               Navigator.pushNamed(context, '/profile');
             },
           ),
