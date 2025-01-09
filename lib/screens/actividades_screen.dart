@@ -8,94 +8,107 @@ class ActividadesScreen extends StatelessWidget {
       'descripcion':
           'Participa en entrenamientos y torneos representando a la ESCOM. Ideal para quienes buscan mejorar su técnica y trabajo en equipo.',
       'imagen': 'assets/img/futbol.jpg',
-      'link': 'https://www.facebook.com/clubdefutbolescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
     {
       'nombre': 'Club de Voleibol',
       'descripcion':
           'Entrena y juega voleibol en un ambiente competitivo y colaborativo. Abierto a todos los niveles de experiencia.',
       'imagen': 'assets/img/voleibol.jpg',
-      'link': 'https://www.facebook.com/clubdevoleibolescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
     {
       'nombre': 'Club de Básquetbol',
       'descripcion':
           'Mejora tus habilidades de baloncesto y compite en torneos. Fomenta el trabajo en equipo y la disciplina deportiva.',
       'imagen': 'assets/img/basquetbol.jpg',
-      'link': 'https://www.facebook.com/clubdebasquetbolescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
     {
       'nombre': 'Club de Ping Pong',
       'descripcion':
           'Desarrolla tu precisión y reflejos en el club de ping pong. Compite en torneos y participa en eventos internos.',
       'imagen': 'assets/img/pingpong.jpg',
-      'link': 'https://www.facebook.com/clubdepingpongescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
     {
       'nombre': 'Club de Taekwondo',
       'descripcion':
           'Aprende técnicas de defensa personal y participa en exhibiciones. Ideal para mejorar tu concentración y condición física.',
       'imagen': 'assets/img/taekwondo.PNG',
-      'link': 'https://www.facebook.com/clubdetaekwondoescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
     {
       'nombre': 'Club de Béisbol',
       'descripcion':
           'Únete al equipo de béisbol de la ESCOM y disfruta de entrenamientos y torneos. Ideal para quienes disfrutan el deporte en equipo.',
       'imagen': 'assets/img/beisbol.jpg',
-      'link': 'https://www.facebook.com/clubdebeisbolecom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
-  ];
-
-  final List<Map<String, String>> actividadesCulturales = [
     {
       'nombre': 'Club de Ajedrez',
       'descripcion':
           'Mejora tus habilidades estratégicas y participa en competencias locales. Un espacio ideal para los amantes del pensamiento crítico.',
       'imagen': 'assets/img/ajedrez.jpg',
-      'link': 'https://www.facebook.com/clubdeajedrezescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsDeportivas.php',
     },
+  ];
+
+  final List<Map<String, String>> actividadesCulturales = [
     {
       'nombre': 'Taller de Baile',
       'descripcion':
           'Aprende diversos estilos de baile y participa en presentaciones artísticas. Perfecto para expresar tu creatividad.',
       'imagen': 'assets/img/baile.jpg',
-      'link': 'https://www.facebook.com/tallerdebaileescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
     {
       'nombre': 'Club de Robótica',
       'descripcion':
           'Desarrolla robots innovadores y compite en eventos tecnológicos. Una oportunidad perfecta para los amantes de la tecnología.',
       'imagen': 'assets/img/robotica.jpg',
-      'link': 'https://www.facebook.com/clubderoboticaescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
     {
       'nombre': 'Taller de Pintura',
       'descripcion':
           'Explora tu creatividad con técnicas de pintura. Exhibe tu trabajo en galerías y eventos artísticos.',
       'imagen': 'assets/img/pintura.jpg',
-      'link': 'https://www.facebook.com/tallerdepinturaescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
     {
       'nombre': 'Club de Teatro',
       'descripcion':
           'Desarrolla tus habilidades actorales y participa en puestas en escena. Ideal para quienes disfrutan el arte dramático.',
       'imagen': 'assets/img/teatro.jpg',
-      'link': 'https://www.facebook.com/clubdeteatroescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
     {
       'nombre': 'Música Folklórica',
       'descripcion':
           'Disfruta y aprende música tradicional mexicana. Participa en presentaciones dentro y fuera de la escuela.',
       'imagen': 'assets/img/musica.jpg',
-      'link': 'https://www.facebook.com/musicafolkloricaescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
     {
       'nombre': 'Tuna',
       'descripcion':
           'Forma parte de la tradicional tuna estudiantil. Canta, toca instrumentos y participa en eventos culturales.',
       'imagen': 'assets/img/tuna.jpg',
-      'link': 'https://www.facebook.com/tunaescom',
+      'link':
+          'https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php',
     },
   ];
 

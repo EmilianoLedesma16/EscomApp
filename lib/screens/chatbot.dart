@@ -15,11 +15,11 @@ class ChatbotScreen extends StatelessWidget {
     ratingTitle: '¡Gracias por usar el chatbot!',
     body: 'Este es un correo de prueba enviado desde Flutter.',
     subject: 'Calificación de prueba',
-    recipient: 'recipient@example.com', // Cambia por un correo real
+    recipient: 'recipient@example.com',
     isSecure: false,
     senderName: 'Tu Nombre',
-    smtpUsername: 'Tu Correo', // Cambia por tu correo real
-    smtpPassword: 'Tu Contraseña', // Cambia por tu contraseña real
+    smtpUsername: 'Tu Correo',
+    smtpPassword: 'Tu Contraseña',
     smtpServer: 'smtp.gmail.com',
     smtpPort: 587,
 
@@ -35,7 +35,7 @@ class ChatbotScreen extends StatelessWidget {
     waitingTime: 1,
 
     // Palabras clave y respuestas
-    keywords: ['ubicación', 'horarios', 'actividades', 'carreras', 'contacto'],
+    keywords: ['ubicacion', 'horarios', 'actividades', 'carreras', 'contacto'],
     responses: [
       'ESCOM está ubicada en Zacatenco, Ciudad de México.',
       'Las clases se imparten entre las 7:00 AM y las 8:00 PM.',

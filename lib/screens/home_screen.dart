@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'dashboard_alumno_screen.dart';
+import 'configuracion.dart';
 import 'profile_screen.dart';
 import 'carreras.dart';
 
@@ -17,22 +18,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-  late final List<Widget> _screens;
   String? userName;
-  int _currentCarouselIndex = 0; // Índice actual del carrusel
+  int _currentCarouselIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    _fetchUserName(); // Corregir llamado a la función.
-
-    _screens = [
-      _buildHomeScreen(),
-      widget.role == 'alumno'
-          ? DashboardAlumnoScreen()
-          : DashboardExternoScreen(),
-      ProfileScreen(),
-    ];
+    _fetchUserName();
   }
 
   Future<void> _fetchUserName() async {
@@ -49,10 +41,12 @@ class _HomeScreenState extends State<HomeScreen> {
         throw Exception("Documento de usuario no encontrado");
 
       setState(() {
-        userName = userDoc['nombre'] ?? 'Usuario';
+        final nombre = userDoc['nombre'] ?? 'Usuario';
+        final primerApe = userDoc['primerApe'] ?? '';
+        userName =
+            '$nombre $primerApe'.trim(); // Combina nombre y primer apellido
       });
     } catch (e) {
-      // Si ocurre un error, manejamos el estado mostrando un nombre predeterminado.
       setState(() {
         userName = 'Usuario';
       });
@@ -62,6 +56,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> screens = [
+      _buildHomeScreen(),
+      widget.role == 'alumno'
+          ? DashboardAlumnoScreen()
+          : DashboardExternoScreen(),
+      ConfiguracionScreen(
+        onThemeChanged: (bool isDarkMode) {
+          setState(() {
+            print('Tema cambiado a: ${isDarkMode ? "Oscuro" : "Claro"}');
+          });
+        },
+      ),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('ESCOMapp'),
@@ -80,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: IndexedStack(
         index: _currentIndex,
-        children: _screens,
+        children: screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
@@ -125,11 +133,15 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 20),
           userName == null
               ? const CircularProgressIndicator()
-              : Text(
-                  'Hola, $userName',
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
+              : Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    'Hola, ${userName ?? 'Usuario'}',
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
           const SizedBox(height: 5),
@@ -165,11 +177,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: carouselImages.asMap().entries.map((entry) {
                   return GestureDetector(
-                    onTap: () => setState(() {
-                      _currentCarouselIndex = entry.key;
-                    }),
-                    child: Container(
-                      width: 8.0,
+                    onTap: () {
+                      setState(() {
+                        _currentCarouselIndex = entry.key;
+                      });
+                    },
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 300),
+                      width: _currentCarouselIndex == entry.key ? 12.0 : 8.0,
                       height: 8.0,
                       margin: const EdgeInsets.symmetric(
                           vertical: 8.0, horizontal: 4.0),

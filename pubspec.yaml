@@ -132,7 +132,5 @@ flutter:
     - assets/docs/mapaCurricularMSCM.pdf
     - assets/docs/optativasIA.pdf
     - assets/docs/optativasISC.pdf
-    - assets/docs/optativasLCD.pdf    
-    - assets/dialogflow-key.json    
-
+    - assets/docs/optativasLCD.pdf
 
