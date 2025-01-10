@@ -135,7 +135,7 @@ class MiacdScreen extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () async {
                   final file = await _loadPdfFromAssets(
-                      'assets/docs/mapaCurricularMSCM.pdf'); // Ruta del PDF para MIACD
+                      'assets/docs/mapaCurricularMIACD.pdf'); // Ruta del PDF para MIACD
                   if (file != null) {
                     Navigator.push(
                       context,

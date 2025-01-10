@@ -59,7 +59,7 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               decoration: const InputDecoration(
-                hintText: 'Buscar profesor por nombre...',
+                hintText: 'Busca al profesor por su nombre...',
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.search),
               ),
@@ -131,11 +131,6 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
           const SizedBox(height: 10),
           Text(
             'Departamento: ${professor['department'] ?? 'No disponible'}',
-            style: const TextStyle(fontSize: 16),
-          ),
-          const SizedBox(height: 10),
-          Text(
-            'Correo: ${professor['email'] ?? 'No disponible'}',
             style: const TextStyle(fontSize: 16),
           ),
           const SizedBox(height: 20),

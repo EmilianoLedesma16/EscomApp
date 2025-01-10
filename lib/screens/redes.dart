@@ -59,8 +59,8 @@ class Redes extends StatelessWidget {
                     child: ListTile(
                       leading: Container(
                         decoration: BoxDecoration(
-                          border:
-                              Border.all(color: Colors.blueAccent, width: 2),
+                          border: Border.all(
+                              color: Colors.blueGrey.shade200, width: 1),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: ClipRRect(

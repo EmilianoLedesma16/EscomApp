@@ -22,18 +22,55 @@ class ProfessorScheduleScreen extends StatelessWidget {
             Text(
               professor['profesor'] ?? 'Nombre no disponible',
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
+
+            // Ícono circular centrado
+            Center(
+              child: CircleAvatar(
+                radius: 100, // Tamaño grande del ícono
+                backgroundColor: Colors.blue.shade100,
+                child: const Icon(
+                  Icons.assignment_ind, // Ícono de persona
+                  color: Colors.black54,
+                  size: 100, // Tamaño del ícono dentro del círculo
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
 
             // Departamento
             Text(
               'Departamento: ${professor['department'] ?? 'Departamento no disponible'}',
               style: const TextStyle(fontSize: 16, color: Colors.grey),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 10),
+
+            // Correo
+            Text(
+              'Correo: ${professor['correo'] ?? 'Correo no disponible'}',
+              style: const TextStyle(fontSize: 16, color: Colors.grey),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 10),
+
+            // Sala
+            Text(
+              'Sala: ${professor['sala'] ?? 'Sala no disponible'}',
+              style: const TextStyle(fontSize: 16, color: Colors.grey),
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
 
-            // Tabla de horarios
-            Expanded(child: _buildScheduleTable(professor)),
+            // Tabla de horarios con scroll horizontal
+            Expanded(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: _buildScheduleTable(professor),
+              ),
+            ),
           ],
         ),
       ),
@@ -52,14 +89,24 @@ class ProfessorScheduleScreen extends StatelessWidget {
       );
     }
 
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12), // Bordes redondeados
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(0, 3), // Posición de la sombra
+          ),
+        ],
+      ),
       child: DataTable(
-        columnSpacing: 10.0, // Espaciado entre columnas
+        columnSpacing: 10.0,
         headingRowColor:
-            WidgetStateColor.resolveWith((states) => Colors.blueGrey.shade100),
+            WidgetStateColor.resolveWith((states) => Colors.purple.shade200),
         dataRowColor: WidgetStateColor.resolveWith((states) {
-          // Alternar colores para las filas
           if (states.contains(WidgetState.selected)) {
             return Colors.blue.shade50;
           }
@@ -71,7 +118,12 @@ class ProfessorScheduleScreen extends StatelessWidget {
           color: Colors.black87,
         ),
         dataTextStyle: const TextStyle(fontSize: 14),
-        border: TableBorder.all(color: Colors.white, width: 0.5),
+        border: TableBorder(
+          horizontalInside: BorderSide(
+            color: Colors.grey.shade300, // Líneas horizontales suaves
+            width: 1,
+          ),
+        ),
         columns: const [
           DataColumn(label: Text('Materia')),
           DataColumn(label: Text('Grupo')),

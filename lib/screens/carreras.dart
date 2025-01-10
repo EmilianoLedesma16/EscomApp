@@ -42,7 +42,7 @@ class CarrerasScreen extends StatelessWidget {
     ),
     _CarreraItem(
       title: 'Maestría en Inteligencia Artificial y Ciencia de Datos',
-      imagePath: 'assets/img/ia.png',
+      imagePath: 'assets/img/miacd.jpg',
       destination: MiacdScreen(),
     ),
   ];

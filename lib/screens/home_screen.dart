@@ -76,7 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color.fromARGB(255, 212, 216, 240),
         actions: [
           IconButton(
-            icon: const Icon(Icons.account_circle),
+            iconSize: 38.0,
+            icon: const Icon(Icons.account_circle, size: 38.0),
             onPressed: () {
               Navigator.push(
                 context,
@@ -273,13 +274,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   _CareerItem(
                     title:
                         'Maestría en Inteligencia Artificial y Ciencia de Datos',
-                    imagePath: 'assets/img/ia.png',
-                    modalidad: 'Modalidad No Escolarizada',
+                    imagePath: 'assets/img/miacd.jpg',
+                    modalidad: 'Modalidad Escolarizada',
                   ),
                   _CareerItem(
                     title: 'Maestría en Sistemas Computacionales Móviles',
                     imagePath: 'assets/img/mscm.jpg',
-                    modalidad: 'Modalidad No Escolarizada',
+                    modalidad: 'Modalidad Escolarizada',
                   ),
                 ]),
                 const SizedBox(height: 30),
