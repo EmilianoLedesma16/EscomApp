@@ -84,7 +84,7 @@ class _SplashScreenState extends State<SplashScreen>
                     SizedBox(height: 20),
                     // Texto animado
                     Text(
-                      'ESCOM App',
+                      'ESCOMapp',
                       style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,

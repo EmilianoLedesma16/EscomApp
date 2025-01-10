@@ -1,34 +1,2903 @@
 [
     {
-        "profesor": "Juan Perez",
-        "department": "sexo",
+        "profesor": "Hernández Secundino José Celestino Elías",
+        "department": "Academia de Ciencia Básicas",
         "materias": [
             {
-                "nombre": "Cálculo Diferencial",
-                "grupos": ["A1", "B2"],
+                "nombre": "Materia 4",
+                "grupos": [
+                    "3CM6"
+                ],
                 "horarios": {
-                    "Lunes": "08:00 - 10:00",
-                    "Miércoles": "10:00 - 12:00"
+                    "Viernes": "10:00-12:00"
                 }
             },
             {
-                "nombre": "Álgebra Lineal",
-                "grupos": ["C1"],
+                "nombre": "Materia 62",
+                "grupos": [
+                    "6CM4"
+                ],
                 "horarios": {
-                    "Viernes": "12:00 - 14:00"
+                    "Lunes": "16:00-18:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 60",
+                "grupos": [
+                    "7CM8"
+                ],
+                "horarios": {
+                    "Martes": "16:00-18:00",
+                    "Viernes": "16:00-18:00"
                 }
             }
         ]
     },
     {
-        "profesor": "Ana Lopez",
+        "profesor": "Rueda Meléndez José Marco Antonio",
+        "department": "Academia de Ingeniería de Software",
         "materias": [
             {
-                "nombre": "Física I",
-                "grupos": ["D1", "E2"],
+                "nombre": "Materia 57",
+                "grupos": [
+                    "3CM9"
+                ],
                 "horarios": {
-                    "Martes": "08:00 - 10:00",
-                    "Jueves": "10:00 - 12:00"
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 100",
+                "grupos": [
+                    "4CM2"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Lunes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rodríguez Sarabia Tania",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 56",
+                "grupos": [
+                    "9CM1"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Viernes": "14:00-16:00",
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 4",
+                "grupos": [
+                    "6CM4"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Castillo Martínez Miguel Ángel",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 60",
+                "grupos": [
+                    "7CM9"
+                ],
+                "horarios": {
+                    "Viernes": "08:00-10:00",
+                    "Martes": "10:00-12:00",
+                    "Lunes": "12:00-14:00",
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 94",
+                "grupos": [
+                    "2CM4"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Jueves": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Moreno Cervantes Axel Ernesto",
+        "department": "Academia de Ingeniería de Software",
+        "materias": [
+            {
+                "nombre": "Materia 35",
+                "grupos": [
+                    "8CM5"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Martes": "16:00-18:00",
+                    "Jueves": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cordero López Martha Rosa",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 30",
+                "grupos": [
+                    "5CM6"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Martes": "14:00-16:00",
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 50",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Martes": "10:00-12:00",
+                    "Jueves": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 17",
+                "grupos": [
+                    "8CM4"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Ojeda Santillan Rodrigo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 67",
+                "grupos": [
+                    "6CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 18",
+                "grupos": [
+                    "4CM6"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Martes": "10:00-12:00",
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Barrales López Ana Luz",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 44",
+                "grupos": [
+                    "3CM9"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "16:00-18:00",
+                    "Jueves": "10:00-12:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 5",
+                "grupos": [
+                    "8CM1"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Jueves": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cordero López Martha Rosa",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 100",
+                "grupos": [
+                    "3CM2"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "08:00-10:00",
+                    "Lunes": "16:00-18:00",
+                    "Viernes": "12:00-14:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 63",
+                "grupos": [
+                    "5CM6"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "08:00-10:00",
+                    "Lunes": "10:00-12:00",
+                    "Jueves": "12:00-14:00",
+                    "Miércoles": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 58",
+                "grupos": [
+                    "9CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "08:00-10:00",
+                    "Jueves": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 53",
+                "grupos": [
+                    "2CM8"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Martes": "10:00-12:00",
+                    "Miércoles": "14:00-16:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 60",
+                "grupos": [
+                    "9CM8"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Martes": "12:00-14:00",
+                    "Jueves": "14:00-16:00",
+                    "Lunes": "10:00-12:00",
+                    "Miércoles": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Melara Abarca Reyna Elia",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 91",
+                "grupos": [
+                    "4CM1"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Lunes": "14:00-16:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 49",
+                "grupos": [
+                    "1CM5"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "López Ruíz Gabriela de Jesús",
+        "department": "Academia de Inteligencia Artificial",
+        "materias": [
+            {
+                "nombre": "Materia 48",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "14:00-16:00",
+                    "Lunes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 36",
+                "grupos": [
+                    "9CM3"
+                ],
+                "horarios": {
+                    "Martes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 77",
+                "grupos": [
+                    "9CM5"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "10:00-12:00",
+                    "Martes": "08:00-10:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Linares Vallejo Erick Eugenio",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 47",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 19",
+                "grupos": [
+                    "8CM8"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "14:00-16:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 27",
+                "grupos": [
+                    "7CM4"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Viernes": "10:00-12:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Domínguez Hernández Samuel",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 50",
+                "grupos": [
+                    "8CM2"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Viernes": "14:00-16:00",
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "6CM9"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Viernes": "14:00-16:00",
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Montiel Sánchez Ángel Salvador",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 69",
+                "grupos": [
+                    "2CM4"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Moreno Cervantes Axel Ernesto",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "4CM3"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Viernes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Alemán Arce Miguel Ángel",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 4",
+                "grupos": [
+                    "1CM9"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 74",
+                "grupos": [
+                    "2CM5"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00",
+                    "Jueves": "12:00-14:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rojas Mexicano Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 29",
+                "grupos": [
+                    "8CM8"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 32",
+                "grupos": [
+                    "3CM7"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 59",
+                "grupos": [
+                    "5CM2"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Martes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Romero Herrera Rodolfo",
+        "department": "Academia de Inteligencia Artificial",
+        "materias": [
+            {
+                "nombre": "Materia 71",
+                "grupos": [
+                    "1CM8"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00",
+                    "Martes": "08:00-10:00",
+                    "Lunes": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Viernes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 61",
+                "grupos": [
+                    "6CM6"
+                ],
+                "horarios": {
+                    "Martes": "16:00-18:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 5",
+                "grupos": [
+                    "7CM4"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Jueves": "12:00-14:00",
+                    "Martes": "10:00-12:00",
+                    "Lunes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 20",
+                "grupos": [
+                    "3CM7"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Miércoles": "14:00-16:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Soto Ramos Manuel Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 86",
+                "grupos": [
+                    "6CM7"
+                ],
+                "horarios": {
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Pastrana Fernández Carlos Jesús",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 62",
+                "grupos": [
+                    "7CM6"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Viernes": "10:00-12:00",
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 28",
+                "grupos": [
+                    "1CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "16:00-18:00",
+                    "Jueves": "16:00-18:00",
+                    "Viernes": "08:00-10:00",
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 99",
+                "grupos": [
+                    "2CM6"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Martes": "14:00-16:00",
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rojas Mexicano Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 77",
+                "grupos": [
+                    "8CM9"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 62",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Bautista Rosales Sandra Ivette",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 62",
+                "grupos": [
+                    "8CM2"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "10:00-12:00",
+                    "Miércoles": "08:00-10:00",
+                    "Martes": "10:00-12:00",
+                    "Lunes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 76",
+                "grupos": [
+                    "8CM8"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Morales Cruz Juan Carlos",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 21",
+                "grupos": [
+                    "8CM6"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Palacios Solano Rocío",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "5CM8"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "08:00-10:00",
+                    "Jueves": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 9",
+                "grupos": [
+                    "9CM4"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00",
+                    "Martes": "14:00-16:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 95",
+                "grupos": [
+                    "2CM5"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Martes": "14:00-16:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Ortíz Ramírez José Antonio",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 44",
+                "grupos": [
+                    "2CM2"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Ingeniería de Software",
+        "materias": [
+            {
+                "nombre": "Materia 43",
+                "grupos": [
+                    "3CM6"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Viernes": "14:00-16:00",
+                    "Martes": "08:00-10:00",
+                    "Jueves": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 49",
+                "grupos": [
+                    "6CM3"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "10:00-12:00",
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "08:00-10:00",
+                    "Viernes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 80",
+                "grupos": [
+                    "7CM7"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Vélez Saldaña Ulises",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "9CM6"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Jueves": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "9CM9"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Jueves": "14:00-16:00",
+                    "Lunes": "16:00-18:00",
+                    "Martes": "08:00-10:00",
+                    "Viernes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Díaz Toalá Iván",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 87",
+                "grupos": [
+                    "7CM7"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 57",
+                "grupos": [
+                    "8CM5"
+                ],
+                "horarios": {
+                    "Viernes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cortez Duarte Nidia Asunción",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 8",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Lunes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 22",
+                "grupos": [
+                    "7CM5"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 50",
+                "grupos": [
+                    "8CM4"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Martes": "12:00-14:00",
+                    "Jueves": "16:00-18:00",
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Martínez Rosales Ricardo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 48",
+                "grupos": [
+                    "3CM3"
+                ],
+                "horarios": {
+                    "Jueves": "10:00-12:00",
+                    "Martes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rivera De la Rosa Mónica",
+        "department": "Academia de Ingeniería de Software",
+        "materias": [
+            {
+                "nombre": "Materia 28",
+                "grupos": [
+                    "3CM3"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "16:00-18:00",
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Díaz Santiago Sandra",
+        "department": "Academia de Inteligencia Artificial",
+        "materias": [
+            {
+                "nombre": "Materia 89",
+                "grupos": [
+                    "7CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "12:00-14:00",
+                    "Martes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Juárez Gambino Joel Omar",
+        "department": "Academia de Inteligencia Artificial",
+        "materias": [
+            {
+                "nombre": "Materia 69",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Lunes": "10:00-12:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 27",
+                "grupos": [
+                    "2CM4"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 29",
+                "grupos": [
+                    "7CM4"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Jueves": "14:00-16:00",
+                    "Viernes": "12:00-14:00",
+                    "Lunes": "12:00-14:00",
+                    "Martes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Sánchez Quintanilla Gilberto",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 55",
+                "grupos": [
+                    "7CM9"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Miércoles": "16:00-18:00",
+                    "Lunes": "16:00-18:00",
+                    "Viernes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 11",
+                "grupos": [
+                    "3CM2"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "08:00-10:00",
+                    "Lunes": "08:00-10:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Castillo Cabrera Gelacio",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 65",
+                "grupos": [
+                    "3CM8"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Lunes": "14:00-16:00",
+                    "Martes": "10:00-12:00",
+                    "Jueves": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 76",
+                "grupos": [
+                    "6CM2"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00",
+                    "Jueves": "14:00-16:00",
+                    "Lunes": "12:00-14:00",
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 69",
+                "grupos": [
+                    "2CM4"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Lunes": "12:00-14:00",
+                    "Jueves": "10:00-12:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Téllez Barrera Juan Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 15",
+                "grupos": [
+                    "9CM9"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 7",
+                "grupos": [
+                    "9CM6"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Jueves": "10:00-12:00",
+                    "Lunes": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 75",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Guzmán Flores Jessie Paulina",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 57",
+                "grupos": [
+                    "8CM1"
+                ],
+                "horarios": {
+                    "Viernes": "08:00-10:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 86",
+                "grupos": [
+                    "3CM6"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Peredo Valderrama Rubén",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 50",
+                "grupos": [
+                    "2CM8"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 83",
+                "grupos": [
+                    "6CM7"
+                ],
+                "horarios": {
+                    "Jueves": "08:00-10:00",
+                    "Lunes": "14:00-16:00",
+                    "Viernes": "16:00-18:00",
+                    "Martes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 66",
+                "grupos": [
+                    "6CM1"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Tecla Parra Roberto",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "1CM5"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "16:00-18:00",
+                    "Martes": "16:00-18:00",
+                    "Jueves": "10:00-12:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 28",
+                "grupos": [
+                    "4CM4"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 8",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Jueves": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Hernández Olvera Luis Enrique",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 44",
+                "grupos": [
+                    "2CM6"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "14:00-16:00",
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Jiménez Ruíz René Baltazar",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 87",
+                "grupos": [
+                    "2CM7"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rosas Carrillo Ary Shared",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 12",
+                "grupos": [
+                    "2CM8"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Arzate Gordillo Jacqueline",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 86",
+                "grupos": [
+                    "5CM9"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 78",
+                "grupos": [
+                    "3CM5"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Jueves": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Hernández Aguilar José Luis",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 82",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00",
+                    "Viernes": "14:00-16:00",
+                    "Miércoles": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 63",
+                "grupos": [
+                    "9CM9"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Puebla Lomas Jaime Hugo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 61",
+                "grupos": [
+                    "3CM7"
+                ],
+                "horarios": {
+                    "Jueves": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 24",
+                "grupos": [
+                    "6CM8"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 87",
+                "grupos": [
+                    "9CM3"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Lunes": "08:00-10:00",
+                    "Martes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "González Cisneros Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 65",
+                "grupos": [
+                    "5CM6"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "10:00-12:00",
+                    "Martes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 31",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 44",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "08:00-10:00",
+                    "Lunes": "10:00-12:00",
+                    "Viernes": "08:00-10:00",
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rodríguez Flores Eduardo",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 9",
+                "grupos": [
+                    "6CM1"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 25",
+                "grupos": [
+                    "3CM4"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 52",
+                "grupos": [
+                    "1CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Lunes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Salas Ramirez Israel",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 20",
+                "grupos": [
+                    "8CM2"
+                ],
+                "horarios": {
+                    "Jueves": "08:00-10:00",
+                    "Viernes": "12:00-14:00",
+                    "Lunes": "12:00-14:00",
+                    "Miércoles": "08:00-10:00",
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 33",
+                "grupos": [
+                    "4CM1"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 95",
+                "grupos": [
+                    "7CM4"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Miércoles": "16:00-18:00",
+                    "Lunes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Gutiérrez Aldana Eduardo",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 86",
+                "grupos": [
+                    "8CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Martes": "10:00-12:00",
+                    "Viernes": "12:00-14:00",
+                    "Jueves": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 5",
+                "grupos": [
+                    "7CM4"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Martes": "16:00-18:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rocha Bernabé María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 79",
+                "grupos": [
+                    "1CM4"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 28",
+                "grupos": [
+                    "9CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Alcántara Méndez Alberto Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 70",
+                "grupos": [
+                    "2CM5"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Martes": "10:00-12:00",
+                    "Viernes": "16:00-18:00",
+                    "Lunes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 23",
+                "grupos": [
+                    "1CM9"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "10:00-12:00",
+                    "Lunes": "10:00-12:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 13",
+                "grupos": [
+                    "7CM3"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "16:00-18:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Agustín Domínguez Verónica",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 94",
+                "grupos": [
+                    "5CM7"
+                ],
+                "horarios": {
+                    "Jueves": "10:00-12:00",
+                    "Viernes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 59",
+                "grupos": [
+                    "3CM7"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Palacios Solano Rocío",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 16",
+                "grupos": [
+                    "8CM4"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 27",
+                "grupos": [
+                    "3CM8"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Jueves": "10:00-12:00",
+                    "Miércoles": "16:00-18:00",
+                    "Viernes": "16:00-18:00",
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Blanco Almazan Ivan Eduardo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 81",
+                "grupos": [
+                    "9CM3"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Martes": "12:00-14:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 59",
+                "grupos": [
+                    "8CM8"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cervantes De Anda Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 55",
+                "grupos": [
+                    "1CM1"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 89",
+                "grupos": [
+                    "7CM6"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Viernes": "08:00-10:00",
+                    "Martes": "08:00-10:00",
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Jiménez Benítez José Alfredo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 3",
+                "grupos": [
+                    "8CM4"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "14:00-16:00",
+                    "Viernes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 38",
+                "grupos": [
+                    "6CM8"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00",
+                    "Jueves": "14:00-16:00",
+                    "Viernes": "08:00-10:00",
+                    "Martes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 77",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Viernes": "16:00-18:00",
+                    "Lunes": "16:00-18:00",
+                    "Jueves": "08:00-10:00",
+                    "Miércoles": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Melara Abarca Reyna Elia",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 18",
+                "grupos": [
+                    "4CM3"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Martes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "16:00-18:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 95",
+                "grupos": [
+                    "1CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 61",
+                "grupos": [
+                    "1CM2"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Alcántara Méndez Alberto Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 98",
+                "grupos": [
+                    "9CM8"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 19",
+                "grupos": [
+                    "4CM8"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Lunes": "08:00-10:00",
+                    "Martes": "12:00-14:00",
+                    "Jueves": "16:00-18:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "3CM9"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Miércoles": "14:00-16:00",
+                    "Jueves": "10:00-12:00",
+                    "Martes": "16:00-18:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rodríguez Ordaz Marisol",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 92",
+                "grupos": [
+                    "2CM4"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Viernes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 21",
+                "grupos": [
+                    "5CM9"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 83",
+                "grupos": [
+                    "5CM5"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Viernes": "10:00-12:00",
+                    "Martes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Pérez de los Santos Mondragón Tanibet",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 24",
+                "grupos": [
+                    "9CM1"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 69",
+                "grupos": [
+                    "3CM9"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Martínez Perales José Cruz",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "9CM5"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Flores Roque Allan Eduardo",
+        "department": "Academia de Ingeniería de Software",
+        "materias": [
+            {
+                "nombre": "Materia 24",
+                "grupos": [
+                    "1CM7"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00",
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 4",
+                "grupos": [
+                    "3CM5"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rodríguez Flores Eduardo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "6CM3"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 36",
+                "grupos": [
+                    "8CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Gómez Mayorga Margarita Elizabeth",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 99",
+                "grupos": [
+                    "3CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "08:00-10:00",
+                    "Martes": "16:00-18:00",
+                    "Lunes": "12:00-14:00",
+                    "Jueves": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 20",
+                "grupos": [
+                    "3CM5"
+                ],
+                "horarios": {
+                    "Martes": "12:00-14:00",
+                    "Viernes": "08:00-10:00",
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Vélez Saldaña Ulises",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 46",
+                "grupos": [
+                    "1CM2"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "08:00-10:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 62",
+                "grupos": [
+                    "2CM7"
+                ],
+                "horarios": {
+                    "Martes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 94",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Martes": "16:00-18:00",
+                    "Jueves": "10:00-12:00",
+                    "Miércoles": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Tenorio Marrón Marco Antonio",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 26",
+                "grupos": [
+                    "5CM3"
+                ],
+                "horarios": {
+                    "Viernes": "14:00-16:00",
+                    "Jueves": "08:00-10:00",
+                    "Lunes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 90",
+                "grupos": [
+                    "3CM6"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Viernes": "16:00-18:00",
+                    "Jueves": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 7",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "16:00-18:00",
+                    "Martes": "12:00-14:00",
+                    "Jueves": "16:00-18:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Martínez Perales José Cruz",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 12",
+                "grupos": [
+                    "4CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 99",
+                "grupos": [
+                    "7CM3"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Viernes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Rosas Trigueros Jorge Luis",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 10",
+                "grupos": [
+                    "8CM2"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 99",
+                "grupos": [
+                    "7CM2"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 62",
+                "grupos": [
+                    "5CM6"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Jueves": "08:00-10:00",
+                    "Martes": "12:00-14:00",
+                    "Lunes": "10:00-12:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cruz Meza María Elena",
+        "department": "Academia de Inteligencia Artificial",
+        "materias": [
+            {
+                "nombre": "Materia 14",
+                "grupos": [
+                    "5CM5"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Jueves": "12:00-14:00",
+                    "Martes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 98",
+                "grupos": [
+                    "6CM1"
+                ],
+                "horarios": {
+                    "Jueves": "10:00-12:00",
+                    "Lunes": "16:00-18:00",
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Sánchez Vélez Ricardo",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 80",
+                "grupos": [
+                    "2CM5"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Martes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 64",
+                "grupos": [
+                    "8CM2"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Martes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Franco Martínez Edgardo Adrián",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 60",
+                "grupos": [
+                    "6CM7"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Reyes Bermejo Tlatoani de Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 66",
+                "grupos": [
+                    "3CM3"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Martes": "10:00-12:00",
+                    "Viernes": "10:00-12:00",
+                    "Jueves": "12:00-14:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Martínez García César Román",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 29",
+                "grupos": [
+                    "8CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 89",
+                "grupos": [
+                    "5CM1"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Guzmán Flores Jessie Paulina",
+        "department": "Academia de Sistemas Distribuidos",
+        "materias": [
+            {
+                "nombre": "Materia 4",
+                "grupos": [
+                    "5CM7"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Viernes": "12:00-14:00",
+                    "Jueves": "08:00-10:00",
+                    "Lunes": "10:00-12:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 18",
+                "grupos": [
+                    "7CM7"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Viernes": "12:00-14:00",
+                    "Miércoles": "12:00-14:00",
+                    "Jueves": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 2",
+                "grupos": [
+                    "4CM7"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Jueves": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Aguilar Sánchez Fernando",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 13",
+                "grupos": [
+                    "7CM2"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "López Leyva Luis Octavio",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 33",
+                "grupos": [
+                    "5CM1"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "16:00-18:00",
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 35",
+                "grupos": [
+                    "5CM2"
+                ],
+                "horarios": {
+                    "Lunes": "14:00-16:00",
+                    "Miércoles": "14:00-16:00",
+                    "Viernes": "10:00-12:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 12",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Viernes": "16:00-18:00",
+                    "Martes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Galeana Chávez María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 64",
+                "grupos": [
+                    "5CM7"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 42",
+                "grupos": [
+                    "6CM5"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Jueves": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 17",
+                "grupos": [
+                    "1CM6"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Lunes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Santillán Luna Raúl",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 57",
+                "grupos": [
+                    "4CM4"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 75",
+                "grupos": [
+                    "4CM2"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Lunes": "16:00-18:00",
+                    "Viernes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Salazar Ramírez Manuel",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 56",
+                "grupos": [
+                    "9CM3"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Martes": "08:00-10:00",
+                    "Viernes": "08:00-10:00",
+                    "Miércoles": "16:00-18:00",
+                    "Jueves": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 5",
+                "grupos": [
+                    "8CM9"
+                ],
+                "horarios": {
+                    "Miércoles": "08:00-10:00",
+                    "Jueves": "14:00-16:00",
+                    "Viernes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 77",
+                "grupos": [
+                    "1CM1"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Martes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "De la O Torres Saúl",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 13",
+                "grupos": [
+                    "6CM5"
+                ],
+                "horarios": {
+                    "Jueves": "08:00-10:00",
+                    "Miércoles": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 20",
+                "grupos": [
+                    "7CM1"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Lunes": "16:00-18:00",
+                    "Viernes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "8CM9"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Lunes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Hernández Aviles Fernando Dante",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "1CM4"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "14:00-16:00",
+                    "Jueves": "16:00-18:00",
+                    "Viernes": "08:00-10:00",
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Dávalos López José Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 39",
+                "grupos": [
+                    "5CM5"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Jueves": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 55",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Viernes": "10:00-12:00",
+                    "Martes": "16:00-18:00",
+                    "Lunes": "16:00-18:00",
+                    "Jueves": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 15",
+                "grupos": [
+                    "8CM3"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Jueves": "16:00-18:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cervantes Espinosa Luis Moctezuma",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "5CM7"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Jueves": "10:00-12:00",
+                    "Miércoles": "14:00-16:00",
+                    "Lunes": "12:00-14:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Figueroa Del Prado Felipe de Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 53",
+                "grupos": [
+                    "2CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00",
+                    "Martes": "12:00-14:00",
+                    "Viernes": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Durán Camarillo Edmundo René",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 79",
+                "grupos": [
+                    "3CM8"
+                ],
+                "horarios": {
+                    "Viernes": "08:00-10:00",
+                    "Lunes": "14:00-16:00",
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "16:00-18:00"
+                }
+            },
+            {
+                "nombre": "Materia 34",
+                "grupos": [
+                    "3CM2"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Jueves": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 100",
+                "grupos": [
+                    "6CM9"
+                ],
+                "horarios": {
+                    "Martes": "14:00-16:00",
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Ocotitla Rojas Nancy",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 33",
+                "grupos": [
+                    "5CM6"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "16:00-18:00",
+                    "Miércoles": "16:00-18:00",
+                    "Jueves": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 66",
+                "grupos": [
+                    "6CM6"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 91",
+                "grupos": [
+                    "5CM2"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Jueves": "08:00-10:00",
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "10:00-12:00",
+                    "Miércoles": "10:00-12:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Díaz Toalá Iván",
+        "department": "Academia de Ciencia Básicas",
+        "materias": [
+            {
+                "nombre": "Materia 48",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Lunes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 12",
+                "grupos": [
+                    "5CM2"
+                ],
+                "horarios": {
+                    "Jueves": "16:00-18:00",
+                    "Miércoles": "10:00-12:00",
+                    "Viernes": "10:00-12:00",
+                    "Lunes": "14:00-16:00",
+                    "Martes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Hernández Jaime Josefína",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 19",
+                "grupos": [
+                    "3CM4"
+                ],
+                "horarios": {
+                    "Lunes": "12:00-14:00",
+                    "Miércoles": "14:00-16:00",
+                    "Viernes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 37",
+                "grupos": [
+                    "3CM8"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Martes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 17",
+                "grupos": [
+                    "2CM2"
+                ],
+                "horarios": {
+                    "Miércoles": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Galeana Chávez María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 57",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Viernes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 68",
+                "grupos": [
+                    "8CM1"
+                ],
+                "horarios": {
+                    "Lunes": "10:00-12:00",
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "14:00-16:00",
+                    "Martes": "10:00-12:00"
+                }
+            },
+            {
+                "nombre": "Materia 38",
+                "grupos": [
+                    "3CM4"
+                ],
+                "horarios": {
+                    "Viernes": "12:00-14:00",
+                    "Jueves": "10:00-12:00",
+                    "Lunes": "14:00-16:00",
+                    "Martes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Santillán Luna Raúl",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 4",
+                "grupos": [
+                    "9CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "10:00-12:00",
+                    "Lunes": "14:00-16:00",
+                    "Viernes": "14:00-16:00",
+                    "Jueves": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Zárate Cárdenas Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 87",
+                "grupos": [
+                    "9CM8"
+                ],
+                "horarios": {
+                    "Jueves": "14:00-16:00",
+                    "Lunes": "12:00-14:00",
+                    "Martes": "14:00-16:00"
+                }
+            },
+            {
+                "nombre": "Materia 8",
+                "grupos": [
+                    "4CM9"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Lunes": "16:00-18:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Galiñanes Rodríguez María Gabriela",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "materias": [
+            {
+                "nombre": "Materia 1",
+                "grupos": [
+                    "6CM7"
+                ],
+                "horarios": {
+                    "Lunes": "16:00-18:00",
+                    "Jueves": "08:00-10:00",
+                    "Miércoles": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 84",
+                "grupos": [
+                    "1CM4"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Viernes": "08:00-10:00",
+                    "Miércoles": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 61",
+                "grupos": [
+                    "3CM9"
+                ],
+                "horarios": {
+                    "Jueves": "12:00-14:00",
+                    "Martes": "08:00-10:00",
+                    "Viernes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Tecla Parra Roberto",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 46",
+                "grupos": [
+                    "5CM3"
+                ],
+                "horarios": {
+                    "Viernes": "10:00-12:00",
+                    "Martes": "14:00-16:00",
+                    "Jueves": "12:00-14:00",
+                    "Miércoles": "16:00-18:00",
+                    "Lunes": "08:00-10:00"
+                }
+            },
+            {
+                "nombre": "Materia 30",
+                "grupos": [
+                    "7CM9"
+                ],
+                "horarios": {
+                    "Martes": "08:00-10:00",
+                    "Lunes": "10:00-12:00",
+                    "Jueves": "14:00-16:00",
+                    "Miércoles": "08:00-10:00",
+                    "Viernes": "08:00-10:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Díaz Santiago Ricardo Felipe",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 37",
+                "grupos": [
+                    "3CM4"
+                ],
+                "horarios": {
+                    "Lunes": "08:00-10:00",
+                    "Viernes": "12:00-14:00"
+                }
+            },
+            {
+                "nombre": "Materia 60",
+                "grupos": [
+                    "4CM1"
+                ],
+                "horarios": {
+                    "Miércoles": "12:00-14:00",
+                    "Lunes": "14:00-16:00"
+                }
+            }
+        ]
+    },
+    {
+        "profesor": "Cruz Rojas Jorge Alberto",
+        "department": "Academia de Ciencias Sociales",
+        "materias": [
+            {
+                "nombre": "Materia 15",
+                "grupos": [
+                    "7CM3"
+                ],
+                "horarios": {
+                    "Miércoles": "16:00-18:00"
                 }
             }
         ]

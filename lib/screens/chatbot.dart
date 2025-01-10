@@ -26,7 +26,7 @@ class ChatbotScreen extends StatelessWidget {
     // Configuración general del chatbot
     sendIcon: const Icon(Icons.send, color: Colors.black),
     userIcon: const Icon(Icons.person, color: Colors.white),
-    botIcon: const Icon(Icons.android, color: Colors.white),
+    botIcon: const Icon(Icons.smart_toy, color: Colors.white),
     botChatColor: const Color.fromARGB(255, 81, 80, 80),
     userChatColor: Colors.blue,
     delayBot: 100,
@@ -35,19 +35,47 @@ class ChatbotScreen extends StatelessWidget {
     waitingTime: 1,
 
     // Palabras clave y respuestas
-    keywords: ['ubicacion', 'horarios', 'actividades', 'carreras', 'contacto'],
+    keywords: [
+      'hola',
+      'adios',
+      'ubicacion',
+      'localizada',
+      'ubicada',
+      'horarios',
+      'actividades',
+      'carreras',
+      'contacto',
+      'admision',
+      'convocatoria',
+      'becas',
+      'calendario',
+      'titulacion',
+      'requisitos',
+      'historia',
+    ],
     responses: [
-      'ESCOM está ubicada en Zacatenco, Ciudad de México.',
+      '¡Hola!\nDime, ¿cómo puedo ayudarte?',
+      'Espero haberte ayudado ¡Regresa pronto!',
+      'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
+      'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
+      'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
       'Las clases se imparten entre las 7:00 AM y las 8:00 PM.',
-      'Consulta la sección de actividades para más información.',
-      'Las carreras incluyen ISC, IA y LCD.',
-      'Puedes contactarnos al teléfono (55) 5729-6000 Ext. 52000.'
+      'La ESCOM brinda una gran variedad de actividades deportivas (fútbol, baloncesto, voleibol, ajedrez, etc) y culturales (baile, música folklorica, teatro, etc). Consulta la sección de actividades para más información.',
+      'En la ESCOM se imparten las carreras a nivel superior de ISC, IA y LCD. Además de las maestrías en Inteligencia Artificial y Ciencia de Datos y en Ciencias en Sistemas Computacionales Móviles',
+      'Puedes contactarnos al teléfono (55) 5729-6000 Ext. 52000. o mandando un correo a escom@ipn.mx',
+      'Puedes consultar la convocatoria de admisión en la página oficial del IPN o directamente en el sitio web de la ESCOM.',
+      'Puedes consultar la convocatoria más reciente en la página oficial del IPN o directamente en el sitio web de la ESCOM. Las fechas y detalles están disponibles allí.',
+      'La ESCOM ofrece diversas becas como la Beca de Manutención, IPN-Bécalos, y otras. Consulta la sección de becas en la página del IPN para requisitos y fechas.',
+      'El calendario escolar incluye información sobre periodos de inscripción, exámenes, días festivos y vacaciones. Puedes descargarlo desde la página oficial del IPN o de la ESCOM.',
+      'Las opciones de titulación en la ESCOM incluyen tesis, proyectos integradores, desempeño académico sobresaliente y más. Consulta la coordinación de titulación para más información.',
+      'Los requisitos de admisión a la ESCOM incluyen haber concluido el nivel medio superior, presentar el examen de admisión del IPN, y entregar la documentación necesaria.',
+      'La ESCOM fue fundada en 1993 y es una de las unidades académicas más destacadas del IPN en el área de ciencias computacionales. Su trayectoria está marcada por la excelencia educativa.'
     ],
 
     // Personalización del diseño
     backgroundColor: Colors.white,
     initialGreeting:
-        "👋 ¡Hola! \nBienvenido al Chatbot de ESCOM\n¿Cómo puedo ayudarte hoy?",
+        "👋 ¡Hola! \nBienvenido al Chatbot de ESCOMapp\n¿Cómo puedo ayudarte hoy?",
     defaultResponse: "Lo siento, no entendí tu pregunta.",
     inactivityMessage: "¿Hay algo más en lo que te pueda ayudar?",
     closingMessage: "Esta conversación se cerrará ahora.",
@@ -62,7 +90,7 @@ class ChatbotScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chatbot ESCOM'),
+        title: const Text('Chatbot ESCOMapp'),
       ),
       body: ikchatbot(config: chatBotConfig),
     );

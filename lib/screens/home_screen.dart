@@ -120,6 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildHomeScreen() {
     final List<String> carouselImages = [
+      'assets/img/escom_logo.png',
       'assets/img/uno.jpeg',
       'assets/img/dos.jpeg',
       'assets/img/tres.jpeg',
@@ -144,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 15),
 
           // Carrusel de imágenes
           Column(
@@ -226,6 +227,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.blue,
                   ),
                 ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Haz clic en las opciones para conocer la modalidad',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.black87,
+                  ),
+                ),
                 const SizedBox(height: 20),
                 _buildCareerGrid([
                   _CareerItem(
@@ -246,7 +256,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   _CareerItem(
                     title: 'Ingeniería en Sistemas Automotrices',
                     imagePath: 'assets/img/isa.jpg',
-                    modalidad: 'Modalidad No Escolarizada',
+                    modalidad: 'Modalidad Escolarizada',
                   ),
                 ]),
                 const SizedBox(height: 30),

@@ -133,8 +133,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 style: ElevatedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  backgroundColor: Colors.purple.shade100,
-                  foregroundColor: Colors.purple.shade700,
+                  backgroundColor: Colors.blue.shade300,
+                  foregroundColor: Colors.white,
                   textStyle: const TextStyle(fontSize: 16),
                 ),
               ),
@@ -146,8 +146,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 style: ElevatedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  backgroundColor: Colors.purple.shade100,
-                  foregroundColor: Colors.purple.shade700,
+                  backgroundColor: Colors.blue.shade300,
+                  foregroundColor: Colors.white,
                   textStyle: const TextStyle(fontSize: 16),
                 ),
               ),
@@ -156,8 +156,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onPressed: () => logout(context),
                 child: const Text('Cerrar Sesión'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.purple.shade100,
+                  foregroundColor: Colors.purple.shade800,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                   textStyle: const TextStyle(fontSize: 16),

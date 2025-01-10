@@ -87,6 +87,18 @@ class _InformacionScreenState extends State<InformacionScreen> {
 
               // Horarios
               Text(
+                'Contacto',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 8),
+              Text(
+                'Teléfono: 555729 6000 Ext. 52001\nCorreo: escom@ipn.mx',
+                style: TextStyle(fontSize: 16),
+              ),
+              SizedBox(height: 16),
+
+              // Horarios
+              Text(
                 'Horarios de Clases',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),

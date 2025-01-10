@@ -1,12 +1,502 @@
 [
     {
-        "profesor": "Juan Perez",
-        "department": "Departamento de Matemáticas",
-        "email": "juan.perez@escom.ipn.mx"
+        "profesor": "Hernández Secundino José Celestino Elías",
+        "department": "Academia de Ciencia Básicas",
+        "email": "hernández.secundino.josé.celestino.elías@escom.ipn.mx"
     },
     {
-        "profesor": "Ana Lopez",
-        "department": "Departamento de Física",
-        "email": "ana.lopez@escom.ipn.mx"
+        "profesor": "Rueda Meléndez José Marco Antonio",
+        "department": "Academia de Ingeniería de Software",
+        "email": "rueda.meléndez.josé.marco.antonio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rodríguez Sarabia Tania",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "rodríguez.sarabia.tania@escom.ipn.mx"
+    },
+    {
+        "profesor": "Castillo Martínez Miguel Ángel",
+        "department": "Academia de Ciencia Básicas",
+        "email": "castillo.martínez.miguel.ángel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Moreno Cervantes Axel Ernesto",
+        "department": "Academia de Ingeniería de Software",
+        "email": "moreno.cervantes.axel.ernesto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cordero López Martha Rosa",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "cordero.lópez.martha.rosa@escom.ipn.mx"
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "lópez.rojas.ariel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ojeda Santillan Rodrigo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "ojeda.santillan.rodrigo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Barrales López Ana Luz",
+        "department": "Academia de Ciencia Básicas",
+        "email": "barrales.lópez.ana.luz@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cordero López Martha Rosa",
+        "department": "Academia de Ciencias Sociales",
+        "email": "cordero.lópez.martha.rosa@escom.ipn.mx"
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "lópez.rojas.ariel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Melara Abarca Reyna Elia",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "melara.abarca.reyna.elia@escom.ipn.mx"
+    },
+    {
+        "profesor": "López Ruíz Gabriela de Jesús",
+        "department": "Academia de Inteligencia Artificial",
+        "email": "lópez.ruíz.gabriela.de.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "Linares Vallejo Erick Eugenio",
+        "department": "Academia de Ciencia Básicas",
+        "email": "linares.vallejo.erick.eugenio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Domínguez Hernández Samuel",
+        "department": "Academia de Ciencias Sociales",
+        "email": "domínguez.hernández.samuel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Montiel Sánchez Ángel Salvador",
+        "department": "Academia de Ciencias Sociales",
+        "email": "montiel.sánchez.ángel.salvador@escom.ipn.mx"
+    },
+    {
+        "profesor": "Moreno Cervantes Axel Ernesto",
+        "department": "Academia de Ciencias Sociales",
+        "email": "moreno.cervantes.axel.ernesto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Alemán Arce Miguel Ángel",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "alemán.arce.miguel.ángel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rojas Mexicano Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rojas.mexicano.ismael@escom.ipn.mx"
+    },
+    {
+        "profesor": "Romero Herrera Rodolfo",
+        "department": "Academia de Inteligencia Artificial",
+        "email": "romero.herrera.rodolfo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "pineda.guerrero.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Soto Ramos Manuel Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "email": "soto.ramos.manuel.alejandro@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pastrana Fernández Carlos Jesús",
+        "department": "Academia de Ciencia Básicas",
+        "email": "pastrana.fernández.carlos.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "López Rojas Ariel",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "lópez.rojas.ariel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rojas Mexicano Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rojas.mexicano.ismael@escom.ipn.mx"
+    },
+    {
+        "profesor": "Bautista Rosales Sandra Ivette",
+        "department": "Academia de Ciencias Sociales",
+        "email": "bautista.rosales.sandra.ivette@escom.ipn.mx"
+    },
+    {
+        "profesor": "Morales Cruz Juan Carlos",
+        "department": "Academia de Ciencia Básicas",
+        "email": "morales.cruz.juan.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Palacios Solano Rocío",
+        "department": "Academia de Ciencias Sociales",
+        "email": "palacios.solano.rocío@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ortíz Ramírez José Antonio",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "ortíz.ramírez.josé.antonio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Ingeniería de Software",
+        "email": "pineda.guerrero.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pineda Guerrero Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "email": "pineda.guerrero.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Vélez Saldaña Ulises",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "vélez.saldaña.ulises@escom.ipn.mx"
+    },
+    {
+        "profesor": "Díaz Toalá Iván",
+        "department": "Academia de Ciencia Básicas",
+        "email": "díaz.toalá.iván@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cortez Duarte Nidia Asunción",
+        "department": "Academia de Ciencias Sociales",
+        "email": "cortez.duarte.nidia.asunción@escom.ipn.mx"
+    },
+    {
+        "profesor": "Martínez Rosales Ricardo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "martínez.rosales.ricardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rivera De la Rosa Mónica",
+        "department": "Academia de Ingeniería de Software",
+        "email": "rivera.de.la.rosa.mónica@escom.ipn.mx"
+    },
+    {
+        "profesor": "Díaz Santiago Sandra",
+        "department": "Academia de Inteligencia Artificial",
+        "email": "díaz.santiago.sandra@escom.ipn.mx"
+    },
+    {
+        "profesor": "Juárez Gambino Joel Omar",
+        "department": "Academia de Inteligencia Artificial",
+        "email": "juárez.gambino.joel.omar@escom.ipn.mx"
+    },
+    {
+        "profesor": "Sánchez Quintanilla Gilberto",
+        "department": "Academia de Ciencias Sociales",
+        "email": "sánchez.quintanilla.gilberto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Castillo Cabrera Gelacio",
+        "department": "Academia de Ciencia Básicas",
+        "email": "castillo.cabrera.gelacio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Téllez Barrera Juan Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "email": "téllez.barrera.juan.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Guzmán Flores Jessie Paulina",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "guzmán.flores.jessie.paulina@escom.ipn.mx"
+    },
+    {
+        "profesor": "Peredo Valderrama Rubén",
+        "department": "Academia de Ciencias Sociales",
+        "email": "peredo.valderrama.rubén@escom.ipn.mx"
+    },
+    {
+        "profesor": "Tecla Parra Roberto",
+        "department": "Academia de Ciencias Sociales",
+        "email": "tecla.parra.roberto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Hernández Olvera Luis Enrique",
+        "department": "Academia de Ciencias Sociales",
+        "email": "hernández.olvera.luis.enrique@escom.ipn.mx"
+    },
+    {
+        "profesor": "Jiménez Ruíz René Baltazar",
+        "department": "Academia de Ciencia Básicas",
+        "email": "jiménez.ruíz.rené.baltazar@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rosas Carrillo Ary Shared",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rosas.carrillo.ary.shared@escom.ipn.mx"
+    },
+    {
+        "profesor": "Arzate Gordillo Jacqueline",
+        "department": "Academia de Ciencias Sociales",
+        "email": "arzate.gordillo.jacqueline@escom.ipn.mx"
+    },
+    {
+        "profesor": "Hernández Aguilar José Luis",
+        "department": "Academia de Ciencias Sociales",
+        "email": "hernández.aguilar.josé.luis@escom.ipn.mx"
+    },
+    {
+        "profesor": "Puebla Lomas Jaime Hugo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "puebla.lomas.jaime.hugo@escom.ipn.mx"
+    },
+    {
+        "profesor": "González Cisneros Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "email": "gonzález.cisneros.alejandro@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rodríguez Flores Eduardo",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "rodríguez.flores.eduardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Salas Ramirez Israel",
+        "department": "Academia de Ciencias Sociales",
+        "email": "salas.ramirez.israel@escom.ipn.mx"
+    },
+    {
+        "profesor": "Gutiérrez Aldana Eduardo",
+        "department": "Academia de Ciencia Básicas",
+        "email": "gutiérrez.aldana.eduardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rocha Bernabé María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rocha.bernabé.maría.del.rosario@escom.ipn.mx"
+    },
+    {
+        "profesor": "Alcántara Méndez Alberto Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "email": "alcántara.méndez.alberto.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "Agustín Domínguez Verónica",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "agustín.domínguez.verónica@escom.ipn.mx"
+    },
+    {
+        "profesor": "Palacios Solano Rocío",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "palacios.solano.rocío@escom.ipn.mx"
+    },
+    {
+        "profesor": "Blanco Almazan Ivan Eduardo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "blanco.almazan.ivan.eduardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cervantes De Anda Ismael",
+        "department": "Academia de Ciencias Sociales",
+        "email": "cervantes.de.anda.ismael@escom.ipn.mx"
+    },
+    {
+        "profesor": "Jiménez Benítez José Alfredo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "jiménez.benítez.josé.alfredo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Melara Abarca Reyna Elia",
+        "department": "Academia de Ciencias Sociales",
+        "email": "melara.abarca.reyna.elia@escom.ipn.mx"
+    },
+    {
+        "profesor": "Alcántara Méndez Alberto Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "email": "alcántara.méndez.alberto.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rodríguez Ordaz Marisol",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "rodríguez.ordaz.marisol@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pérez de los Santos Mondragón Tanibet",
+        "department": "Academia de Ciencias Sociales",
+        "email": "pérez.de.los.santos.mondragón.tanibet@escom.ipn.mx"
+    },
+    {
+        "profesor": "Martínez Perales José Cruz",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "martínez.perales.josé.cruz@escom.ipn.mx"
+    },
+    {
+        "profesor": "Flores Roque Allan Eduardo",
+        "department": "Academia de Ingeniería de Software",
+        "email": "flores.roque.allan.eduardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rodríguez Flores Eduardo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rodríguez.flores.eduardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Gómez Mayorga Margarita Elizabeth",
+        "department": "Academia de Ciencia Básicas",
+        "email": "gómez.mayorga.margarita.elizabeth@escom.ipn.mx"
+    },
+    {
+        "profesor": "Vélez Saldaña Ulises",
+        "department": "Academia de Ciencias Sociales",
+        "email": "vélez.saldaña.ulises@escom.ipn.mx"
+    },
+    {
+        "profesor": "Tenorio Marrón Marco Antonio",
+        "department": "Academia de Ciencias Sociales",
+        "email": "tenorio.marrón.marco.antonio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Martínez Perales José Cruz",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "martínez.perales.josé.cruz@escom.ipn.mx"
+    },
+    {
+        "profesor": "Rosas Trigueros Jorge Luis",
+        "department": "Academia de Ciencias Sociales",
+        "email": "rosas.trigueros.jorge.luis@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cruz Meza María Elena",
+        "department": "Academia de Inteligencia Artificial",
+        "email": "cruz.meza.maría.elena@escom.ipn.mx"
+    },
+    {
+        "profesor": "Sánchez Vélez Ricardo",
+        "department": "Academia de Ciencias Sociales",
+        "email": "sánchez.vélez.ricardo@escom.ipn.mx"
+    },
+    {
+        "profesor": "Franco Martínez Edgardo Adrián",
+        "department": "Academia de Ciencias Sociales",
+        "email": "franco.martínez.edgardo.adrián@escom.ipn.mx"
+    },
+    {
+        "profesor": "Reyes Bermejo Tlatoani de Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "email": "reyes.bermejo.tlatoani.de.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "Martínez García César Román",
+        "department": "Academia de Ciencias Sociales",
+        "email": "martínez.garcía.césar.román@escom.ipn.mx"
+    },
+    {
+        "profesor": "Guzmán Flores Jessie Paulina",
+        "department": "Academia de Sistemas Distribuidos",
+        "email": "guzmán.flores.jessie.paulina@escom.ipn.mx"
+    },
+    {
+        "profesor": "Aguilar Sánchez Fernando",
+        "department": "Academia de Ciencia Básicas",
+        "email": "aguilar.sánchez.fernando@escom.ipn.mx"
+    },
+    {
+        "profesor": "López Leyva Luis Octavio",
+        "department": "Academia de Ciencia Básicas",
+        "email": "lópez.leyva.luis.octavio@escom.ipn.mx"
+    },
+    {
+        "profesor": "Galeana Chávez María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "email": "galeana.chávez.maría.del.rosario@escom.ipn.mx"
+    },
+    {
+        "profesor": "Santillán Luna Raúl",
+        "department": "Academia de Ciencias Sociales",
+        "email": "santillán.luna.raúl@escom.ipn.mx"
+    },
+    {
+        "profesor": "Salazar Ramírez Manuel",
+        "department": "Academia de Ciencias Sociales",
+        "email": "salazar.ramírez.manuel@escom.ipn.mx"
+    },
+    {
+        "profesor": "De la O Torres Saúl",
+        "department": "Academia de Ciencias Sociales",
+        "email": "de.la.o.torres.saúl@escom.ipn.mx"
+    },
+    {
+        "profesor": "Hernández Aviles Fernando Dante",
+        "department": "Academia de Ciencias Sociales",
+        "email": "hernández.aviles.fernando.dante@escom.ipn.mx"
+    },
+    {
+        "profesor": "Dávalos López José Carlos",
+        "department": "Academia de Ciencias Sociales",
+        "email": "dávalos.lópez.josé.carlos@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cervantes Espinosa Luis Moctezuma",
+        "department": "Academia de Ciencias Sociales",
+        "email": "cervantes.espinosa.luis.moctezuma@escom.ipn.mx"
+    },
+    {
+        "profesor": "Figueroa Del Prado Felipe de Jesús",
+        "department": "Academia de Ciencias Sociales",
+        "email": "figueroa.del.prado.felipe.de.jesús@escom.ipn.mx"
+    },
+    {
+        "profesor": "Durán Camarillo Edmundo René",
+        "department": "Academia de Ciencias Sociales",
+        "email": "durán.camarillo.edmundo.rené@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ocotitla Rojas Nancy",
+        "department": "Academia de Ciencias Sociales",
+        "email": "ocotitla.rojas.nancy@escom.ipn.mx"
+    },
+    {
+        "profesor": "Díaz Toalá Iván",
+        "department": "Academia de Ciencia Básicas",
+        "email": "díaz.toalá.iván@escom.ipn.mx"
+    },
+    {
+        "profesor": "Hernández Jaime Josefína",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "hernández.jaime.josefína@escom.ipn.mx"
+    },
+    {
+        "profesor": "Galeana Chávez María del Rosario",
+        "department": "Academia de Ciencias Sociales",
+        "email": "galeana.chávez.maría.del.rosario@escom.ipn.mx"
+    },
+    {
+        "profesor": "Santillán Luna Raúl",
+        "department": "Academia de Ciencias Sociales",
+        "email": "santillán.luna.raúl@escom.ipn.mx"
+    },
+    {
+        "profesor": "Zárate Cárdenas Alejandro",
+        "department": "Academia de Ciencias Sociales",
+        "email": "zárate.cárdenas.alejandro@escom.ipn.mx"
+    },
+    {
+        "profesor": "Galiñanes Rodríguez María Gabriela",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "email": "galiñanes.rodríguez.maría.gabriela@escom.ipn.mx"
+    },
+    {
+        "profesor": "Tecla Parra Roberto",
+        "department": "Academia de Ciencias Sociales",
+        "email": "tecla.parra.roberto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Díaz Santiago Ricardo Felipe",
+        "department": "Academia de Ciencias Sociales",
+        "email": "díaz.santiago.ricardo.felipe@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cruz Rojas Jorge Alberto",
+        "department": "Academia de Ciencias Sociales",
+        "email": "cruz.rojas.jorge.alberto@escom.ipn.mx"
     }
 ]

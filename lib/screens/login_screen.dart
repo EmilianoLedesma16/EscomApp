@@ -25,7 +25,7 @@ class LoginScreen extends StatelessWidget {
       if (!userCredential.user!.emailVerified) {
         await FirebaseAuth.instance.signOut();
         // ignore: use_build_context_synchronously
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text(
               'El correo no está verificado. Por favor verifica tu correo e inténtalo de nuevo.'),
         ));
@@ -36,17 +36,22 @@ class LoginScreen extends StatelessWidget {
       String role = await getRole(userCredential.user!.uid);
 
       // Redirigir al Home correspondiente según el rol
-      Navigator.pushReplacement(
-        // ignore: use_build_context_synchronously
+      // Limpia el stack de navegación para evitar regresar al Login
+      Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(
-          builder: (context) => HomeScreen(role: role),
-        ),
+        MaterialPageRoute(builder: (context) => HomeScreen(role: role)),
+        (Route<dynamic> route) => false,
       );
-    } catch (e) {
-      // ignore: use_build_context_synchronously
+    } on FirebaseAuthException catch (e) {
+      // Manejo específico de errores
+      String errorMessage = getErrorMessage(e.code);
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text('Error: ${e.toString()}'),
+        content: Text(errorMessage),
+      ));
+    } catch (e) {
+      // Manejo genérico de errores
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text('Ocurrió un error. Por favor intenta de nuevo.'),
       ));
     }
   }
@@ -64,10 +69,29 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
+  // Traduce códigos de error de Firebase a mensajes claros
+  String getErrorMessage(String errorCode) {
+    switch (errorCode) {
+      case 'user-not-found':
+        return 'No se encontró una cuenta con este correo.';
+      case 'wrong-password':
+        return 'La contraseña es incorrecta. Por favor, intenta de nuevo.';
+      case 'invalid-email':
+        return 'El correo ingresado no es válido.';
+      case 'user-disabled':
+        return 'La cuenta está deshabilitada. Contacta al soporte técnico.';
+      default:
+        return 'Ocurrió un error desconocido. Por favor, intenta de nuevo.';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Inicio de Sesión')),
+      appBar: AppBar(
+        title: const Text('Inicio de Sesión'),
+        automaticallyImplyLeading: false, // Elimina el botón de regresar
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -75,29 +99,30 @@ class LoginScreen extends StatelessWidget {
           children: [
             TextField(
               controller: emailController,
-              decoration: InputDecoration(labelText: 'Correo Electrónico'),
+              decoration:
+                  const InputDecoration(labelText: 'Correo Electrónico'),
             ),
             TextField(
               controller: passwordController,
-              decoration: InputDecoration(labelText: 'Contraseña'),
+              decoration: const InputDecoration(labelText: 'Contraseña'),
               obscureText: true,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => login(context),
-              child: Text('Iniciar Sesión'),
+              child: const Text('Iniciar Sesión'),
             ),
             TextButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/forgotPassword');
               },
-              child: Text('¿Olvidaste tu contraseña?'),
+              child: const Text('¿Olvidaste tu contraseña?'),
             ),
             TextButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/registerSelection');
               },
-              child: Text('¿No tienes cuenta? Regístrate'),
+              child: const Text('¿No tienes cuenta? Regístrate'),
             ),
           ],
         ),
