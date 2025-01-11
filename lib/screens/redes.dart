@@ -5,22 +5,22 @@ class Redes extends StatelessWidget {
   final List<Map<String, String>> socialMediaLinks = [
     {
       'name': 'Facebook',
-      'url': 'https://www.facebook.com/ESCOM.IPN.Oficial',
+      'url': 'https://www.facebook.com/escomipnmx',
       'icon': 'assets/img/facebook.png',
     },
     {
       'name': 'Twitter',
-      'url': 'https://x.com/ESCOM_IPN',
+      'url': 'https://x.com/escomunidad',
       'icon': 'assets/img/x.png',
     },
     {
       'name': 'Instagram',
-      'url': 'https://www.instagram.com/escom.ipn',
+      'url': 'https://www.instagram.com/cec.escom.ipn/',
       'icon': 'assets/img/instagram.png',
     },
     {
       'name': 'YouTube',
-      'url': 'https://www.youtube.com/ESCOMIPN',
+      'url': 'https://www.youtube.com/@UTEYCVESCOM',
       'icon': 'assets/img/youtube.png',
     },
   ];

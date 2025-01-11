@@ -38,7 +38,7 @@ class ChatbotScreen extends StatelessWidget {
     keywords: [
       'hola',
       'adios',
-      'ubicacion',
+      'ubicación',
       'localizada',
       'ubicada',
       'horarios',
@@ -46,13 +46,14 @@ class ChatbotScreen extends StatelessWidget {
       'actividades',
       'carreras',
       'contacto',
-      'admision',
+      'admisión',
       'convocatoria',
       'becas',
       'calendario',
-      'titulacion',
+      'titulación',
       'requisitos',
       'historia',
+      'plan'
     ],
     responses: [
       '¡Hola!\nDime, ¿cómo puedo ayudarte?',
@@ -71,7 +72,8 @@ class ChatbotScreen extends StatelessWidget {
       'El calendario escolar incluye información sobre periodos de inscripción, exámenes, días festivos y vacaciones. Puedes descargarlo desde la página oficial del IPN o de la ESCOM.',
       'Las opciones de titulación en la ESCOM incluyen tesis, proyectos integradores, desempeño académico sobresaliente y más. Consulta la coordinación de titulación para más información.',
       'Los requisitos de admisión a la ESCOM incluyen haber concluido el nivel medio superior, presentar el examen de admisión del IPN, y entregar la documentación necesaria.',
-      'La ESCOM fue fundada en 1993 y es una de las unidades académicas más destacadas del IPN en el área de ciencias computacionales. Su trayectoria está marcada por la excelencia educativa.'
+      'La ESCOM fue fundada en 1993 y es una de las unidades académicas más destacadas del IPN en el área de ciencias computacionales. Su trayectoria está marcada por la excelencia educativa.',
+      'Puedes consultar el apartado de carreras para conocer el plan de estudios y los mapas curriculares de cada materia así como las materias optativas de cada carrera'
     ],
 
     // Personalización del diseño

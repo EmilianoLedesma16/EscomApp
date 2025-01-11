@@ -15,6 +15,7 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   String? userName;
   File? _profileImage;
+  String? _uniqueImageKey;
 
   @override
   void initState() {
@@ -23,6 +24,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     loadProfileImage();
   }
 
+  /// Obtener el nombre del usuario desde Firestore
   Future<void> fetchUserName() async {
     try {
       final userId = FirebaseAuth.instance.currentUser?.uid;
@@ -42,26 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
-  Future<void> pickImage(ImageSource source) async {
-    try {
-      final pickedImage = await ImagePicker().pickImage(source: source);
-      if (pickedImage != null) {
-        final directory = await getApplicationDocumentsDirectory();
-        final imagePath = '${directory.path}/profile_image.png';
-        final imageFile = File(pickedImage.path);
-        await imageFile.copy(imagePath);
-
-        setState(() {
-          _profileImage = File(imagePath);
-        });
-      }
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error al seleccionar la imagen: $e')),
-      );
-    }
-  }
-
+  /// Cargar la imagen de perfil almacenada localmente
   Future<void> loadProfileImage() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
@@ -71,22 +54,65 @@ class _ProfileScreenState extends State<ProfileScreen> {
       if (await imageFile.exists()) {
         setState(() {
           _profileImage = imageFile;
+          _uniqueImageKey = DateTime.now().toString(); // Nueva clave única
         });
       }
     } catch (e) {
+      debugPrint('Error al cargar la imagen: $e');
+    }
+  }
+
+  /// Seleccionar una imagen desde la cámara o galería
+  Future<void> pickImage(ImageSource source) async {
+    try {
+      final pickedImage = await ImagePicker().pickImage(source: source);
+
+      if (pickedImage != null) {
+        final directory = await getApplicationDocumentsDirectory();
+        final imagePath = '${directory.path}/profile_image.png';
+
+        // Copiar y sobrescribir la imagen seleccionada
+        final imageFile = File(pickedImage.path);
+        await imageFile.copy(imagePath);
+
+        setState(() {
+          _profileImage = File(imagePath); // Actualizar la referencia
+          _uniqueImageKey = DateTime.now().toString(); // Forzar recarga
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Imagen actualizada correctamente')),
+        );
+      }
+    } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error al cargar la imagen: $e')),
+        SnackBar(content: Text('Error al seleccionar la imagen: $e')),
       );
     }
   }
 
-  Future<void> logout(BuildContext context) async {
+  /// Borrar la imagen de perfil
+  Future<void> deleteProfileImage() async {
     try {
-      await FirebaseAuth.instance.signOut();
-      Navigator.pushReplacementNamed(context, '/login');
+      final directory = await getApplicationDocumentsDirectory();
+      final imagePath = '${directory.path}/profile_image.png';
+
+      final imageFile = File(imagePath);
+      if (await imageFile.exists()) {
+        await imageFile.delete(); // Eliminar el archivo
+      }
+
+      setState(() {
+        _profileImage = null; // Restablecer la imagen a nula
+        _uniqueImageKey = DateTime.now().toString(); // Forzar recarga
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Imagen eliminada correctamente')),
+      );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error al cerrar sesión: $e')),
+        SnackBar(content: Text('Error al borrar la imagen: $e')),
       );
     }
   }
@@ -104,22 +130,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              if (_profileImage != null)
-                GestureDetector(
-                  onTap: () => pickImage(ImageSource.gallery),
-                  child: CircleAvatar(
-                    radius: 100,
-                    backgroundImage: FileImage(_profileImage!),
-                  ),
-                )
-              else
-                GestureDetector(
-                  onTap: () => pickImage(ImageSource.gallery),
-                  child: const CircleAvatar(
-                    radius: 100,
-                    child: Icon(Icons.person, size: 100),
-                  ),
+              GestureDetector(
+                onTap: () =>
+                    pickImage(ImageSource.gallery), // Seleccionar desde galería
+                child: CircleAvatar(
+                  radius: 100,
+                  backgroundImage:
+                      _profileImage != null ? FileImage(_profileImage!) : null,
+                  key: ValueKey(
+                      _uniqueImageKey), // Clave única para forzar recarga
+                  child: _profileImage == null
+                      ? const Icon(Icons.person, size: 100)
+                      : null,
                 ),
+              ),
               const SizedBox(height: 20),
               Text(
                 'Hola, ${userName ?? 'Cargando...'}',
@@ -128,7 +152,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const SizedBox(height: 30),
               ElevatedButton.icon(
-                onPressed: () => pickImage(ImageSource.camera),
+                onPressed: () =>
+                    pickImage(ImageSource.camera), // Tomar foto con cámara
                 icon: const Icon(Icons.camera_alt),
                 label: const Text('Tomar Foto'),
                 style: ElevatedButton.styleFrom(
@@ -152,18 +177,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   textStyle: const TextStyle(fontSize: 16),
                 ),
               ),
-              const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () => logout(context),
-                child: const Text('Cerrar Sesión'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple.shade100,
-                  foregroundColor: Colors.purple.shade800,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                  textStyle: const TextStyle(fontSize: 16),
+              const SizedBox(height: 10),
+              if (_profileImage !=
+                  null) // Mostrar botón de borrar solo si hay una imagen
+                ElevatedButton.icon(
+                  onPressed: deleteProfileImage,
+                  icon: const Icon(Icons.delete),
+                  label: const Text('Borrar Foto'),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    backgroundColor: Colors.red.shade300,
+                    foregroundColor: Colors.white,
+                    textStyle: const TextStyle(fontSize: 16),
+                  ),
                 ),
-              ),
             ],
           ),
         ),
