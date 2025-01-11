@@ -10,6 +10,7 @@ class CarreraIAScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ingeniería en Inteligencia Artificial'),
+        backgroundColor: Colors.pink.shade100,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

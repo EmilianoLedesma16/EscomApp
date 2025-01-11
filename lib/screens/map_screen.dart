@@ -23,9 +23,8 @@ class _MapScreenState extends State<MapScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Escom Maps'),
-        foregroundColor: Colors.white,
-        backgroundColor:
-            Color.fromARGB(255, 24, 80, 201), // Color azul de la ESCOM
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.blue.shade100, // Color azul de la ESCOM
       ),
       body: FlutterMap(
         mapController: _mapController,

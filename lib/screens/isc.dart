@@ -10,6 +10,7 @@ class CarreraSistemasScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ingeniería en Sistemas Computacionales'),
+        backgroundColor: Colors.pink.shade100,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

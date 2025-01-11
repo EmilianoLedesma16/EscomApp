@@ -10,7 +10,6 @@ import 'screens/map_screen.dart';
 import 'screens/galeria.dart';
 import 'screens/profile_screen.dart';
 import 'screens/home_screen.dart';
-import 'screens/splash_intermedio_screen.dart';
 import 'screens/professor_directory_screen.dart';
 import 'screens/professor_schedule_screen.dart';
 import 'screens/splash_screen.dart';
@@ -74,7 +73,6 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/splash', // Pantalla inicial de la app
       routes: {
         '/splash': (context) => SplashScreen(),
-        '/intermediateSplash': (context) => IntermediateSplashScreen(),
         '/login': (context) => LoginScreen(),
         '/home': (context) =>
             HomeScreen(role: 'alumno'), // Rol dinámico según el login

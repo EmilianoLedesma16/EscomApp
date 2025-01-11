@@ -12,6 +12,7 @@ class ProfessorScheduleScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
             'Horarios de ${professor['profesor'] ?? 'Nombre no disponible'}'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -30,7 +31,7 @@ class ProfessorScheduleScreen extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 radius: 100, // Tamaño grande del ícono
-                backgroundColor: Colors.blue.shade100,
+                backgroundColor: Colors.blueGrey.shade100,
                 child: const Icon(
                   Icons.assignment_ind, // Ícono de persona
                   color: Colors.black54,
@@ -105,7 +106,7 @@ class ProfessorScheduleScreen extends StatelessWidget {
       child: DataTable(
         columnSpacing: 10.0,
         headingRowColor:
-            WidgetStateColor.resolveWith((states) => Colors.purple.shade200),
+            WidgetStateColor.resolveWith((states) => Colors.indigo.shade200),
         dataRowColor: WidgetStateColor.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
             return Colors.blue.shade50;

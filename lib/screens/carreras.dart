@@ -52,6 +52,7 @@ class CarrerasScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Oferta Educativa'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

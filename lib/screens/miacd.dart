@@ -11,6 +11,7 @@ class MiacdScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
             'Maestría en Inteligencia Artificial y Ciencia de Datos'),
+        backgroundColor: Colors.pink.shade100,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

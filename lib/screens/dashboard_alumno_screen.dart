@@ -24,7 +24,7 @@ class DashboardAlumnoScreen extends StatelessWidget {
               Icons.sports_football, '/actividades'),
           _buildOption(
               context, 'Chatbot', Icons.chat_bubble_rounded, '/chatbot'),
-          _buildOption(context, 'Redes sociales', Icons.photo_album, '/redes'),
+          _buildOption(context, 'Redes sociales', Icons.facebook, '/redes'),
         ],
       ),
     );

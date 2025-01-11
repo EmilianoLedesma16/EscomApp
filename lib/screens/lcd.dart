@@ -10,6 +10,7 @@ class CienciaDeDatosScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Licenciatura en Ciencia de Datos'),
+        backgroundColor: Colors.pink.shade100,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

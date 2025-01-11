@@ -79,6 +79,7 @@ class Historia extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Historia de la ESCOM'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(16.0),

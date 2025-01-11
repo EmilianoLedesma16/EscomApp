@@ -10,6 +10,7 @@ class MscmScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Maestría en Sistemas Computacionales Móviles'),
+        backgroundColor: Colors.pink.shade100,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

@@ -93,6 +93,7 @@ class ChatbotScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chatbot ESCOMapp'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: ikchatbot(config: chatBotConfig),
     );

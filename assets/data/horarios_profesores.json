@@ -1,7 +1,7 @@
 [
     {
         "profesor": "Hernández Secundino José Celestino Elías",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -94,7 +94,7 @@
     },
     {
         "profesor": "Rodríguez Sarabia Tania",
-        "department": "Academia de Sistemas Distribuidos",
+        "department": "Academia de Ciencia de Datos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -155,7 +155,7 @@
     },
     {
         "profesor": "Castillo Martínez Miguel Ángel",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Sistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -259,7 +259,7 @@
     },
     {
         "profesor": "Cordero López Martha Rosa",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -362,7 +362,7 @@
     },
     {
         "profesor": "Ojeda Santillan Rodrigo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -414,7 +414,7 @@
     },
     {
         "profesor": "Barrales López Ana Luz",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de CSistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -443,111 +443,8 @@
         "correo": "barrales.lópez.ana.luz@escom.ipn.mx"
     },
     {
-        "profesor": "Cordero López Martha Rosa",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "SOFTWARE QUALITY ASSURANCE AND DESING PATTERNS",
-                "grupos": [
-                    "6CM1"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30L",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE",
-                "grupos": [
-                    "6CM2"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00",
-                    "Martes": "8:30-10:00",
-                    "Jueves": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "TRABAJO TERMINAL I",
-                "grupos": [
-                    "7BV1"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00",
-                    "Martes": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "cordero.lópez.martha.rosa@escom.ipn.mx"
-    },
-    {
-        "profesor": "López Rojas Ariel",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV3"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30L",
-                    "Viernes": "15:00-16:30"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM2"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00L",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM3"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30L",
-                    "Jueves": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "HIGH TECHNOLOGY ENTERPRISE MANAGEMENT",
-                "grupos": [
-                    "6CM4"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00",
-                    "Viernes": "12:00-13:30L"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV4"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00L",
-                    "Martes": "13:30-15:00",
-                    "Jueves": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "lópez.rojas.ariel@escom.ipn.mx"
-    },
-    {
         "profesor": "Melara Abarca Reyna Elia",
-        "department": "Academia de Sistemas Distribuidos",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -672,7 +569,7 @@
     },
     {
         "profesor": "Linares Vallejo Erick Eugenio",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Sistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -722,7 +619,7 @@
     },
     {
         "profesor": "Domínguez Hernández Samuel",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -763,7 +660,7 @@
     },
     {
         "profesor": "Montiel Sánchez Ángel Salvador",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -804,58 +701,6 @@
         "correo": "montiel.sánchez.ángel.salvador@escom.ipn.mx"
     },
     {
-        "profesor": "Moreno Cervantes Axel Ernesto",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "APLICACIONES PARA COMUNICACIONES EN RED",
-                "grupos": [
-                    "6CM1"
-                ],
-                "horarios": {
-                    "Lunes": "7:00-8:30",
-                    "Jueves": "7:00-8:30",
-                    "Viernes": "8:30-10:00L"
-                }
-            },
-            {
-                "nombre": "APLICACIONES PARA COMUNICACIONES EN RED",
-                "grupos": [
-                    "6CM2"
-                ],
-                "horarios": {
-                    "Martes": "7:00-8:30",
-                    "Miércoles": "7:00-8:30",
-                    "Viernes": "7:00-8:30L"
-                }
-            },
-            {
-                "nombre": "APLICACIONES PARA COMUNICACIONES EN RED",
-                "grupos": [
-                    "6CM3"
-                ],
-                "horarios": {
-                    "Lunes": "8:30-10:00",
-                    "Miércoles": "8:30-10:00",
-                    "Jueves": "8:30-10:00L"
-                }
-            },
-            {
-                "nombre": "APLICACIONES PARA COMUNICACIONES EN RED",
-                "grupos": [
-                    "6CM5"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00",
-                    "Martes": "13:30-15:00L",
-                    "Jueves": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "moreno.cervantes.axel.ernesto@escom.ipn.mx"
-    },
-    {
         "profesor": "Alemán Arce Miguel Ángel",
         "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
@@ -876,7 +721,7 @@
     },
     {
         "profesor": "Rojas Mexicano Ismael",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1091,101 +936,8 @@
         "correo": "pastrana.fernández.carlos.jesús@escom.ipn.mx"
     },
     {
-        "profesor": "López Rojas Ariel",
-        "department": "Academia de Sistemas Distribuidos",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV3"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30L",
-                    "Viernes": "15:00-16:30"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM2"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00L",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM3"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30L",
-                    "Jueves": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "HIGH TECHNOLOGY ENTERPRISE MANAGEMENT",
-                "grupos": [
-                    "6CM4"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00",
-                    "Viernes": "12:00-13:30L"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV4"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00L",
-                    "Martes": "13:30-15:00",
-                    "Jueves": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "lópez.rojas.ariel@escom.ipn.mx"
-    },
-    {
-        "profesor": "Rojas Mexicano Ismael",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE",
-                "grupos": [
-                    "6CM3"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00L",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE",
-                "grupos": [
-                    "6CM4"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30L"
-                }
-            }
-        ],
-        "correo": "rojas.mexicano.ismael@escom.ipn.mx"
-    },
-    {
         "profesor": "Bautista Rosales Sandra Ivette",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1237,7 +989,7 @@
     },
     {
         "profesor": "Morales Cruz Juan Carlos",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Sistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1331,7 +1083,7 @@
     },
     {
         "profesor": "Ortíz Ramírez José Antonio",
-        "department": "Academia de Sistemas Distribuidos",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1360,112 +1112,8 @@
         "correo": "ortíz.ramírez.josé.antonio@escom.ipn.mx"
     },
     {
-        "profesor": "Pineda Guerrero Carlos",
-        "department": "Academia de Ingeniería de Software",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV1"
-                ],
-                "horarios": {
-                    "Lunes": "16:30-18:00L",
-                    "Miércoles": "16:30-18:00",
-                    "Jueves": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV2"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00",
-                    "Martes": "16:30-18:00",
-                    "Jueves": "18:30-20:00L"
-                }
-            },
-            {
-                "nombre": "ADMINISTRACIÓN DE SERVICIOS EN RED",
-                "grupos": [
-                    "7CV2"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30L",
-                    "Viernes": "15:00-16:30"
-                }
-            },
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV3"
-                ],
-                "horarios": {
-                    "Martes": "18:30-20:00",
-                    "Miércoles": "18:30-20:00L",
-                    "Viernes": "18:30-20:00"
-                }
-            }
-        ],
-        "correo": "pineda.guerrero.carlos@escom.ipn.mx"
-    },
-    {
-        "profesor": "Pineda Guerrero Carlos",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV1"
-                ],
-                "horarios": {
-                    "Lunes": "16:30-18:00L",
-                    "Miércoles": "16:30-18:00",
-                    "Jueves": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV2"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00",
-                    "Martes": "16:30-18:00",
-                    "Jueves": "18:30-20:00L"
-                }
-            },
-            {
-                "nombre": "ADMINISTRACIÓN DE SERVICIOS EN RED",
-                "grupos": [
-                    "7CV2"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30L",
-                    "Viernes": "15:00-16:30"
-                }
-            },
-            {
-                "nombre": "SISTEMAS DISTRIBUIDOS",
-                "grupos": [
-                    "7CV3"
-                ],
-                "horarios": {
-                    "Martes": "18:30-20:00",
-                    "Miércoles": "18:30-20:00L",
-                    "Viernes": "18:30-20:00"
-                }
-            }
-        ],
-        "correo": "pineda.guerrero.carlos@escom.ipn.mx"
-    },
-    {
         "profesor": "Vélez Saldaña Ulises",
-        "department": "Academia de Sistemas Distribuidos",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1517,7 +1165,7 @@
     },
     {
         "profesor": "Díaz Toalá Iván",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1580,7 +1228,7 @@
     },
     {
         "profesor": "Cortez Duarte Nidia Asunción",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1631,7 +1279,7 @@
     },
     {
         "profesor": "Martínez Rosales Ricardo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1713,7 +1361,7 @@
     },
     {
         "profesor": "Díaz Santiago Sandra",
-        "department": "Academia de Inteligencia Artificial",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1783,7 +1431,7 @@
     },
     {
         "profesor": "Sánchez Quintanilla Gilberto",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1813,7 +1461,7 @@
     },
     {
         "profesor": "Castillo Cabrera Gelacio",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1854,7 +1502,7 @@
     },
     {
         "profesor": "Téllez Barrera Juan Carlos",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -1962,7 +1610,7 @@
     },
     {
         "profesor": "Peredo Valderrama Rubén",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2013,7 +1661,7 @@
     },
     {
         "profesor": "Tecla Parra Roberto",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniría de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2065,7 +1713,7 @@
     },
     {
         "profesor": "Hernández Olvera Luis Enrique",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2095,7 +1743,7 @@
     },
     {
         "profesor": "Jiménez Ruíz René Baltazar",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Fundamentos de Sistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2147,7 +1795,7 @@
     },
     {
         "profesor": "Rosas Carrillo Ary Shared",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2177,7 +1825,7 @@
     },
     {
         "profesor": "Arzate Gordillo Jacqueline",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2239,7 +1887,7 @@
     },
     {
         "profesor": "Hernández Aguilar José Luis",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2280,7 +1928,7 @@
     },
     {
         "profesor": "Puebla Lomas Jaime Hugo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2320,7 +1968,7 @@
     },
     {
         "profesor": "González Cisneros Alejandro",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básidas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2350,7 +1998,7 @@
     },
     {
         "profesor": "Rodríguez Flores Eduardo",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ciencias Sociales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2401,7 +2049,7 @@
     },
     {
         "profesor": "Salas Ramirez Israel",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2452,7 +2100,7 @@
     },
     {
         "profesor": "Gutiérrez Aldana Eduardo",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2483,7 +2131,7 @@
     },
     {
         "profesor": "Rocha Bernabé María del Rosario",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2523,7 +2171,7 @@
     },
     {
         "profesor": "Alcántara Méndez Alberto Jesús",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2585,7 +2233,7 @@
     },
     {
         "profesor": "Agustín Domínguez Verónica",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ciencias Sociales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2625,61 +2273,8 @@
         "correo": "agustín.domínguez.verónica@escom.ipn.mx"
     },
     {
-        "profesor": "Palacios Solano Rocío",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "IT GOVERNANCE",
-                "grupos": [
-                    "7CV2"
-                ],
-                "horarios": {
-                    "Lunes": "15:00-16:30",
-                    "Jueves": "15:00-16:30L",
-                    "Viernes": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS",
-                "grupos": [
-                    "5CV5"
-                ],
-                "horarios": {
-                    "Lunes": "16:30-18:00",
-                    "Miércoles": "16:30-18:00L",
-                    "Jueves": "16:30-18:00L"
-                }
-            },
-            {
-                "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS",
-                "grupos": [
-                    "5CV1"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00",
-                    "Martes": "16:30-18:00L",
-                    "Jueves": "18:30-20:00"
-                }
-            },
-            {
-                "nombre": "ADMINISTRACIÓN DE PROYECTOS DE TI",
-                "grupos": [
-                    "7AM1"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30L",
-                    "Jueves": "12:00-13:30"
-                }
-            }
-        ],
-        "correo": "palacios.solano.rocío@escom.ipn.mx"
-    },
-    {
         "profesor": "Blanco Almazan Ivan Eduardo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2753,7 +2348,7 @@
     },
     {
         "profesor": "Cervantes De Anda Ismael",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2783,7 +2378,7 @@
     },
     {
         "profesor": "Jiménez Benítez José Alfredo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -2833,132 +2428,8 @@
         "correo": "jiménez.benítez.josé.alfredo@escom.ipn.mx"
     },
     {
-        "profesor": "Melara Abarca Reyna Elia",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE",
-                "grupos": [
-                    "6CM5"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30L",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS",
-                "grupos": [
-                    "5CM4"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00",
-                    "Martes": "8:30-10:00L",
-                    "Jueves": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "BASES DE DATOS",
-                "grupos": [
-                    "3CM2"
-                ],
-                "horarios": {
-                    "Lunes": "8:30-10:00L",
-                    "Miércoles": "8:30-10:00",
-                    "Jueves": "8:30-10:00"
-                }
-            },
-            {
-                "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS",
-                "grupos": [
-                    "4BV1"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00",
-                    "Martes": "13:30-15:00L",
-                    "Jueves": "13:30-15:00"
-                }
-            },
-            {
-                "nombre": "TRABAJO TERMINAL II (LAB)",
-                "grupos": [
-                    "5CM12"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "melara.abarca.reyna.elia@escom.ipn.mx"
-    },
-    {
-        "profesor": "Alcántara Méndez Alberto Jesús",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "COMPILADORES",
-                "grupos": [
-                    "5CM3"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "INSTRUMENTACIÓN Y CONTROL",
-                "grupos": [
-                    "5CM4"
-                ],
-                "horarios": {
-                    "Lunes": "7:00-8:30",
-                    "Jueves": "7:00-8:30L",
-                    "Viernes": "8:30-10:00"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
-                "grupos": [
-                    "1CM4"
-                ],
-                "horarios": {
-                    "Martes": "7:00-8:30L",
-                    "Miércoles": "7:00-8:30",
-                    "Viernes": "7:00-8:30"
-                }
-            },
-            {
-                "nombre": "VIRTUAL INSTRUMENTATION",
-                "grupos": [
-                    "7CM2"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30L"
-                }
-            },
-            {
-                "nombre": "TRABAJO TERMINAL I",
-                "grupos": [
-                    "4CV11"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "alcántara.méndez.alberto.jesús@escom.ipn.mx"
-    },
-    {
         "profesor": "Rodríguez Ordaz Marisol",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ciencias Sociales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3009,7 +2480,7 @@
     },
     {
         "profesor": "Pérez de los Santos Mondragón Tanibet",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3123,7 +2594,7 @@
     },
     {
         "profesor": "Flores Roque Allan Eduardo",
-        "department": "Academia de Ingeniería de Software",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3139,57 +2610,6 @@
             }
         ],
         "correo": "flores.roque.allan.eduardo@escom.ipn.mx"
-    },
-    {
-        "profesor": "Rodríguez Flores Eduardo",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "FINANZAS EMPRESARIALES",
-                "grupos": [
-                    "3CM5"
-                ],
-                "horarios": {
-                    "Lunes": "8:30-10:00",
-                    "Miércoles": "8:30-10:00",
-                    "Jueves": "8:30-10:00L"
-                }
-            },
-            {
-                "nombre": "FINANZAS EMPRESARIALES",
-                "grupos": [
-                    "3CM4"
-                ],
-                "horarios": {
-                    "Martes": "7:00-8:30L",
-                    "Miércoles": "7:00-8:30",
-                    "Viernes": "7:00-8:30"
-                }
-            },
-            {
-                "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS",
-                "grupos": [
-                    "5CM5"
-                ],
-                "horarios": {
-                    "Lunes": "7:00-8:30",
-                    "Jueves": "7:00-8:30L",
-                    "Viernes": "8:30-10:00L"
-                }
-            },
-            {
-                "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS",
-                "grupos": [
-                    "7BV2"
-                ],
-                "horarios": {
-                    "Lunes": "13:30-15:00",
-                    "Martes": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "rodríguez.flores.eduardo@escom.ipn.mx"
     },
     {
         "profesor": "Gómez Mayorga Margarita Elizabeth",
@@ -3242,60 +2662,8 @@
         "correo": "gómez.mayorga.margarita.elizabeth@escom.ipn.mx"
     },
     {
-        "profesor": "Vélez Saldaña Ulises",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "SOFTWARE ENGINEERING FOR MOBILE DEVICES",
-                "grupos": [
-                    "3CM11"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00L",
-                    "Viernes": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS",
-                "grupos": [
-                    "5CM5"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "BASES DE DATOS",
-                "grupos": [
-                    "3CM3"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00L",
-                    "Martes": "8:30-10:00",
-                    "Jueves": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "BASES DE DATOS",
-                "grupos": [
-                    "3CM5"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30L",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30"
-                }
-            }
-        ],
-        "correo": "vélez.saldaña.ulises@escom.ipn.mx"
-    },
-    {
         "profesor": "Tenorio Marrón Marco Antonio",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Sistemas Distribuidos",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3324,71 +2692,8 @@
         "correo": "tenorio.marrón.marco.antonio@escom.ipn.mx"
     },
     {
-        "profesor": "Martínez Perales José Cruz",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV1"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00L",
-                    "Martes": "16:30-18:00",
-                    "Jueves": "18:30-20:00"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CV2"
-                ],
-                "horarios": {
-                    "Martes": "18:30-20:00",
-                    "Miércoles": "18:30-20:00",
-                    "Viernes": "13:30-15:00L"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM1"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Miércoles": "13:30-15:00",
-                    "Viernes": "12:00-13:30L"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS ECONÓMICOS",
-                "grupos": [
-                    "2CV4"
-                ],
-                "horarios": {
-                    "Lunes": "15:00-16:30L",
-                    "Jueves": "15:00-16:30",
-                    "Viernes": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "MÉTODOS CUANTITATIVOS PARA LA TOMA DE DESICIONES",
-                "grupos": [
-                    "6CM5"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30L",
-                    "Viernes": "15:00-16:30"
-                }
-            }
-        ],
-        "correo": "martínez.perales.josé.cruz@escom.ipn.mx"
-    },
-    {
         "profesor": "Rosas Trigueros Jorge Luis",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Inteligencia Artificial",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3459,7 +2764,7 @@
     },
     {
         "profesor": "Sánchez Vélez Ricardo",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3489,7 +2794,7 @@
     },
     {
         "profesor": "Franco Martínez Edgardo Adrián",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3550,7 +2855,7 @@
     },
     {
         "profesor": "Reyes Bermejo Tlatoani de Jesús",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3580,7 +2885,7 @@
     },
     {
         "profesor": "Martínez García César Román",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -3623,48 +2928,8 @@
         "correo": "martínez.garcía.césar.román@escom.ipn.mx"
     },
     {
-        "profesor": "Guzmán Flores Jessie Paulina",
-        "department": "Academia de Sistemas Distribuidos",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS",
-                "grupos": [
-                    "5CM2"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "IT GOVERNANCE",
-                "grupos": [
-                    "3CM11"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00",
-                    "Martes": "8:30-10:00",
-                    "Jueves": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "TRABAJO TERMINAL I (LAB)",
-                "grupos": [
-                    "7CV1"
-                ],
-                "horarios": {
-                    "Martes": "12:00-13:30",
-                    "Viernes": "13:30-15:00"
-                }
-            }
-        ],
-        "correo": "guzmán.flores.jessie.paulina@escom.ipn.mx"
-    },
-    {
         "profesor": "Aguilar Sánchez Fernando",
-        "department": "Academia de Ciencia Básicas",
+        "department": "Academia de Sistemas Digitales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4136,7 +3401,7 @@
     },
     {
         "profesor": "Ocotitla Rojas Nancy",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniería de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4175,71 +3440,8 @@
         "correo": "ocotitla.rojas.nancy@escom.ipn.mx"
     },
     {
-        "profesor": "Díaz Toalá Iván",
-        "department": "Academia de Ciencia Básicas",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "TEORÍA DE COMUNICACIONES Y SEÑALES",
-                "grupos": [
-                    "3CM12"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00",
-                    "Martes": "8:30-10:00",
-                    "Jueves": "10:30-12:00L"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS DE DISEÑO DIGITAL",
-                "grupos": [
-                    "3CM1"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00L",
-                    "Miércoles": "10:30-12:00",
-                    "Viernes": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "PROCESAMIENTO DIGITAL DE SEÑALES",
-                "grupos": [
-                    "5CM1"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30L",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS DE DISEÑO DIGITAL",
-                "grupos": [
-                    "2BV1"
-                ],
-                "horarios": {
-                    "Martes": "15:00-16:30",
-                    "Miércoles": "15:00-16:30",
-                    "Viernes": "15:00-16:30L"
-                }
-            },
-            {
-                "nombre": "PROCESAMIENTO DE SEÑALES",
-                "grupos": [
-                    "5BM1"
-                ],
-                "horarios": {
-                    "Lunes": "8:30-10:00",
-                    "Miércoles": "8:30-10:00",
-                    "Jueves": "8:30-10:00L"
-                }
-            }
-        ],
-        "correo": "díaz.toalá.iván@escom.ipn.mx"
-    },
-    {
         "profesor": "Hernández Jaime Josefína",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ciencias Sociales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4288,100 +3490,8 @@
         "correo": "hernández.jaime.josefína@escom.ipn.mx"
     },
     {
-        "profesor": "Galeana Chávez María del Rosario",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "BASES DE DATOS",
-                "grupos": [
-                    "3CV2"
-                ],
-                "horarios": {
-                    "Lunes": "16:30-18:00L",
-                    "Miércoles": "16:30-18:00",
-                    "Jueves": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "BASES DE DATOS",
-                "grupos": [
-                    "3CV3"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00",
-                    "Martes": "16:30-18:00",
-                    "Jueves": "18:30-20:00L"
-                }
-            },
-            {
-                "nombre": "TRABAJO TERMINAL II (LAB)",
-                "grupos": [
-                    "8CV2"
-                ],
-                "horarios": {
-                    "Martes": "18:30-20:00",
-                    "Miércoles": "18:30-20:00"
-                }
-            }
-        ],
-        "correo": "galeana.chávez.maría.del.rosario@escom.ipn.mx"
-    },
-    {
-        "profesor": "Santillán Luna Raúl",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "CIRCUITOS ELÉCTRICOS",
-                "grupos": [
-                    "3CV2"
-                ],
-                "horarios": {
-                    "Lunes": "18:30-20:00L",
-                    "Martes": "16:30-18:00",
-                    "Jueves": "18:30-20:00"
-                }
-            },
-            {
-                "nombre": "CIRCUITOS ELÉCTRICOS",
-                "grupos": [
-                    "3CV3"
-                ],
-                "horarios": {
-                    "Martes": "18:30-20:00L",
-                    "Miércoles": "18:30-20:00",
-                    "Viernes": "18:30-20:00"
-                }
-            },
-            {
-                "nombre": "CIRCUITOS ELÉCTRICOS",
-                "grupos": [
-                    "3CV6"
-                ],
-                "horarios": {
-                    "Lunes": "15:00-16:30",
-                    "Jueves": "15:00-16:30L",
-                    "Viernes": "16:30-18:00"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
-                "grupos": [
-                    "1CV5"
-                ],
-                "horarios": {
-                    "Lunes": "16:30-18:00L",
-                    "Miércoles": "16:30-18:00",
-                    "Jueves": "16:30-18:00"
-                }
-            }
-        ],
-        "correo": "santillán.luna.raúl@escom.ipn.mx"
-    },
-    {
         "profesor": "Zárate Cárdenas Alejandro",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4468,7 +3578,7 @@
     },
     {
         "profesor": "Galiñanes Rodríguez María Gabriela",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "department": "Academia de Ciencias Sociales",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4508,60 +3618,8 @@
         "correo": "galiñanes.rodríguez.maría.gabriela@escom.ipn.mx"
     },
     {
-        "profesor": "Tecla Parra Roberto",
-        "department": "Academia de Ciencias Sociales",
-        "sala": "Cubículo 1117",
-        "materias": [
-            {
-                "nombre": "COMPILADORES",
-                "grupos": [
-                    "5CM2"
-                ],
-                "horarios": {
-                    "Lunes": "10:30-12:00",
-                    "Martes": "8:30-10:00L",
-                    "Jueves": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "PARADIGMAS DE PROGRAMACIÓN",
-                "grupos": [
-                    "3CM2"
-                ],
-                "horarios": {
-                    "Lunes": "7:00-8:30",
-                    "Jueves": "7:00-8:30L",
-                    "Viernes": "8:30-10:00"
-                }
-            },
-            {
-                "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
-                "grupos": [
-                    "1CM7"
-                ],
-                "horarios": {
-                    "Martes": "10:30-12:00",
-                    "Miércoles": "10:30-12:00L",
-                    "Viernes": "10:30-12:00"
-                }
-            },
-            {
-                "nombre": "PARADIGMAS DE PROGRAMACIÓN",
-                "grupos": [
-                    "3BM1"
-                ],
-                "horarios": {
-                    "Lunes": "12:00-13:30",
-                    "Miércoles": "12:00-13:30",
-                    "Jueves": "12:00-13:30L"
-                }
-            }
-        ],
-        "correo": "tecla.parra.roberto@escom.ipn.mx"
-    },
-    {
         "profesor": "Díaz Santiago Ricardo Felipe",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ingeniría de Software",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4601,7 +3659,7 @@
     },
     {
         "profesor": "Cruz Rojas Jorge Alberto",
-        "department": "Academia de Ciencias Sociales",
+        "department": "Academia de Ciencias Básicas",
         "sala": "Cubículo 1117",
         "materias": [
             {
@@ -4674,5 +3732,347 @@
             }
         ],
         "correo": "cruz.rojas.jorge.alberto@escom.ipn.mx"
+    },
+    {
+        "profesor": "Adan Sosa Fanny",
+        "department": "Academia de Ciencias Sociales ",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Comunicación Oral y Escrita",
+                "grupos": [
+                    "1CM4"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "adan.sosa.fanny@escom.ipn.mx"
+    },
+    {
+        "profesor": "Albortante Morato Cecilia",
+        "department": "Academia de Ingeniería de Software",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Compiladores",
+                "grupos": [
+                    "5CM4"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "albortante.morato.cecilia@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ávila Sanchez Christian Alejandro",
+        "department": "Academia de Ciencias Básicas",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Matemáticas Discretas",
+                "grupos": [
+                    "1CM2"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "avila.sanchez.christian.a@escom.ipn.mx"
+    },
+    {
+        "profesor": "Cancino Mosqueda Odette Berenice",
+        "department": "Academia de Ciencias Sociales",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Fundamentos económicos",
+                "grupos": [
+                    "2CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "cancino.mosqueda.odette@escom.ipn.mx"
+    },
+    {
+        "profesor": "Alejandro Pérez Gómez",
+        "department": "Academia de Ingeniería de Software",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Ingeniería de Software",
+                "grupos": [
+                    "6CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "alejandro.perez@escom.ipn.mx"
+    },
+    {
+        "profesor": "María López Hernández",
+        "department": "Academia de Ciencia de Datos",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Bases de Datos",
+                "grupos": [
+                    "3CM5"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "maria.lopez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Carlos Ramírez Torres",
+        "department": "Academia de Sistemas Digitales",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Diseño de Sistemas Digitales",
+                "grupos": [
+                    "4CM2"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "carlos.ramirez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Lucía García Vargas",
+        "department": "Academia de Sistemas Distribuidos",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Sistemas Distribuidos",
+                "grupos": [
+                    "7CM3"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "lucia.garcia@escom.ipn.mx"
+    },
+    {
+        "profesor": "Diego Torres Sánchez",
+        "department": "Academia de Ciencia Básicas",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Cálculo",
+                "grupos": [
+                    "1CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "diego.torres@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ana Martínez Ruiz",
+        "department": "Academia de Inteligencia Artificial",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Inteligencia Artificial",
+                "grupos": [
+                    "6CM2"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "ana.martinez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Fernando Hernández Pérez",
+        "department": "Academia de Ciencias Sociales",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Fundamentos Económicos",
+                "grupos": [
+                    "2CM5"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "fernando.hernandez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Laura Sánchez Morales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Circuitos Eléctricos",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "laura.sanchez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Jorge Vargas Martínez",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Métodos Cuantitativos para la Toma de Decisiones",
+                "grupos": [
+                    "6CM2"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "jorge.vargas@escom.ipn.mx"
+    },
+    {
+        "profesor": "Isabel Romero González",
+        "department": "Academia de Ciencias de la Comunicación",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Comunicación Oral y Escrita",
+                "grupos": [
+                    "1CM2"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "isabel.romero@escom.ipn.mx"
+    },
+    {
+        "profesor": "Pablo Díaz Fernández",
+        "department": "Academia de Ciencia Básicas",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Matemáticas Discretas",
+                "grupos": [
+                    "1CM5"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "pablo.diaz@escom.ipn.mx"
+    },
+    {
+        "profesor": "Sara Méndez Ortega",
+        "department": "Academia de Sistemas Digitales",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Sistemas en Chip",
+                "grupos": [
+                    "6CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "sara.mendez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Ricardo Gutiérrez López",
+        "department": "Academia de Ciencia de Datos",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Análisis y Diseño de Algoritmos",
+                "grupos": [
+                    "3CM3"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "ricardo.gutierrez@escom.ipn.mx"
+    },
+    {
+        "profesor": "Gabriela Ruiz Jiménez",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos",
+        "sala": "Cubículo 1117",
+        "materias": [
+            {
+                "nombre": "Fundamentos de Diseño Digital",
+                "grupos": [
+                    "3CM1"
+                ],
+                "horarios": {
+                    "Martes": "7:00-8:30L",
+                    "Miércoles": "7:00-8:30",
+                    "Viernes": "7:00-8:30"
+                }
+            }
+        ],
+        "correo": "gabriela.ruiz@escom.ipn.mx"
     }
 ]

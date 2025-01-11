@@ -66,6 +66,7 @@ class _InformacionScreenState extends State<InformacionScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Información General'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -73,135 +74,154 @@ class _InformacionScreenState extends State<InformacionScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Ubicación
-              Text(
-                'Ubicación',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              _buildSection(
+                title: 'Ubicación',
+                content:
+                    'Avenida Juan de Dios Bátiz S/N,\nColonia Nueva Industrial Vallejo,\nAlcaldía Gustavo A. Madero, Ciudad de México.',
               ),
-              SizedBox(height: 8),
-              Text(
-                'Avenida Juan de Dios Bátiz S/N,\nColonia Nueva Industrial Vallejo,\nAlcaldía Gustavo A. Madero, Ciudad de México.',
-                style: TextStyle(fontSize: 16),
+              _buildSection(
+                title: 'Contacto',
+                content:
+                    'Teléfono: 555729 6000 Ext. 52001\nCorreo: escom@ipn.mx',
               ),
-              SizedBox(height: 16),
+              _buildSection(
+                title: 'Admisiones',
+                content:
+                    'El proceso de admisión a la ESCOM requiere realizar un examen de ingreso. Es importante estar atentos a las convocatorias que publica el IPN en su sitio oficial.',
+              ),
+              _buildSection(
+                title: 'Horarios de Clases',
+                content: 'De lunes a viernes: 7:00 - 21:00 hrs.',
+              ),
+              _buildSection(
+                title: 'Transporte Público Cercano',
+                content: '',
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildTransportRow(
+                        Icons.train,
+                        'Metro:\n• Línea 5 - Politecnico (a 1 km).\n• Línea 6 - Lindavista (a 3.1 km).',
+                        Colors.orange),
+                    _buildTransportRow(
+                        Icons.directions_bus_filled,
+                        'Metrobús:\n• Línea 3 - La Patera (a 1.3 km).',
+                        Colors.red),
+                  ],
+                ),
+              ),
+              _buildSection(
+                title: 'Simbología del Calendario',
+                content: '',
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildLegendItem('Inicio de Semestre', Colors.green),
+                    _buildLegendItem('Fin de Semestre', Colors.red),
+                    _buildLegendItem('Vacaciones', Colors.purple),
+                    _buildLegendItem('Días Festivos', Colors.blue),
+                  ],
+                ),
+              ),
+              _buildSection(
+                title: 'Calendario Académico',
+                content: '',
+                child: TableCalendar(
+                  focusedDay: _focusedDay,
+                  firstDay: DateTime(2024, 1, 1),
+                  lastDay: DateTime(2025, 12, 31),
+                  headerStyle: HeaderStyle(formatButtonVisible: false),
+                  calendarBuilders: CalendarBuilders(
+                    markerBuilder: (context, date, events) {
+                      if (events.isEmpty) return null;
 
-              // Horarios
-              Text(
-                'Contacto',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Text(
-                'Teléfono: 555729 6000 Ext. 52001\nCorreo: escom@ipn.mx',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 16),
-
-              // Horarios
-              Text(
-                'Horarios de Clases',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Text(
-                'De lunes a viernes: 7:00 - 21:00 hrs.',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 16),
-
-              // Transporte Público Cercano
-              Text(
-                'Transporte Público Cercano',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Row(
-                children: [
-                  Icon(Icons.train, color: Colors.orange),
-                  SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      'Metro:\n'
-                      '• Línea 5 - Politécnico (a 1 km).\n'
-                      '• Línea 6 - Lindavista (a 3.1 km).',
-                      style: TextStyle(fontSize: 16),
-                    ),
+                      return Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: events.map((event) {
+                          final color = _getEventColor(event as String);
+                          return Container(
+                            margin: EdgeInsets.symmetric(horizontal: 2),
+                            decoration: BoxDecoration(
+                              color: color,
+                              shape: BoxShape.circle,
+                            ),
+                            width: 8,
+                            height: 8,
+                          );
+                        }).toList(),
+                      );
+                    },
                   ),
-                ],
-              ),
-              SizedBox(height: 8),
-              Row(
-                children: [
-                  Icon(Icons.directions_bus_filled, color: Colors.red),
-                  SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      'Metrobús:\n'
-                      '• Línea 3 - La Patera (a 1.3 km).',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-
-              // Simbología del Calendario
-              Text(
-                'Simbología del Calendario',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              _buildLegendItem('Inicio de Semestre', Colors.green),
-              _buildLegendItem('Fin de Semestre', Colors.red),
-              _buildLegendItem('Vacaciones', Colors.purple),
-              _buildLegendItem('Días Festivos', Colors.blue),
-              SizedBox(height: 16),
-
-              // Calendario Académico
-              Text(
-                'Calendario Académico',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              TableCalendar(
-                focusedDay: _focusedDay,
-                firstDay: DateTime(2024, 1, 1),
-                lastDay: DateTime(2025, 12, 31),
-                headerStyle: HeaderStyle(formatButtonVisible: false),
-                calendarBuilders: CalendarBuilders(
-                  markerBuilder: (context, date, events) {
-                    if (events.isEmpty) return null;
-
-                    return Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: events.map((event) {
-                        final color = _getEventColor(event as String);
-                        return Container(
-                          margin: EdgeInsets.symmetric(horizontal: 2),
-                          decoration: BoxDecoration(
-                            color: color,
-                            shape: BoxShape.circle,
-                          ),
-                          width: 8,
-                          height: 8,
-                        );
-                      }).toList(),
-                    );
+                  eventLoader: _getEventsForDay,
+                  selectedDayPredicate: (day) => isSameDay(_selectedDay, day),
+                  onDaySelected: (selectedDay, focusedDay) {
+                    setState(() {
+                      _selectedDay = selectedDay;
+                      _focusedDay = focusedDay;
+                    });
                   },
                 ),
-                eventLoader: _getEventsForDay,
-                selectedDayPredicate: (day) => isSameDay(_selectedDay, day),
-                onDaySelected: (selectedDay, focusedDay) {
-                  setState(() {
-                    _selectedDay = selectedDay;
-                    _focusedDay = focusedDay;
-                  });
-                },
               ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildSection(
+      {required String title, required String content, Widget? child}) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.2),
+              spreadRadius: 2,
+              blurRadius: 4,
+              offset: Offset(0, 2),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.indigo),
+            ),
+            SizedBox(height: 8),
+            if (content.isNotEmpty)
+              Text(
+                content,
+                style: TextStyle(fontSize: 16),
+              ),
+            if (child != null) child,
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTransportRow(IconData icon, String text, Color color) {
+    return Row(
+      children: [
+        Icon(icon, color: color),
+        SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
+      ],
     );
   }
 

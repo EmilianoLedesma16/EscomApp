@@ -30,6 +30,7 @@ class Redes extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Redes Sociales'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

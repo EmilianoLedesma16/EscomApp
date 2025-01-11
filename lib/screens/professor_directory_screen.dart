@@ -52,6 +52,7 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Directorio de Profesores'),
+        backgroundColor: Colors.blue.shade100,
       ),
       body: Column(
         children: [

@@ -1,7 +1,7 @@
 [
     {
         "profesor": "Hernández Secundino José Celestino Elías",
-        "department": "Academia de Sistemas Digitales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Rueda Meléndez José Marco Antonio",
@@ -9,11 +9,11 @@
     },
     {
         "profesor": "Rodríguez Sarabia Tania",
-        "department": "Academia de Sistemas Distribuidos"
+        "department": "Academia de Ciencia de Datos"
     },
     {
         "profesor": "Castillo Martínez Miguel Ángel",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Sistemas Digitales"
     },
     {
         "profesor": "Moreno Cervantes Axel Ernesto",
@@ -21,7 +21,7 @@
     },
     {
         "profesor": "Cordero López Martha Rosa",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "López Rojas Ariel",
@@ -29,15 +29,15 @@
     },
     {
         "profesor": "Ojeda Santillan Rodrigo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Barrales López Ana Luz",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de CSistemas Digitales"
     },
     {
         "profesor": "Melara Abarca Reyna Elia",
-        "department": "Academia de Sistemas Distribuidos"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "López Ruíz Gabriela de Jesús",
@@ -45,15 +45,15 @@
     },
     {
         "profesor": "Linares Vallejo Erick Eugenio",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Sistemas Digitales"
     },
     {
         "profesor": "Domínguez Hernández Samuel",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Montiel Sánchez Ángel Salvador",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Alemán Arce Miguel Ángel",
@@ -61,7 +61,7 @@
     },
     {
         "profesor": "Rojas Mexicano Ismael",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Romero Herrera Rodolfo",
@@ -81,11 +81,11 @@
     },
     {
         "profesor": "Bautista Rosales Sandra Ivette",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Morales Cruz Juan Carlos",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Sistemas Digitales"
     },
     {
         "profesor": "Palacios Solano Rocío",
@@ -93,23 +93,23 @@
     },
     {
         "profesor": "Ortíz Ramírez José Antonio",
-        "department": "Academia de Sistemas Distribuidos"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Vélez Saldaña Ulises",
-        "department": "Academia de Sistemas Distribuidos"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Díaz Toalá Iván",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Sistemas Electrónicos"
     },
     {
         "profesor": "Cortez Duarte Nidia Asunción",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Martínez Rosales Ricardo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Rivera De la Rosa Mónica",
@@ -117,7 +117,7 @@
     },
     {
         "profesor": "Díaz Santiago Sandra",
-        "department": "Academia de Inteligencia Artificial"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Juárez Gambino Joel Omar",
@@ -125,15 +125,15 @@
     },
     {
         "profesor": "Sánchez Quintanilla Gilberto",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Castillo Cabrera Gelacio",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Téllez Barrera Juan Carlos",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Guzmán Flores Jessie Paulina",
@@ -141,83 +141,83 @@
     },
     {
         "profesor": "Peredo Valderrama Rubén",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Tecla Parra Roberto",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniría de Software"
     },
     {
         "profesor": "Hernández Olvera Luis Enrique",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Jiménez Ruíz René Baltazar",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Fundamentos de Sistemas Digitales"
     },
     {
         "profesor": "Rosas Carrillo Ary Shared",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Arzate Gordillo Jacqueline",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Hernández Aguilar José Luis",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Puebla Lomas Jaime Hugo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "González Cisneros Alejandro",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básidas"
     },
     {
         "profesor": "Rodríguez Flores Eduardo",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ciencias Sociales"
     },
     {
         "profesor": "Salas Ramirez Israel",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Gutiérrez Aldana Eduardo",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Rocha Bernabé María del Rosario",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Alcántara Méndez Alberto Jesús",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia Ingeniería de Software"
     },
     {
         "profesor": "Agustín Domínguez Verónica",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ciencias Sociales"
     },
     {
         "profesor": "Blanco Almazan Ivan Eduardo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Cervantes De Anda Ismael",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     },
     {
         "profesor": "Jiménez Benítez José Alfredo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Rodríguez Ordaz Marisol",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ciencias Sociales"
     },
     {
         "profesor": "Pérez de los Santos Mondragón Tanibet",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Martínez Perales José Cruz",
@@ -225,7 +225,7 @@
     },
     {
         "profesor": "Flores Roque Allan Eduardo",
-        "department": "Academia de Ingeniería de Software"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Gómez Mayorga Margarita Elizabeth",
@@ -233,11 +233,11 @@
     },
     {
         "profesor": "Tenorio Marrón Marco Antonio",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Sistemas Distribuidos"
     },
     {
         "profesor": "Rosas Trigueros Jorge Luis",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Inteligencia Artificial"
     },
     {
         "profesor": "Cruz Meza María Elena",
@@ -245,23 +245,23 @@
     },
     {
         "profesor": "Sánchez Vélez Ricardo",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Franco Martínez Edgardo Adrián",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Reyes Bermejo Tlatoani de Jesús",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Martínez García César Román",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Aguilar Sánchez Fernando",
-        "department": "Academia de Ciencia Básicas"
+        "department": "Academia de Sistemas Digitales"
     },
     {
         "profesor": "López Leyva Luis Octavio",
@@ -305,26 +305,98 @@
     },
     {
         "profesor": "Ocotitla Rojas Nancy",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniería de Software"
     },
     {
         "profesor": "Hernández Jaime Josefína",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ciencias Sociales"
     },
     {
         "profesor": "Zárate Cárdenas Alejandro",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ciencias Básicas"
     },
     {
         "profesor": "Galiñanes Rodríguez María Gabriela",
-        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+        "department": "Academia de Ciencias Sociales"
     },
     {
         "profesor": "Díaz Santiago Ricardo Felipe",
-        "department": "Academia de Ciencias Sociales"
+        "department": "Academia de Ingeniría de Software"
     },
     {
         "profesor": "Cruz Rojas Jorge Alberto",
+        "department": "Academia de Ciencias Básicas"
+    },
+    {
+        "profesor": "Adan Sosa Fanny",
+        "department": "Academia de Ciencias Sociales "
+    },
+    {
+        "profesor": "Albortante Morato Cecilia",
+        "department": "Academia de Ingeniería de Software"
+    },
+    {
+        "profesor": "Ávila Sanchez Christian Alejandro",
+        "department": "Academia de Ciencias Básicas"
+    },
+    {
+        "profesor": "Cancino Mosqueda Odette Berenice",
         "department": "Academia de Ciencias Sociales"
+    },
+    {
+        "profesor": "Alejandro Pérez Gómez",
+        "department": "Academia de Ingeniería de Software"
+    },
+    {
+        "profesor": "María López Hernández",
+        "department": "Academia de Ciencia de Datos"
+    },
+    {
+        "profesor": "Carlos Ramírez Torres",
+        "department": "Academia de Sistemas Digitales"
+    },
+    {
+        "profesor": "Lucía García Vargas",
+        "department": "Academia de Sistemas Distribuidos"
+    },
+    {
+        "profesor": "Diego Torres Sánchez",
+        "department": "Academia de Ciencia Básicas"
+    },
+    {
+        "profesor": "Ana Martínez Ruiz",
+        "department": "Academia de Inteligencia Artificial"
+    },
+    {
+        "profesor": "Fernando Hernández Pérez",
+        "department": "Academia de Ciencias Sociales"
+    },
+    {
+        "profesor": "Laura Sánchez Morales",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
+    },
+    {
+        "profesor": "Jorge Vargas Martínez",
+        "department": "Academia de Proyectos Estratégicos y Toma de Decisiones"
+    },
+    {
+        "profesor": "Isabel Romero González",
+        "department": "Academia de Ciencias de la Comunicación"
+    },
+    {
+        "profesor": "Pablo Díaz Fernández",
+        "department": "Academia de Ciencia Básicas"
+    },
+    {
+        "profesor": "Sara Méndez Ortega",
+        "department": "Academia de Sistemas Digitales"
+    },
+    {
+        "profesor": "Ricardo Gutiérrez López",
+        "department": "Academia de Ciencia de Datos"
+    },
+    {
+        "profesor": "Gabriela Ruiz Jiménez",
+        "department": "Academia de Fundamentos de Sistemas Electrónicos"
     }
 ]
