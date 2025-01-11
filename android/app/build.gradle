@@ -1,45 +1,58 @@
-plugins {
-    id "com.android.application"
-    id "kotlin-android"
-    // El plugin de Flutter debe ir después de Android y Kotlin.
-    id "dev.flutter.flutter-gradle-plugin"
-    // Plugin de Google Services para Firebase
-    id "com.google.gms.google-services"
-}
-
-android {
-    namespace = "com.example.escom_app"  // Namespace actualizado
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+    plugins {
+        id "com.android.application"
+        id "kotlin-android"
+        // El plugin de Flutter debe ir después de Android y Kotlin.
+        id "dev.flutter.flutter-gradle-plugin"
+        // Plugin de Google Services para Firebase
+        id "com.google.gms.google-services"
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+    def keystoreProperties = new Properties()
+    def keystorePropertiesFile = rootProject.file('key.properties')
+    if (keystorePropertiesFile.exists()) {
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
     }
 
-    defaultConfig {
-        applicationId = "com.example.escom_app"  // Asegúrate de que coincide con el namespace
-        minSdk = 23
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-    }
+    android {
+        namespace = "com.example.escom_app"  // Namespace actualizado
+        compileSdk = flutter.compileSdkVersion
+        ndkVersion = flutter.ndkVersion
 
-    buildTypes {
-        release {
-            // Configuración de firma para builds de producción (usar debug para ahora)
-            signingConfig = signingConfigs.debug
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
+
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8
+        }
+
+        defaultConfig {
+            applicationId = "com.example.escom_app"  // Asegúrate de que coincide con el namespace
+            minSdk = 23
+            targetSdk = flutter.targetSdkVersion
+            versionCode = flutter.versionCode
+            versionName = flutter.versionName
+        }
+
+        signingConfigs {
+            release {
+                keyAlias = keystoreProperties['keyAlias']
+                keyPassword = keystoreProperties['keyPassword']
+                storeFile = keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                storePassword = keystoreProperties['storePassword']
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig = signingConfigs.release
+            }
         }
     }
-}
 
-flutter {
-    source = "../.."  // Asegúrate de que el path es correcto
-}
+    flutter {
+        source = "../.."  // Asegúrate de que el path es correcto
+    }
 
-// Asegúrate de que este plugin esté al final del archivo
-apply plugin: 'com.google.gms.google-services'
+    // Asegúrate de que este plugin esté al final del archivo
+    apply plugin: 'com.google.gms.google-services'

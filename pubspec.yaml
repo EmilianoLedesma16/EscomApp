@@ -1,5 +1,5 @@
 name: escom_app
-description: "A new Flutter project."
+description: "EscomApp es una aplicacion que fomenta el ingreso a la escom."
 
 publish_to: 'none'
 
@@ -43,6 +43,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/escom_logo.png"
 
 flutter:
   uses-material-design: true
@@ -55,6 +61,7 @@ flutter:
 
   # Agrega tu imagen
   assets:
+    - assets/icon/escom_logo.png 
     - assets/img/ajedrez.jpg
     - assets/img/aniversario.jpg
     - assets/img/arcoiris.jpg

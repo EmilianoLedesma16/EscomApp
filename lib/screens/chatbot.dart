@@ -60,7 +60,7 @@ class ChatbotScreen extends StatelessWidget {
       'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
       'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
       'La ESCOM está ubicada en Zacatenco en la Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A. Madero, 07320 Ciudad de México, CDMX.',
-      'Las clases se imparten entre las 7:00 AM y las 8:00 PM.',
+      'Las clases se imparten entre las 7:00 AM y las 9:00 PM.',
       'La ESCOM brinda una gran variedad de actividades deportivas (fútbol, baloncesto, voleibol, ajedrez, etc) y culturales (baile, música folklorica, teatro, etc). Consulta la sección de actividades para más información.',
       'La ESCOM brinda una gran variedad de actividades deportivas (fútbol, baloncesto, voleibol, ajedrez, etc) y culturales (baile, música folklorica, teatro, etc). Consulta la sección de actividades para más información.',
       'En la ESCOM se imparten las carreras a nivel superior de ISC, IA y LCD. Además de las maestrías en Inteligencia Artificial y Ciencia de Datos y en Ciencias en Sistemas Computacionales Móviles',
