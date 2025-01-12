@@ -14,65 +14,66 @@ class ProfessorScheduleScreen extends StatelessWidget {
             'Horarios de ${professor['profesor'] ?? 'Nombre no disponible'}'),
         backgroundColor: Colors.blue.shade100,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Nombre del profesor
-            Text(
-              professor['profesor'] ?? 'Nombre no disponible',
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Nombre del profesor
+              Text(
+                professor['profesor'] ?? 'Nombre no disponible',
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
 
-            // Ícono circular centrado
-            Center(
-              child: CircleAvatar(
-                radius: 100, // Tamaño grande del ícono
-                backgroundColor: Colors.blueGrey.shade100,
-                child: const Icon(
-                  Icons.assignment_ind, // Ícono de persona
-                  color: Colors.black54,
-                  size: 100, // Tamaño del ícono dentro del círculo
+              // Ícono circular centrado
+              Center(
+                child: CircleAvatar(
+                  radius: 100, // Tamaño grande del ícono
+                  backgroundColor: Colors.blueGrey.shade100,
+                  child: const Icon(
+                    Icons.assignment_ind, // Ícono de persona
+                    color: Colors.black54,
+                    size: 100, // Tamaño del ícono dentro del círculo
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 20),
+              const SizedBox(height: 20),
 
-            // Departamento
-            Text(
-              'Departamento: ${professor['department'] ?? 'Departamento no disponible'}',
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 10),
+              // Departamento
+              Text(
+                'Departamento: ${professor['department'] ?? 'Departamento no disponible'}',
+                style: const TextStyle(fontSize: 16, color: Colors.grey),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 10),
 
-            // Correo
-            Text(
-              'Correo: ${professor['correo'] ?? 'Correo no disponible'}',
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 10),
+              // Correo
+              Text(
+                'Correo: ${professor['correo'] ?? 'Correo no disponible'}',
+                style: const TextStyle(fontSize: 16, color: Colors.grey),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 10),
 
-            // Sala
-            Text(
-              'Sala: ${professor['sala'] ?? 'Sala no disponible'}',
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
+              // Sala
+              Text(
+                'Sala: ${professor['sala'] ?? 'Sala no disponible'}',
+                style: const TextStyle(fontSize: 16, color: Colors.grey),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
 
-            // Tabla de horarios con scroll horizontal
-            Expanded(
-              child: SingleChildScrollView(
+              // Tabla de horarios con scroll horizontal
+              SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: _buildScheduleTable(professor),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

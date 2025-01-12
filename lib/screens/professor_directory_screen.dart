@@ -71,7 +71,7 @@ class _ProfessorDirectoryScreenState extends State<ProfessorDirectoryScreen> {
             child: Row(
               children: [
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.48,
+                  width: MediaQuery.of(context).size.width * 0.56,
                   child: ListView.builder(
                     itemCount: _filteredProfessors.length,
                     itemBuilder: (context, index) {
